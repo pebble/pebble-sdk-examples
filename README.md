@@ -18,8 +18,6 @@ Content overview:
  * `templates` -- A couple of minimal apps that serve as a good
                   starting point for your own apps.
 
- * `tools` --  As used in section above.
-
 
 ### Building the examples
 
@@ -32,7 +30,7 @@ For example, to build the `Classio` watch:
 
     cd watches
 
-    ../tools/create_pebble_project.py --symlink-only ../sdk/ classio
+    /<sdk_path>/tools/create_pebble_project.py --symlink-only /<sdk_path>/sdk/ classio
 
 Then follow the instructions given by the script.
 
@@ -41,7 +39,7 @@ Then follow the instructions given by the script.
 
 To create a new project from scratch with the same script:
 
-     ../tools/create_pebble_project.py ../sdk/ new_project_name
+     /<sdk_path>/tools/create_pebble_project.py /<sdk_path>/sdk/ new_project_name
 
 Then change into the project directory and run:
 
