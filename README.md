@@ -1,8 +1,11 @@
-## Pebble Smartwatch SDK.
+## Pebble Smartwatch SDK Examples
 
-Welcome!
+This repository contains the examples that are shipped with the Pebble
+Smartwatch SDK to make it easy for you to fork them.
 
-For installation instructions and more, see: <http://developer.getpebble.com/>
+For SDK download and installation instructions, see:
+
+ * <http://developer.getpebble.com/>
 
 
 #### Description of directory content
