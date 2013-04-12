@@ -1,0 +1,11 @@
+{
+ "friendlyVersion": "0.1",
+ "versionDefName": "FONT_DEMO_RESOURCES",
+
+ "media": [
+	   {"type":"font",
+	    "defName":"FONT_UNICONS_30",
+	    "file":"fonts/unicons_30.ttf"}
+	  ]
+
+}

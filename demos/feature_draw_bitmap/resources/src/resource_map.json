@@ -1,0 +1,13 @@
+
+{"friendlyVersion": "VERSION",
+ "versionDefName": "APP_RESOURCES",
+ "media": [
+
+	{
+        "type": "png",
+        "defName": "IMAGE_NO_LITTER",
+        "file": "images/no_litter_crop.png"
+	}
+
+ ]
+}

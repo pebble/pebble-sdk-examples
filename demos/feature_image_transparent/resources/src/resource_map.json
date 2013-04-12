@@ -1,0 +1,10 @@
+{
+    "friendlyVersion": "dev_0.0",
+    "versionDefName": "APP_RESOURCES",
+
+    "media": [{
+        "type": "png-trans",
+        "defName": "IMAGE_PANDA",
+        "file": "images/panda.png"
+    }]
+}

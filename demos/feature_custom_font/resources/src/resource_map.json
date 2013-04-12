@@ -1,0 +1,11 @@
+{
+ "friendlyVersion": "0.1",
+ "versionDefName": "FONT_DEMO_RESOURCES",
+
+ "media": [
+     {"type":"font",
+      "defName":"FONT_OSP_DIN_44",
+      "file":"fonts/osp-din/OSP-DIN_44.ttf"}
+	  ]
+
+}

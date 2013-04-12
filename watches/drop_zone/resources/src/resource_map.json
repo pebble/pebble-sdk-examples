@@ -1,0 +1,19 @@
+
+{"friendlyVersion": "VERSION",
+ "versionDefName": "APP_RESOURCES",
+ "media": [
+        {
+        "type": "png",
+        "defName": "IMAGE_MENU_ICON",
+        "file": "images/menu_icon_drop_zone.png"
+        },
+
+        {
+        "type": "font",
+        "characterRegex": "[:0-9]",
+        "defName": "FONT_ROBOTO_BOLD_CONDENSED_SUBSET_40",
+        "file": "fonts/Roboto-BoldCondensed.ttf"
+        }
+
+ ]
+}

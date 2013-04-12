@@ -1,0 +1,14 @@
+During the build process for a Pebble App, each font is converted from a
+vector TrueType format into a bitmap of a particular point size.
+
+The desired point size is specified by including the value in the name
+of the source `.ttf` file.
+
+ e.g. copy the file `OSP-DIN.ttf` to a file named `OSP-DIN_44.ttf` to get
+      the OSP-DIN font rendered at 44 points.
+
+If you want to have a font rendered at multiple sizes you need a copy
+of the file with the correct name for each size.
+
+
+The `OSP-DIN` font is from here: http://openfontlibrary.org/en/font/osp-din

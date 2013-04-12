@@ -1,0 +1,11 @@
+
+{"friendlyVersion": "VERSION",
+ "versionDefName": "APP_RESOURCES",
+ "media": [
+        {
+        "type": "png",
+        "defName": "IMAGE_MOCKUP",
+        "file": "images/mockup.png"
+        }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+    "friendlyVersion": "dev_0.0",
+    "versionDefName": "APP_RESOURCES",
+
+    "media": [
+
+	{
+        "type": "png",
+        "defName": "IMAGE_MENU_ICON",
+        "file": "images/menu_icon_big_watch.png"
+	},
+
+
+        {
+        "type": "png",
+        "defName": "IMAGE_NUM_0",
+        "file": "images/num_0.png"
+        },
+
+        {
+        "type": "png",
+        "defName": "IMAGE_NUM_1",
+        "file": "images/num_1.png"
+        },
+
+        {
+        "type": "png",
+        "defName": "IMAGE_NUM_2",
+        "file": "images/num_2.png"
+        },
+
+        {
+        "type": "png",
+        "defName": "IMAGE_NUM_3",
+        "file": "images/num_3.png"
+        },
+
+        {
+        "type": "png",
+        "defName": "IMAGE_NUM_4",
+        "file": "images/num_4.png"
+        },
+
+        {
+        "type": "png",
+        "defName": "IMAGE_NUM_5",
+        "file": "images/num_5.png"
+        },
+
+        {
+        "type": "png",
+        "defName": "IMAGE_NUM_6",
+        "file": "images/num_6.png"
+        },
+
+        {
+        "type": "png",
+        "defName": "IMAGE_NUM_7",
+        "file": "images/num_7.png"
+        },
+
+        {
+        "type": "png",
+        "defName": "IMAGE_NUM_8",
+        "file": "images/num_8.png"
+        },
+
+        {
+        "type": "png",
+        "defName": "IMAGE_NUM_9",
+        "file": "images/num_9.png"
+        }
+
+    ]
+}

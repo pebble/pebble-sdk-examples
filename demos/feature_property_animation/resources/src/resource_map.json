@@ -1,0 +1,11 @@
+
+{"friendlyVersion": "VERSION",
+ "versionDefName": "VERSION",
+ "media": [
+	   {
+	    "type":"raw",
+	    "defName":"DUMMY",
+	    "file":"resource_map.json"
+	   }
+	  ]
+}

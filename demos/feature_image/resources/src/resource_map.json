@@ -1,0 +1,15 @@
+{
+    "friendlyVersion": "dev_0.0",
+    "versionDefName": "FEATURE_DEMO_IMAGE_RESOURCES",
+
+    "media": [
+
+	{
+        "type": "png",
+        "defName": "IMAGE_NO_LITTER",
+        "file": "images/no_litter.png"
+	}
+
+    ]
+}
+
