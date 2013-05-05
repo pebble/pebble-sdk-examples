@@ -45,7 +45,7 @@ static const char* STR_NOON = "mittag";
 static const char* STR_MIDNIGHT = "mitternacht";
 static const char* STR_QUARTER = "Viertel";
 static const char* STR_TO = "vor";
-static const char* STR_PAST = "nach";
+static const char* STR_AND = "und";
 static const char* STR_HALF = "halb";
 static const char* STR_AFTER = "nach";
 
@@ -60,15 +60,19 @@ static size_t append_number(char* words, int num) {
       strcat(words, TEENS[ones_val]);
       return strlen(TEENS[ones_val]);
     }
+    if (ones_val > 0 || num == 0) {
+      strcat(words, ONES[ones_val]);
+      len += strlen(ONES[ones_val]);
+      strcat(words, STR_AND);
+      len += strlen(STR_AND);
+    }
     strcat(words, TENS[tens_val]);
     len += strlen(TENS[tens_val]);
     if (ones_val > 0) {
       strcat(words, " ");
       len += 1;
     }
-  }
-
-  if (ones_val > 0 || num == 0) {
+  } else if (ones_val > 0 || num == 0) {
     strcat(words, ONES[ones_val]);
     len += strlen(ONES[ones_val]);
   }
@@ -112,6 +116,15 @@ void fuzzy_time_to_words(int hours, int minutes, char* words, size_t length) {
 
       fuzzy_hours = (fuzzy_hours + 1) % 24;
     } else if (fuzzy_minutes == 30) {
+      remaining -= append_string(words, remaining, STR_HALF);
+      remaining -= append_string(words, remaining, " ");
+
+      fuzzy_hours = (fuzzy_hours + 1) % 24;
+    } else if (fuzzy_minutes > 30 && fuzzy_minutes < 40) {
+      remaining -= append_number(words, fuzzy_minutes-30);
+      remaining -= append_string(words, remaining, " ");
+      remaining -= append_string(words, remaining, STR_AFTER);
+      remaining -= append_string(words, remaining, " ");
       remaining -= append_string(words, remaining, STR_HALF);
       remaining -= append_string(words, remaining, " ");
 
