@@ -41,8 +41,8 @@ static const char* const TENS[] = {
 };
 
 static const char* STR_OH_CLOCK = "Uhr";
-static const char* STR_NOON = "mittag";
-static const char* STR_MIDNIGHT = "mitternacht";
+static const char* STR_NOON = "Mittag";
+static const char* STR_MIDNIGHT = "Mitternacht";
 static const char* STR_QUARTER = "Viertel";
 static const char* STR_TO = "vor";
 static const char* STR_AND = "und";
@@ -153,10 +153,12 @@ void fuzzy_time_to_words(int hours, int minutes, char* words, size_t length) {
     }
   }
 
-  if (fuzzy_hours == 0) {
+  if (fuzzy_hours == 0 && fuzzy_minutes == 0) {
     remaining -= append_string(words, remaining, STR_MIDNIGHT);
-  } else if (fuzzy_hours == 12) {
+  } else if (fuzzy_hours == 12 && fuzzy_minutes == 0) {
     remaining -= append_string(words, remaining, STR_NOON);
+  } else if (fuzzy_hours == 0 || fuzzy_hours == 12) {
+    remaining -= append_string(words, remaining, TEENS[2]);
   } else {
     remaining -= append_number(words, fuzzy_hours % 12);
   }
