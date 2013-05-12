@@ -3,7 +3,7 @@
 
 static const char* const ONES[] = {
   "null",
-  "ein",
+  "eins",
   "zwei",
   "drei",
   "vier",
