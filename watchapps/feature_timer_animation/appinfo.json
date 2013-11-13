@@ -1,0 +1,15 @@
+{
+  "uuid": "0133a0dd-37bf-4b42-a84d-5b6b12a4ed09",
+  "shortName": "Timer Animation",
+  "longName": "Timer Animation",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": []
+  }
+}

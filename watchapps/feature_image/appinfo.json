@@ -1,0 +1,21 @@
+{
+  "uuid": "3cf2450e-5f6f-4f22-baaa-8c2a968cfc28",
+  "shortName": "Image Demo",
+  "longName": "Image Demo",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": [
+      {
+        "type": "png",
+        "name": "IMAGE_NO_LITTER",
+        "file": "images/no_litter.png"
+      }
+    ]
+  }
+}

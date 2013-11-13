@@ -1,0 +1,15 @@
+{
+  "uuid": "3aa643c5-acd4-4897-9213-5e6812da3857",
+  "shortName": "Accel Discs",
+  "longName": "Accel Discs",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": []
+  }
+}

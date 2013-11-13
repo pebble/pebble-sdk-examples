@@ -1,0 +1,15 @@
+{
+  "uuid": "6d5f57f9-b01c-4a6a-88f0-ec024d38ba41",
+  "shortName": "GPath Demo",
+  "longName": "GPath Demo",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": []
+  }
+}

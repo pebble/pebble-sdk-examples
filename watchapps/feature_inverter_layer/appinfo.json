@@ -1,0 +1,15 @@
+{
+  "uuid": "0c136b6e-7f4c-4888-92e2-756392fc0f3b",
+  "shortName": "Inverter Layer",
+  "longName": "Inverter Layer",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": []
+  }
+}

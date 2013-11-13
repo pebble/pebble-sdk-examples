@@ -1,0 +1,7 @@
+Copyright (C) 2011 OSP 
+http://ospublish.constantvzw.org.
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+
+See the project website for the current trunk and the various branches:
+http://ospublish.constantvzw.org/foundry/osp-din/

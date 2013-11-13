@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DBB11C62-7E67-47B1-A59F-9AADA79275BF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SportsDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>630595BA-D44E-488F-AADC-D591EB6CCAA1</key>
+		<string>ssh://github.com/pebble/pebblesdk-examples.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>sports-demo/SportsDemo-iOS/SportsDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>630595BA-D44E-488F-AADC-D591EB6CCAA1</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/pebble/pebblesdk-examples.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>630595BA-D44E-488F-AADC-D591EB6CCAA1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>630595BA-D44E-488F-AADC-D591EB6CCAA1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>pebblesdk-examples</string>
+		</dict>
+	</array>
+</dict>
+</plist>

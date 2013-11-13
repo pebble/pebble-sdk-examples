@@ -1,0 +1,21 @@
+{
+  "uuid": "20c30673-36bc-4e9a-a05e-ac9d7dc5977e",
+  "shortName": "Transparent Demo",
+  "longName": "Transparent Demo",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": [
+      {
+        "type": "png-trans",
+        "name": "IMAGE_PANDA",
+        "file": "images/panda.png"
+      }
+    ]
+  }
+}

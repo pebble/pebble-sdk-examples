@@ -1,0 +1,26 @@
+{
+  "uuid": "703b16db-2e94-4b39-83ea-3f206a254235",
+  "shortName": "Drink Counter",
+  "longName": "Drink Counter",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": [
+      {
+        "type": "png",
+        "name": "IMAGE_ACTION_ICON_PLUS",
+        "file": "images/action_icon_plus.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_ACTION_ICON_MINUS",
+        "file": "images/action_icon_minus.png"
+      }
+    ]
+  }
+}

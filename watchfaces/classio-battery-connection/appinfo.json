@@ -1,0 +1,15 @@
+{
+  "uuid": "54d3118f-3346-462c-995c-0d0b4e01148c",
+  "shortName": "Classio B&B",
+  "longName": "Classio B&B",
+  "companyName": "Camembert, Inc.",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": []
+  }
+}

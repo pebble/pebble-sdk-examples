@@ -1,0 +1,19 @@
+{
+  "uuid": "2a3352d5-2d44-437f-9652-98464640aeab",
+  "shortName": "Quotes",
+  "longName": "Quotes",
+  "companyName": "Pebble Financial Corp",
+  "versionCode": 1,
+  "versionLabel": "1.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "symbol": 0,
+    "price": 1,
+    "fetch": 2
+  },
+  "resources": {
+    "media": []
+  }
+}

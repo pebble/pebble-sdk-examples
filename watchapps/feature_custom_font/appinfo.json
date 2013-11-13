@@ -1,0 +1,21 @@
+{
+  "uuid": "47d2fd2a-7809-4cfe-9144-08173353aaad",
+  "shortName": "Custom Font",
+  "longName": "Custom Font",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": [
+      {
+        "type": "font",
+        "name": "FONT_OSP_DIN_44",
+        "file": "fonts/osp-din/OSP-DIN_44.ttf"
+      }
+    ]
+  }
+}

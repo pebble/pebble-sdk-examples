@@ -1,0 +1,31 @@
+{
+  "uuid": "0a5399d9-5693-4f3e-b768-9c99b5f5dcea",
+  "shortName": "Ocean Survey",
+  "longName": "Ocean Survey",
+  "companyName": "Pebble Environment Services",
+  "versionCode": 1,
+  "versionLabel": "1.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": [
+      {
+        "type": "png",
+        "name": "IMAGE_ACTION_ICON_DOLPHIN",
+        "file": "images/dolphin.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_ACTION_ICON_SEALION",
+        "file": "images/sealion.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_ACTION_ICON_PELICAN",
+        "file": "images/pelican.png"
+      }
+    ]
+  }
+}

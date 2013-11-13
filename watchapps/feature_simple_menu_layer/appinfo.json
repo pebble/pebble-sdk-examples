@@ -1,0 +1,21 @@
+{
+  "uuid": "69a53987-379e-4ae7-a3c2-d08e5ffe8511",
+  "shortName": "Simple Menu",
+  "longName": "Simple Menu",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": [
+      {
+        "type": "png",
+        "name": "IMAGE_MENU_ICON_1",
+        "file": "images/menu_icon_simplicity.png"
+      }
+    ]
+  }
+}

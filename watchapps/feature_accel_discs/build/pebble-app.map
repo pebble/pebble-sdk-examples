@@ -1,0 +1,903 @@
+Archive member included because of file (symbol)
+
+/Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+                              src/feature_accel_discs.c.7.o (accel_service_peek)
+/Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_addsubdf3.o)
+                              src/feature_accel_discs.c.7.o (__aeabi_dsub)
+/Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_muldivdf3.o)
+                              src/feature_accel_discs.c.7.o (__aeabi_dmul)
+/Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_cmpdf2.o)
+                              src/feature_accel_discs.c.7.o (__aeabi_dcmplt)
+/Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_fixdfsi.o)
+                              src/feature_accel_discs.c.7.o (__aeabi_d2iz)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .bss           0x0000000000000000        0x0 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .init          0x0000000000000000        0x4 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .fini          0x0000000000000000        0x4 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .text          0x0000000000000000       0x68 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+ .bss           0x0000000000000000       0x1c /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+ .init_array    0x0000000000000000        0x4 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+ .fini_array    0x0000000000000000        0x4 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+ .eh_frame      0x0000000000000000        0x0 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+ .jcr           0x0000000000000000        0x0 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+ .text          0x0000000000000000        0x0 src/feature_accel_discs.c.7.o
+ .bss           0x0000000000000000        0x0 src/feature_accel_discs.c.7.o
+ .bss           0x0000000000000000        0x0 /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.sin_lookup
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.cos_lookup
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.clock_copy_time_string
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.clock_is_24h_style
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.bluetooth_connection_service_subscribe
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.bluetooth_connection_service_unsubscribe
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.app_in_focus_service_subscribe
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.app_in_focus_service_unsubscribe
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.app_out_of_focus_service_subscribe
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.app_out_of_focus_service_unsubscribe
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.battery_state_service_subscribe
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.battery_state_service_unsubscribe
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.battery_state_service_peek
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.accel_service_set_sampling_rate
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.accel_service_set_samples_per_update
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.accel_tap_service_subscribe
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.accel_tap_service_unsubscribe
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.tick_timer_service_init
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.tick_timer_service_subscribe
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.tick_timer_service_unsubscribe
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.data_spooling_create
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.data_spooling_finish
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.data_spooling_spool
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.app_log  0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.dict_calc_buffer_size
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.dict_write_begin
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.dict_write_data
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.dict_write_cstring
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.dict_write_int
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.dict_write_uint8
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.dict_write_uint16
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.dict_write_int32
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.dict_write_end
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.dict_read_begin_from_buffer
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.dict_read_next
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.dict_read_first
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.dict_serialize_tuplets
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.dict_serialize_tuplets_to_buffer
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.dict_serialize_tuplets_to_buffer_with_iter
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.dict_write_tuplet
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.dict_calc_buffer_size_from_tuplets
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.dict_merge
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.dict_find
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.app_message_open
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.app_message_register_callbacks
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.app_message_deregister_callbacks
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.app_message_out_get
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.app_message_out_send
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.app_message_out_release
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.app_sync_init
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.app_sync_deinit
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.app_sync_set
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.app_sync_get
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.resource_get_handle
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.resource_load
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.resource_size
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.resource_load_byte_range
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.app_comm_set_sniff_interval
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.psleep   0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.app_timer_reschedule
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.app_timer_cancel
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.persist_exists
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.persist_get_size
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.persist_read_bool
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.persist_read_int
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.persist_read_data
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.persist_read_string
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.persist_write_bool
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.persist_write_int
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.persist_write_data
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.persist_write_string
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.persist_delete
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.gpoint_equal
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.gsize_equal
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.grect_equal
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.grect_is_empty
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.grect_standardize
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.grect_clip
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.grect_contains_point
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.grect_center_point
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.grect_crop
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.gbitmap_init_with_resource
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.gbitmap_init_with_data
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.gbitmap_init_as_sub_bitmap
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.gbitmap_deinit
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.grect_align
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.graphics_context_set_stroke_color
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.graphics_context_set_text_color
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.graphics_context_set_compositing_mode
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.graphics_draw_pixel
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.graphics_draw_line
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.graphics_draw_rect
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.graphics_fill_rect
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.graphics_draw_circle
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.graphics_draw_round_rect
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.graphics_draw_bitmap_in_rect
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.gpath_init
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.gpath_draw_filled
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.gpath_draw_outline
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.gpath_rotate_to
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.gpath_move_to
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.fonts_get_system_font
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.fonts_load_custom_font
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.fonts_unload_custom_font
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.graphics_text_draw
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.graphics_text_layout_get_max_used_size
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.click_number_of_clicks_counted
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.click_recognizer_get_button_id
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.layer_set_frame
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.layer_set_bounds
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.layer_get_bounds
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.layer_get_window
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.layer_remove_from_parent
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.layer_remove_child_layers
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.layer_insert_below_sibling
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.layer_insert_above_sibling
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.layer_set_hidden
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.layer_get_hidden
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.layer_set_clips
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.layer_get_clips
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.window_set_click_config_provider
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.window_set_click_config_provider_with_context
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.window_get_click_config_provider
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.window_set_fullscreen
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.window_get_fullscreen
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.window_set_status_bar_icon
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.window_is_loaded
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.window_stack_pop
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.window_stack_pop_all
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.window_stack_remove
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.window_stack_get_top_window
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.window_stack_contains_window
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.animation_create
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.animation_destroy
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.animation_set_duration
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.animation_set_delay
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.animation_set_curve
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.animation_set_handlers
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.animation_get_context
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.animation_schedule
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.animation_unschedule
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.animation_unschedule_all
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.animation_is_scheduled
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.animation_set_implementation
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.property_animation_init_layer_frame
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.property_animation_init
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.property_animation_update_int16
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.property_animation_update_gpoint
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.property_animation_update_grect
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.text_layer_create
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.text_layer_destroy
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.text_layer_get_layer
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.text_layer_set_text
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.text_layer_get_text
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.text_layer_set_background_color
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.text_layer_set_text_color
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.text_layer_set_overflow_mode
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.text_layer_set_font
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.text_layer_set_text_alignment
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.text_layer_get_content_size
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.text_layer_set_size
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.scroll_layer_create
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.scroll_layer_destroy
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.scroll_layer_get_layer
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.scroll_layer_add_child
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.scroll_layer_set_click_config_onto_window
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.scroll_layer_set_callbacks
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.scroll_layer_set_context
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.scroll_layer_set_content_offset
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.scroll_layer_get_content_offset
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.scroll_layer_set_content_size
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.scroll_layer_get_content_size
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.scroll_layer_set_frame
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.scroll_layer_scroll_up_click_handler
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.scroll_layer_scroll_down_click_handler
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.inverter_layer_create
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.inverter_layer_destroy
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.inverter_layer_get_layer
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.menu_cell_basic_draw
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.menu_cell_title_draw
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.menu_cell_basic_header_draw
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.menu_index_compare
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.menu_layer_create
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.menu_layer_destroy
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.menu_layer_get_layer
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.menu_layer_set_callbacks
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.menu_layer_set_click_config_onto_window
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.menu_layer_set_selected_next
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.menu_layer_set_selected_index
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.menu_layer_get_selected_index
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.menu_layer_reload_data
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.simple_menu_layer_create
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.simple_menu_layer_destroy
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.simple_menu_layer_get_layer
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.simple_menu_layer_get_selected_index
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.simple_menu_layer_set_selected_index
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.action_bar_layer_create
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.action_bar_layer_destroy
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.action_bar_layer_get_layer
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.action_bar_layer_set_context
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.action_bar_layer_set_click_config_provider
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.action_bar_layer_set_icon
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.action_bar_layer_clear_icon
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.action_bar_layer_add_to_window
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.action_bar_layer_remove_from_window
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.action_bar_layer_set_background_color
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.bitmap_layer_create
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.bitmap_layer_destroy
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.bitmap_layer_get_layer
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.bitmap_layer_set_bitmap
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.bitmap_layer_set_alignment
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.bitmap_layer_set_background_color
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.bitmap_layer_set_compositing_mode
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.rot_bitmap_layer_create
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.rot_bitmap_layer_destroy
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.rot_bitmap_layer_set_corner_clip_color
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.rot_bitmap_layer_set_angle
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.rot_bitmap_layer_increment_angle
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.rot_bitmap_set_src_ic
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.rot_bitmap_set_compositing_mode
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.number_window_create
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.number_window_destroy
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.number_window_set_label
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.number_window_set_max
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.number_window_set_min
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.number_window_set_value
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.number_window_set_step_size
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.number_window_get_value
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.vibes_cancel
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.vibes_short_pulse
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.vibes_long_pulse
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.vibes_double_pulse
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.vibes_enqueue_custom_pattern
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.light_enable_interaction
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.light_enable
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.rand     0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.srand    0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.snprintf
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.strcmp   0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.strncmp  0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.strcpy   0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.strncpy  0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.strcat   0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.strncat  0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.strlen   0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.memcpy   0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.memmove  0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.strftime
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.localtime
+                0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.gmtime   0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.malloc   0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.free     0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.time     0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text.time_ms  0x0000000000000000        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .bss           0x0000000000000000        0x0 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_addsubdf3.o)
+ .bss           0x0000000000000000        0x0 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_muldivdf3.o)
+ .bss           0x0000000000000000        0x0 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_cmpdf2.o)
+ .bss           0x0000000000000000        0x0 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_fixdfsi.o)
+ .text          0x0000000000000000        0x0 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
+ .bss           0x0000000000000000        0x0 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
+ .eh_frame      0x0000000000000000        0x4 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
+ .jcr           0x0000000000000000        0x4 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
+ .text          0x0000000000000000        0x0 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+ .bss           0x0000000000000000        0x0 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+ .init          0x0000000000000000        0x8 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+ .fini          0x0000000000000000        0x8 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+APP              0x0000000000000000 0x0000000000006000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+LOAD /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+LOAD src/feature_accel_discs.c.7.o
+LOAD /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a
+START GROUP
+LOAD /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a
+LOAD /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/../../../../arm-none-eabi/lib/thumb2/libc.a
+END GROUP
+LOAD /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
+LOAD /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+
+.header         0x0000000000000000       0x84
+ *(.pbl_header)
+ .pbl_header    0x0000000000000000       0x84 src/feature_accel_discs.c.7.o
+                0x0000000000000000                __pbl_app_info
+
+.text           0x0000000000000084      0x908
+ *(.text)
+ .text          0x0000000000000084       0x14 /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .text          0x0000000000000098      0x370 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_addsubdf3.o)
+                0x0000000000000098                __aeabi_drsub
+                0x00000000000000a0                __subdf3
+                0x00000000000000a0                __aeabi_dsub
+                0x00000000000000a4                __aeabi_dadd
+                0x00000000000000a4                __adddf3
+                0x000000000000031c                __aeabi_ui2d
+                0x000000000000031c                __floatunsidf
+                0x000000000000033c                __floatsidf
+                0x000000000000033c                __aeabi_i2d
+                0x0000000000000360                __extendsfdf2
+                0x0000000000000360                __aeabi_f2d
+                0x000000000000039c                __aeabi_ul2d
+                0x000000000000039c                __floatundidf
+                0x00000000000003ac                __aeabi_l2d
+                0x00000000000003ac                __floatdidf
+ .text          0x0000000000000408      0x424 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_muldivdf3.o)
+                0x0000000000000408                __aeabi_dmul
+                0x0000000000000408                __muldf3
+                0x000000000000065c                __aeabi_ddiv
+                0x000000000000065c                __divdf3
+ .text          0x000000000000082c      0x110 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_cmpdf2.o)
+                0x000000000000082c                __gtdf2
+                0x000000000000082c                __gedf2
+                0x0000000000000834                __ltdf2
+                0x0000000000000834                __ledf2
+                0x000000000000083c                __eqdf2
+                0x000000000000083c                __nedf2
+                0x000000000000083c                __cmpdf2
+                0x00000000000008b8                __aeabi_cdrcmple
+                0x00000000000008c8                __aeabi_cdcmple
+                0x00000000000008c8                __aeabi_cdcmpeq
+                0x00000000000008d8                __aeabi_dcmpeq
+                0x00000000000008ec                __aeabi_dcmplt
+                0x0000000000000900                __aeabi_dcmple
+                0x0000000000000914                __aeabi_dcmpge
+                0x0000000000000928                __aeabi_dcmpgt
+ .text          0x000000000000093c       0x50 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_fixdfsi.o)
+                0x000000000000093c                __fixdfsi
+                0x000000000000093c                __aeabi_d2iz
+
+.glue_7         0x000000000000098c        0x0
+ .glue_7        0x0000000000000000        0x0 linker stubs
+
+.glue_7t        0x000000000000098c        0x0
+ .glue_7t       0x0000000000000000        0x0 linker stubs
+
+.vfp11_veneer   0x000000000000098c        0x0
+ .vfp11_veneer  0x0000000000000000        0x0 linker stubs
+
+.v4_bx          0x000000000000098c        0x0
+ .v4_bx         0x0000000000000000        0x0 linker stubs
+
+.iplt           0x000000000000098c        0x0
+ .iplt          0x0000000000000000        0x0 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+
+.text.handle_accel
+                0x000000000000098c        0x2
+ .text.handle_accel
+                0x000000000000098c        0x2 src/feature_accel_discs.c.7.o
+
+.text.timer_callback
+                0x0000000000000990      0x1f8
+ .text.timer_callback
+                0x0000000000000990      0x1f8 src/feature_accel_discs.c.7.o
+
+.text.window_unload
+                0x0000000000000b88       0x10
+ .text.window_unload
+                0x0000000000000b88       0x10 src/feature_accel_discs.c.7.o
+
+.text.window_load
+                0x0000000000000b98      0x108
+ .text.window_load
+                0x0000000000000b98      0x108 src/feature_accel_discs.c.7.o
+
+.text.disc_layer_update_callback
+                0x0000000000000ca0       0x50
+ .text.disc_layer_update_callback
+                0x0000000000000ca0       0x50 src/feature_accel_discs.c.7.o
+
+.text.startup.main
+                0x0000000000000cf0       0x8c
+ .text.startup.main
+                0x0000000000000cf0       0x8c src/feature_accel_discs.c.7.o
+                0x0000000000000cf0                main
+
+.text.accel_service_peek
+                0x0000000000000d7c        0xc
+ .text.accel_service_peek
+                0x0000000000000d7c        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+                0x0000000000000d7c                accel_service_peek
+
+.text.accel_data_service_subscribe
+                0x0000000000000d88        0xc
+ .text.accel_data_service_subscribe
+                0x0000000000000d88        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+                0x0000000000000d88                accel_data_service_subscribe
+
+.text.accel_data_service_unsubscribe
+                0x0000000000000d94        0xc
+ .text.accel_data_service_unsubscribe
+                0x0000000000000d94        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+                0x0000000000000d94                accel_data_service_unsubscribe
+
+.text.app_event_loop
+                0x0000000000000da0        0xc
+ .text.app_event_loop
+                0x0000000000000da0        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+                0x0000000000000da0                app_event_loop
+
+.text.app_timer_register
+                0x0000000000000dac        0xc
+ .text.app_timer_register
+                0x0000000000000dac        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+                0x0000000000000dac                app_timer_register
+
+.text.graphics_context_set_fill_color
+                0x0000000000000db8        0xc
+ .text.graphics_context_set_fill_color
+                0x0000000000000db8        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+                0x0000000000000db8                graphics_context_set_fill_color
+
+.text.graphics_fill_circle
+                0x0000000000000dc4        0xc
+ .text.graphics_fill_circle
+                0x0000000000000dc4        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+                0x0000000000000dc4                graphics_fill_circle
+
+.text.layer_create
+                0x0000000000000dd0        0xc
+ .text.layer_create
+                0x0000000000000dd0        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+                0x0000000000000dd0                layer_create
+
+.text.layer_destroy
+                0x0000000000000ddc        0xc
+ .text.layer_destroy
+                0x0000000000000ddc        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+                0x0000000000000ddc                layer_destroy
+
+.text.layer_mark_dirty
+                0x0000000000000de8        0xc
+ .text.layer_mark_dirty
+                0x0000000000000de8        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+                0x0000000000000de8                layer_mark_dirty
+
+.text.layer_set_update_proc
+                0x0000000000000df4        0xc
+ .text.layer_set_update_proc
+                0x0000000000000df4        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+                0x0000000000000df4                layer_set_update_proc
+
+.text.layer_get_frame
+                0x0000000000000e00        0xc
+ .text.layer_get_frame
+                0x0000000000000e00        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+                0x0000000000000e00                layer_get_frame
+
+.text.layer_add_child
+                0x0000000000000e0c        0xc
+ .text.layer_add_child
+                0x0000000000000e0c        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+                0x0000000000000e0c                layer_add_child
+
+.text.window_create
+                0x0000000000000e18        0xc
+ .text.window_create
+                0x0000000000000e18        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+                0x0000000000000e18                window_create
+
+.text.window_destroy
+                0x0000000000000e24        0xc
+ .text.window_destroy
+                0x0000000000000e24        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+                0x0000000000000e24                window_destroy
+
+.text.window_set_window_handlers
+                0x0000000000000e30        0xc
+ .text.window_set_window_handlers
+                0x0000000000000e30        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+                0x0000000000000e30                window_set_window_handlers
+
+.text.window_get_root_layer
+                0x0000000000000e3c        0xc
+ .text.window_get_root_layer
+                0x0000000000000e3c        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+                0x0000000000000e3c                window_get_root_layer
+
+.text.window_set_background_color
+                0x0000000000000e48        0xc
+ .text.window_set_background_color
+                0x0000000000000e48        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+                0x0000000000000e48                window_set_background_color
+
+.text.window_stack_push
+                0x0000000000000e54        0xc
+ .text.window_stack_push
+                0x0000000000000e54        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+                0x0000000000000e54                window_stack_push
+
+.text.memset    0x0000000000000e60        0xc
+ .text.memset   0x0000000000000e60        0xc /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+                0x0000000000000e60                memset
+
+.rel.dyn        0x0000000000000e6c        0x0
+ .rel.iplt      0x0000000000000000        0x0 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+
+.data           0x0000000000000e6c        0x4
+ *(.data)
+ .data          0x0000000000000e6c        0x0 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .data          0x0000000000000e6c        0x4 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+                0x0000000000000e6c                __dso_handle
+ .data          0x0000000000000e70        0x0 src/feature_accel_discs.c.7.o
+ .data          0x0000000000000e70        0x0 /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .data          0x0000000000000e70        0x0 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_addsubdf3.o)
+ .data          0x0000000000000e70        0x0 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_muldivdf3.o)
+ .data          0x0000000000000e70        0x0 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_cmpdf2.o)
+ .data          0x0000000000000e70        0x0 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_fixdfsi.o)
+ .data          0x0000000000000e70        0x0 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
+ .data          0x0000000000000e70        0x0 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+
+.igot.plt       0x0000000000000e70        0x0
+ .igot.plt      0x0000000000000000        0x0 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+
+.data.next_radius
+                0x0000000000000e70        0x8
+ .data.next_radius
+                0x0000000000000e70        0x8 src/feature_accel_discs.c.7.o
+
+.bss
+ *(.bss)
+
+.bss.window_frame
+                0x0000000000000e78        0x8
+ .bss.window_frame
+                0x0000000000000e78        0x8 src/feature_accel_discs.c.7.o
+
+.bss.disc_layer
+                0x0000000000000e80        0x4
+ .bss.disc_layer
+                0x0000000000000e80        0x4 src/feature_accel_discs.c.7.o
+
+.bss.timer      0x0000000000000e84        0x4
+ .bss.timer     0x0000000000000e84        0x4 src/feature_accel_discs.c.7.o
+
+.bss.discs      0x0000000000000e88      0x3c0
+ .bss.discs     0x0000000000000e88      0x3c0 src/feature_accel_discs.c.7.o
+
+.bss.window     0x0000000000001248        0x4
+ .bss.window    0x0000000000001248        0x4 src/feature_accel_discs.c.7.o
+
+DISCARD
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+ *(.eh_frame)
+OUTPUT(/Users/thomas/work/pebblesdk-examples/watchapps/feature_accel_discs/build/pebble-app.elf elf32-littlearm)
+
+.ARM.attributes
+                0x0000000000000000       0x27
+ .ARM.attributes
+                0x0000000000000000       0x1b /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .ARM.attributes
+                0x000000000000001b       0x2b /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+ .ARM.attributes
+                0x0000000000000046       0x33 src/feature_accel_discs.c.7.o
+ .ARM.attributes
+                0x0000000000000079       0x21 /Users/thomas/pebble-dev/PebbleSDK-2.x-201308290106/Pebble/lib/libpebble.a(tmpbEEFztpebble_os.o)
+ .ARM.attributes
+                0x000000000000009a       0x1b /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x00000000000000b5       0x1b /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x00000000000000d0       0x1b /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_cmpdf2.o)
+ .ARM.attributes
+                0x00000000000000eb       0x1b /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_fixdfsi.o)
+ .ARM.attributes
+                0x0000000000000106       0x2b /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
+ .ARM.attributes
+                0x0000000000000131       0x1b /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+
+.comment        0x0000000000000000       0x4e
+ .comment       0x0000000000000000       0x4e /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+                                         0x4f (size before relaxing)
+ .comment       0x0000000000000000       0x4f src/feature_accel_discs.c.7.o
+ .comment       0x0000000000000000       0x4f /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
+
+.debug_line     0x0000000000000000      0x9d0
+ .debug_line    0x0000000000000000       0x71 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .debug_line    0x0000000000000071      0x307 src/feature_accel_discs.c.7.o
+ .debug_line    0x0000000000000378      0x212 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_addsubdf3.o)
+ .debug_line    0x000000000000058a      0x22f /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_muldivdf3.o)
+ .debug_line    0x00000000000007b9      0x115 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_cmpdf2.o)
+ .debug_line    0x00000000000008ce       0x8d /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_fixdfsi.o)
+ .debug_line    0x000000000000095b       0x75 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+
+.debug_info     0x0000000000000000      0xea1
+ .debug_info    0x0000000000000000       0xb2 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .debug_info    0x00000000000000b2      0x9b5 src/feature_accel_discs.c.7.o
+ .debug_info    0x0000000000000a67       0xe2 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_addsubdf3.o)
+ .debug_info    0x0000000000000b49       0xe2 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_muldivdf3.o)
+ .debug_info    0x0000000000000c2b       0xe2 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_cmpdf2.o)
+ .debug_info    0x0000000000000d0d       0xe2 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_fixdfsi.o)
+ .debug_info    0x0000000000000def       0xb2 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+
+.debug_abbrev   0x0000000000000000      0x31b
+ .debug_abbrev  0x0000000000000000       0x12 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .debug_abbrev  0x0000000000000012      0x2a7 src/feature_accel_discs.c.7.o
+ .debug_abbrev  0x00000000000002b9       0x14 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_addsubdf3.o)
+ .debug_abbrev  0x00000000000002cd       0x14 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_muldivdf3.o)
+ .debug_abbrev  0x00000000000002e1       0x14 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_cmpdf2.o)
+ .debug_abbrev  0x00000000000002f5       0x14 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_fixdfsi.o)
+ .debug_abbrev  0x0000000000000309       0x12 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+
+.debug_aranges  0x0000000000000000      0x118
+ .debug_aranges
+                0x0000000000000000       0x28 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .debug_aranges
+                0x0000000000000028       0x48 src/feature_accel_discs.c.7.o
+ .debug_aranges
+                0x0000000000000070       0x20 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_addsubdf3.o)
+ .debug_aranges
+                0x0000000000000090       0x20 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_muldivdf3.o)
+ .debug_aranges
+                0x00000000000000b0       0x20 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_cmpdf2.o)
+ .debug_aranges
+                0x00000000000000d0       0x20 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/libgcc.a(_arm_fixdfsi.o)
+ .debug_aranges
+                0x00000000000000f0       0x28 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+
+.debug_ranges   0x0000000000000000      0x1f8
+ .debug_ranges  0x0000000000000000       0x20 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .debug_ranges  0x0000000000000020      0x1b8 src/feature_accel_discs.c.7.o
+ .debug_ranges  0x00000000000001d8       0x20 /Users/thomas/local/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+
+.debug_loc      0x0000000000000000      0x1f5
+ .debug_loc     0x0000000000000000      0x1f5 src/feature_accel_discs.c.7.o
+
+.debug_str      0x0000000000000000      0x4ae
+ .debug_str     0x0000000000000000      0x4ae src/feature_accel_discs.c.7.o
+                                        0x52a (size before relaxing)
+
+.debug_frame    0x0000000000000000       0xc0
+ .debug_frame   0x0000000000000000       0xc0 src/feature_accel_discs.c.7.o

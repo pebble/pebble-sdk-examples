@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.example.PebbleKitExample"
+  android:versionCode="1"
+  android:versionName="1.0">
+
+  <permission android:name="com.example.PebbleKitExample.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+  <uses-permission android:name="com.example.PebbleKitExample.permission.C2D_MESSAGE" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.SEND_SMS"/>
+  <uses-permission android:name="android.permission.READ_CONTACTS"/>
+  <uses-permission android:name="android.permission.NFC" />
+  <uses-feature android:name="android.hardware.nfc" />
+
+    <!-- App receives GCM messages. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- GCM connects to Google Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+  <application android:label="@string/app_name">
+
+    <activity
+      android:name=".MainActivity"
+      android:label="@string/app_name">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+
+    <activity
+      android:name=".ExampleSportsActivity"
+      android:label="@string/activity_sports">
+
+    </activity>
+
+    <activity
+      android:name=".ExampleGolfActivity"
+      android:label="@string/activity_golf">
+
+    </activity>
+
+    <activity
+      android:name=".ExampleWeatherActivity"
+      android:label="@string/activity_weather">
+
+    </activity>
+
+    <activity
+      android:name=".TodoList.ExampleTodoListActivity"
+      android:label="@string/activity_todo_list">
+
+    </activity>
+
+      <activity
+          android:name=".ExampleSmsActivity"
+          android:label="@string/activity_sms">
+
+      </activity>
+
+    <activity
+       android:name=".ExampleGCMActivity"
+       android:label="@string/activity_gcm"
+       android:screenOrientation="portrait"
+       android:launchMode="singleInstance">
+       <intent-filter>
+            <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <data android:mimeType="application/com.example.android.beam" />
+        </intent-filter>
+    </activity>
+
+    <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND" >
+        <intent-filter>
+            <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+            <category android:name="com.example.PebbleKitExample" />
+        </intent-filter>
+    </receiver>
+
+    <service android:name=".GCMIntentService" />
+  </application>
+</manifest> 

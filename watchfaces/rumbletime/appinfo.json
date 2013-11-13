@@ -1,0 +1,15 @@
+{
+  "uuid": "321476b1-2ec6-4d03-9ef8-0f8cdb2fa9e7",
+  "shortName": "RumbleTime",
+  "longName": "RumbleTime",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": []
+  }
+}

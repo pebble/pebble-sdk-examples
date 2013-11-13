@@ -1,0 +1,14 @@
+{
+  "uuid" : "4295ec2e-e89a-499a-8d48-ab36ddba4034",
+  "shortName" : "On The Button",
+  "longName" : "On The Button",
+  "companyName" : "A Company",
+  "versionCode" : 3,
+  "versionLabel" : "3.0",
+  "watchapp" : {
+    "watchface" : false
+  },
+  "resources" : {
+    "media" : []
+  }
+}

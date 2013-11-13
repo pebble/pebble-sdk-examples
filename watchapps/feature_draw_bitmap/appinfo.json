@@ -1,0 +1,21 @@
+{
+  "uuid": "2ff7fa04-6011-4a98-8a3b-a826a4b899f8",
+  "shortName": "Draw Bitmap",
+  "longName": "Draw Bitmap",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": [
+      {
+        "type": "png",
+        "name": "IMAGE_NO_LITTER",
+        "file": "images/no_litter_crop.png"
+      }
+    ]
+  }
+}

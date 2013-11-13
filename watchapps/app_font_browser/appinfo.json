@@ -1,0 +1,15 @@
+{
+  "uuid": "75f25e48-c4c0-402f-a935-fcb7857d1ed4",
+  "shortName": "Font Browser",
+  "longName": "Font Browser",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": []
+  }
+}

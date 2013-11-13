@@ -1,0 +1,15 @@
+{
+  "uuid": "656bca9a-5400-42d2-afcf-e9bae1528df1",
+  "shortName": "Timer App",
+  "longName": "Timer App",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": []
+  }
+}

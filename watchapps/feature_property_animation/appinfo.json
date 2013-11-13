@@ -1,0 +1,15 @@
+{
+  "uuid": "4401751d-9e98-4e66-b9f8-77a55a573f67",
+  "shortName": "Static Demo",
+  "longName": "Static Demo",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": []
+  }
+}

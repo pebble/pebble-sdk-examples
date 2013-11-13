@@ -1,0 +1,15 @@
+{
+  "uuid": "434f3d92-cee5-488d-85f4-ad2d33aaf1ff",
+  "shortName": "Text Draw Demo",
+  "longName": "Text Draw Demo",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": []
+  }
+}

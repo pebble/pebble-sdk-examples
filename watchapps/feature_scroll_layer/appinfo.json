@@ -1,0 +1,15 @@
+{
+  "uuid": "1542cda0-eb9c-4ea4-ae82-5db0b2b720df",
+  "shortName": "Scroll Demo",
+  "longName": "Scroll Demo",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": []
+  }
+}

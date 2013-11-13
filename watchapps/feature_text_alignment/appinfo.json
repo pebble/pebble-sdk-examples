@@ -1,0 +1,15 @@
+{
+  "uuid": "0d22d0c7-a810-434b-824c-5f363f53be28",
+  "shortName": "Text Alignment",
+  "longName": "Text Alignment",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": []
+  }
+}

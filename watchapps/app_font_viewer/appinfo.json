@@ -1,0 +1,21 @@
+{
+  "uuid": "2f085772-ad3f-4f2c-8730-86c9181f593c",
+  "shortName": "Font Viewer",
+  "longName": "Font Viewer",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": [
+      {
+        "type": "font",
+        "name": "FONT_UNICONS_30",
+        "file": "fonts/unicons_30.ttf"
+      }
+    ]
+  }
+}

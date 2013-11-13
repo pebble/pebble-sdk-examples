@@ -1,0 +1,18 @@
+# project  configured on Mon Nov  4 11:38:20 2013 by
+# waf 1.7.11 (abi 98, python 20705f0 on darwin)
+# using /Users/thomas/pebble-dev/PebbleSDK-2.0-BETA0-rc4/Pebble/waf configure build
+#
+----------------------------------------
+Setting top to
+/Users/thomas/work/pebblesdk-examples/watchapps/feature_menu_layer
+----------------------------------------
+Setting out to
+/Users/thomas/work/pebblesdk-examples/watchapps/feature_menu_layer/build
+----------------------------------------
+Checking for program gcc,cc
+arm-none-eabi-gcc
+find program=['gcc', 'cc'] paths='' var='CC' -> 'arm-none-eabi-gcc'
+----------------------------------------
+Checking for program ar
+arm-none-eabi-ar
+find program=['ar'] paths='' var='AR' -> 'arm-none-eabi-ar'

@@ -1,0 +1,176 @@
+{
+  "uuid" : "7112d624-6555-4279-89ae-c086e9369427",
+  "shortName" : "91 Dub",
+  "longName" : "91 Dub",
+  "companyName" : "Pebble Technology & orviwan",
+  "versionCode" : 3,
+  "versionLabel" : "3.0",
+  "watchapp" : {
+    "watchface" : true
+  },
+  "resources" : {
+    "media": [
+      {
+        "type": "png",
+        "name": "IMAGE_MENU_ICON",
+        "file": "images/menu_icon_91w.png",
+        "menu_icon": true
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_BACKGROUND",
+        "file": "images/background.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_METER_BAR",
+        "file": "images/icon_meter.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_24_HOUR_MODE",
+        "file": "images/time_format_24H.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_PM_MODE",
+        "file": "images/time_format_PM.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_DAY_NAME_SUN",
+        "file": "images/day_sun.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_DAY_NAME_MON",
+        "file": "images/day_mon.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_DAY_NAME_TUE",
+        "file": "images/day_tue.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_DAY_NAME_WED",
+        "file": "images/day_wed.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_DAY_NAME_THU",
+        "file": "images/day_thu.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_DAY_NAME_FRI",
+        "file": "images/day_fri.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_DAY_NAME_SAT",
+        "file": "images/day_sat.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_DATENUM_0",
+        "file": "images/datenum_0.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_DATENUM_1",
+        "file": "images/datenum_1.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_DATENUM_2",
+        "file": "images/datenum_2.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_DATENUM_3",
+        "file": "images/datenum_3.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_DATENUM_4",
+        "file": "images/datenum_4.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_DATENUM_5",
+        "file": "images/datenum_5.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_DATENUM_6",
+        "file": "images/datenum_6.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_DATENUM_7",
+        "file": "images/datenum_7.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_DATENUM_8",
+        "file": "images/datenum_8.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_DATENUM_9",
+        "file": "images/datenum_9.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_0",
+        "file": "images/num_0.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_1",
+        "file": "images/num_1.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_2",
+        "file": "images/num_2.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_3",
+        "file": "images/num_3.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_4",
+        "file": "images/num_4.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_5",
+        "file": "images/num_5.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_6",
+        "file": "images/num_6.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_7",
+        "file": "images/num_7.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_8",
+        "file": "images/num_8.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_NUM_9",
+        "file": "images/num_9.png"
+      }
+    ]
+  }
+}

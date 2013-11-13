@@ -1,0 +1,21 @@
+{
+  "uuid": "23eedd80-6ec1-4e58-89e4-98700ed0799c",
+  "shortName": "GCompOp Demo",
+  "longName": "GCompOp Demo",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": [
+      {
+        "type": "png",
+        "name": "IMAGE_PUG",
+        "file": "images/pug.png"
+      }
+    ]
+  }
+}

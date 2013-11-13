@@ -1,0 +1,15 @@
+{
+  "uuid": "4846a572-4eb2-4eaa-a949-0dc4fea76eab",
+  "shortName": "12/24 Mode",
+  "longName": "12/24 Mode",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": []
+  }
+}

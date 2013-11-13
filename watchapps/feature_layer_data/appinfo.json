@@ -1,0 +1,17 @@
+{
+  "uuid": "4dbf3472-da52-462c-9de2-77b92caabe8c",
+  "shortName": "Layer Data Demo",
+  "longName": "Layer Data Demo",
+  "companyName": "Pebble Technology",
+  "versionCode": 1,
+  "versionLabel": "1.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": []
+  }
+}

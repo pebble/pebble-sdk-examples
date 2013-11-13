@@ -1,0 +1,15 @@
+{
+  "uuid": "4e56054d-067a-44bb-ba19-02eb6cd8b5a1",
+  "shortName": "App Log Demo",
+  "longName": "App Log Demo",
+  "companyName": "Pebble Tecnology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": []
+  }
+}

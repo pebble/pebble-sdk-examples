@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">ExamplePebbleKitActivity</string>
+  <string name="activity_golf">Golf App Example</string>
+  <string name="activity_sports">Sports App Example</string>
+  <string name="activity_weather">Weather App Example</string>
+  <string name="activity_todo_list">To-Do List Example</string>
+  <string-array name="jazz_artist_names">
+      <item>Brad Mehldau</item>
+      <item>Joshua Redman</item>
+      <item>Chick Corea</item>
+      <item>Kurt Rosenwinkel</item>
+      <item>Miles Davis</item>
+      <item>Wayne Shorter</item>
+      <item>Michael Brecker</item>
+      <item>Herbie Hancock</item>
+      <item>Joe Zawinul</item>
+      <item>Brian Blade</item>
+      <item>Jeff Ballard</item>
+      <item>Larry Grenadier</item>
+      <item>Keith Jarrett</item>
+      <item>McCoy Tyner</item>
+      <item>Stephon Harris</item>
+      <item>Mark Turner</item>
+  </string-array>
+  <string name="todo_list_add_item_dialog_description_hint">Short description</string>
+  <string name="todo_list_add_dialog_ok_button">Append</string>
+  <string name="todo_list_add_dialog_cancel_button">Cancel</string>
+  <string name="activity_sms">Sms App Example</string>
+  <string name="activity_gcm">GCM App Example</string>
+</resources>

@@ -1,0 +1,36 @@
+{
+  "uuid": "1d6c7f01-d948-42a6-aa4e-b2084210ebbc",
+  "shortName": "Menu Layer Demo",
+  "longName": "Menu Layer Demo",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": [
+      {
+        "type": "png",
+        "name": "IMAGE_MENU_ICON_BIG_WATCH",
+        "file": "images/menu_icon_big_watch.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_MENU_ICON_SECTOR_WATCH",
+        "file": "images/menu_icon_sector_watch.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_MENU_ICON_BINARY_WATCH",
+        "file": "images/menu_icon_binary_watch.png"
+      },
+      {
+        "type": "png",
+        "name": "IMAGE_BACKGROUND_BRAINS",
+        "file": "images/brains_watch_background.png"
+      }
+    ]
+  }
+}

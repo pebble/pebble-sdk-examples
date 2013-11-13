@@ -1,0 +1,15 @@
+{
+  "uuid": "1f3599a5-cf96-4c09-bbea-aa113e8cc18f",
+  "shortName": "TODO list",
+  "longName": "TODO list",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": []
+  }
+}

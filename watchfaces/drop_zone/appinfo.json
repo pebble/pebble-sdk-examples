@@ -1,0 +1,28 @@
+{
+  "uuid": "74d6e2b8-e44f-44c4-a861-cdcfb6077c8a",
+  "shortName": "Drop Zone",
+  "longName": "Drop Zone",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": true
+  },
+  "appKeys": {},
+  "resources": {
+    "media": [
+      {
+        "menuIcon": true,
+        "type": "png",
+        "name": "IMAGE_MENU_ICON",
+        "file": "images/menu_icon_drop_zone.png"
+      },
+      {
+        "characterRegex": "[:0-9]",
+        "type": "font",
+        "name": "FONT_ROBOTO_BOLD_CONDENSED_SUBSET_40",
+        "file": "fonts/Roboto-BoldCondensed.ttf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+  android:layout_width="match_parent" android:layout_height="match_parent">
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="New Text"
+    android:id="@+id/textBack"
+    android:layout_gravity="center"
+    android:textSize="24sp" />
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="New Text"
+    android:id="@+id/textMiddle"
+    android:layout_gravity="center"
+    android:textSize="32sp"
+    android:textStyle="bold" />
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="New Text"
+    android:id="@+id/textFront"
+    android:layout_gravity="center"
+    android:textSize="24sp" />
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="New Text"
+    android:id="@+id/textHole"
+    android:layout_gravity="center"
+    android:layout_marginTop="15dp"
+    android:textSize="24sp" />
+
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="5dp">
+
+    <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Start App"
+      android:id="@+id/button"
+      android:layout_gravity="center"
+      android:onClick="startWatchApp"/>
+
+    <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Stop App"
+      android:id="@+id/button1"
+      android:layout_gravity="center"
+      android:onClick="stopWatchApp"/>
+
+    <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Customize App"
+      android:id="@+id/button2"
+      android:layout_gravity="center"
+      android:onClick="customizeWatchApp"/>
+
+  </LinearLayout>
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Prev Hole"
+    android:id="@+id/button4"
+    android:layout_gravity="center"
+    android:onClick="goPrevious"/>
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Next Hole"
+    android:id="@+id/button3"
+    android:layout_gravity="center"
+    android:onClick="goNext"/>
+
+</LinearLayout>

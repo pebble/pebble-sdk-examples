@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:padding="10dp">
+
+  <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/imageView"
+    android:layout_gravity="center"
+    android:src="@drawable/running" />
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Paused"
+    android:id="@+id/status"
+    android:layout_gravity="center"
+    android:typeface="sans"
+    android:textStyle="bold"
+    android:textSize="32sp"
+    android:layout_marginTop="5dp" />
+
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp">
+
+    <Button
+      android:layout_width="wrap_content"
+      android:layout_height="fill_parent"
+      android:text="Start App"
+      android:id="@+id/button"
+      android:onClick="startWatchApp" />
+
+    <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Stop App"
+      android:id="@+id/button2"
+      android:layout_gravity="center"
+      android:onClick="stopWatchApp" />
+
+    <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Customize App"
+      android:id="@+id/button1"
+      android:layout_gravity="center"
+      android:onClick="customizeWatchApp" />
+  </LinearLayout>
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Update Data"
+    android:id="@+id/button3"
+    android:layout_gravity="center"
+    android:onClick="updateWatchApp" />
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Change Units"
+    android:id="@+id/button4"
+    android:layout_gravity="center"
+    android:onClick="changeUnitsOnWatch" />
+
+</LinearLayout>
+

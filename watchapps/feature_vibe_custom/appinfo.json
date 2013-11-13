@@ -1,0 +1,15 @@
+{
+  "uuid": "68d008b2-3a5a-45ed-811e-0955cde93b03",
+  "shortName": "Vibe Custom",
+  "longName": "Vibe Custom",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": []
+  }
+}

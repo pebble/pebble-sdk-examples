@@ -1,0 +1,22 @@
+{
+  "uuid": "1e8d28ef-e169-4924-a8b8-76c32faa7a66",
+  "shortName": "Segment Six",
+  "longName": "Segment Six",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": true
+  },
+  "appKeys": {},
+  "resources": {
+    "media": [
+      {
+        "menuIcon": true,
+        "type": "png",
+        "name": "IMAGE_MENU_ICON",
+        "file": "images/menu_icon_sector_watch.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "uuid": "6cc4967f-a06e-4a00-bf46-8a326aceaf31",
+  "shortName": "Mockup Helper",
+  "longName": "Mockup Helper",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {},
+  "resources": {
+    "media": [
+      {
+        "type": "png",
+        "name": "IMAGE_MOCKUP",
+        "file": "images/mockup.png"
+      }
+    ]
+  }
+}
