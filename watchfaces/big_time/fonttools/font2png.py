@@ -42,7 +42,7 @@
 # canvas of the correct size.
 #
 
-import ImageFont, ImageDraw, Image
+from PIL import ImageFont, ImageDraw, Image
 
 FONT_SIZE = 100
 FONT_FILE_PATH = "resources/src/fonts/nevis.ttf"
