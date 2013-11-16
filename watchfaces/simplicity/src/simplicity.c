@@ -68,8 +68,13 @@ void handle_init(void) {
   layer_set_update_proc(line_layer, line_layer_update_callback);
   layer_add_child(window_layer, line_layer);
 
+  // Ensures time is displayed immediately (will break if NULL tick event accessed).
+  // (This is why it's a good idea to have a separate routine to do the update itself.)
+  time_t now = time(NULL);
+  struct tm *current_time = localtime(&now);
+  handle_minute_tick(current_time, MINUTE_UNIT);
+
   tick_timer_service_subscribe(MINUTE_UNIT, handle_minute_tick);
-  // TODO: Update display here to avoid blank display on launch?
 }
 
 
