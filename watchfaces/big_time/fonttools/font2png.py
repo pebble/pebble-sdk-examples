@@ -60,7 +60,7 @@ META_DATA_TEMPLATE = \
 """
         {
         "type": "png",
-        "defName": "IMAGE_NUM_%d",
+        "name": "IMAGE_NUM_%d",
         "file": "images/num_%d.png"
         }"""
 
