@@ -75,7 +75,9 @@ static void set_container_image(GBitmap **bmp_image, BitmapLayer *bmp_layer, con
   bitmap_layer_set_bitmap(bmp_layer, *bmp_image);
   layer_set_frame(bitmap_layer_get_layer(bmp_layer), frame);
 
-  gbitmap_destroy(old_image);
+  if (old_image != NULL) {
+  	gbitmap_destroy(old_image);
+  }
 }
 
 
@@ -111,17 +113,16 @@ static void update_display(struct tm *current_time) {
 
   if (!clock_is_24h_style()) {
     if (current_time->tm_hour >= 12) {
+    	layer_set_hidden(bitmap_layer_get_layer(time_format_layer), false);
       set_container_image(&time_format_image, time_format_layer, RESOURCE_ID_IMAGE_PM_MODE, GPoint(17, 68));
     } else {
-      layer_remove_from_parent(bitmap_layer_get_layer(time_format_layer));
-      bitmap_layer_destroy(time_format_layer);
-      gbitmap_destroy(time_format_image);
+    	layer_set_hidden(bitmap_layer_get_layer(time_format_layer), true);
     }
 
     if (display_hour/10 == 0) {
-      layer_remove_from_parent(bitmap_layer_get_layer(time_digits_layers[0]));
-      bitmap_layer_destroy(time_digits_layers[0]);
-      gbitmap_destroy(time_digits_images[0]);
+    	layer_set_hidden(bitmap_layer_get_layer(time_digits_layers[0]), true);
+    } else {
+    	layer_set_hidden(bitmap_layer_get_layer(time_digits_layers[0]), false);
     }
   }
 
@@ -161,7 +162,7 @@ static void init(void) {
   bitmap_layer_set_bitmap(meter_bar_layer, meter_bar_image);
   layer_add_child(window_layer, bitmap_layer_get_layer(meter_bar_layer));
 
-  if (clock_is_24h_style()) {
+  if (!clock_is_24h_style()) {
     time_format_image = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_24_HOUR_MODE);
     GRect frame = (GRect) {
       .origin = { .x = 17, .y = 68 },
@@ -174,6 +175,8 @@ static void init(void) {
 
   // Create time and date layers
   GRect dummy_frame = { {0, 0}, {0, 0} };
+  day_name_layer = bitmap_layer_create(dummy_frame);
+  layer_add_child(window_layer, bitmap_layer_get_layer(day_name_layer));
   for (int i = 0; i < TOTAL_TIME_DIGITS; ++i) {
     time_digits_layers[i] = bitmap_layer_create(dummy_frame);
     layer_add_child(window_layer, bitmap_layer_get_layer(time_digits_layers[i]));

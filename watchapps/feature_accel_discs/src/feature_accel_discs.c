@@ -83,7 +83,7 @@ static void disc_layer_update_callback(Layer *me, GContext *ctx) {
 }
 
 static void timer_callback(void *data) {
-  AccelData accel = { 0, 0, 0 };
+  AccelData accel = (AccelData) { .x = 0, .y = 0, .z = 0 };
 
   accel_service_peek(&accel);
 
