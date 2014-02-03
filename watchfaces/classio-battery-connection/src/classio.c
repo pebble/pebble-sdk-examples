@@ -56,7 +56,7 @@ static void do_init(void) {
   text_layer_set_background_color(connection_layer, GColorClear);
   text_layer_set_font(connection_layer, fonts_get_system_font(FONT_KEY_GOTHIC_18));
   text_layer_set_text_alignment(connection_layer, GTextAlignmentCenter);
-  text_layer_set_text(connection_layer, "connected");
+  handle_bluetooth(bluetooth_connection_service_peek());
 
   battery_layer = text_layer_create(GRect(0, 120, /* width */ frame.size.w, 34 /* height */));
   text_layer_set_text_color(battery_layer, GColorWhite);
