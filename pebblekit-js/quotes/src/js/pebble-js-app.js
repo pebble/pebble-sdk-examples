@@ -1,10 +1,6 @@
-// Fetch saved symbol from local storage (using standard localStorage webAPI)
-var symbol = localStorage.getItem("symbol");
-
 // We use the fake "PBL" symbol as default
-if (!symbol) {
-  symbol = "PBL";
-}
+var defaultSymbol = "PBL";
+var symbol = defaultSymbol;
 
 // Fetch stock data for a given stock symbol (NYSE or NASDAQ only) from markitondemand.com
 // & send the stock price back to the watch via app message
@@ -23,7 +19,7 @@ function fetchStockQuote(symbol) {
         response = JSON.parse(req.responseText);
         var price;
         if (response.Message) {
-          // the merkitondemand API sends a response with a Message
+          // the markitondemand API sends a response with a Message
           // field when the symbol is not found
           Pebble.sendAppMessage({
             "price": "Not Found"});
@@ -48,6 +44,12 @@ Pebble.addEventListener("ready",
                         function(e) {
                           console.log("connect!" + e.ready);
                           console.log(e.type);
+                          // Fetch saved symbol from local storage (using
+                          // standard localStorage webAPI)
+                          symbol = localStorage.getItem("symbol");
+                          if (!symbol) {
+                            symbol = "PBL";
+                          }
                         });
 
 // Set callback for appmessage events
