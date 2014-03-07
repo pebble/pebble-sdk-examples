@@ -9,9 +9,10 @@
     "watchface": false
   },
   "appKeys": {
-    "symbol": 0,
-    "price": 1,
-    "fetch": 2
+    "init": 0,
+    "fetch": 1,
+    "symbol": 2,
+    "price": 3
   },
   "resources": {
     "media": []
