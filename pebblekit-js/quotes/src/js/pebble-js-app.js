@@ -39,7 +39,7 @@ function fetchStockQuote(symbol) {
         console.log("Request returned error code " + req.status.toString());
       }
     }
-  }
+  };
   req.send(null);
 }
 
