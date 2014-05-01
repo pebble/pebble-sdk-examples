@@ -4,6 +4,7 @@
 #define NUM_DISCS 20
 #define DISC_DENSITY 0.25
 #define ACCEL_RATIO 0.05
+#define ACCEL_STEP_MS 50
 
 typedef struct Vec2d {
   double x;
@@ -95,11 +96,7 @@ static void timer_callback(void *data) {
 
   layer_mark_dirty(disc_layer);
 
-  timer = app_timer_register(100 /* milliseconds */, timer_callback, NULL);
-}
-
-static void handle_accel(AccelData *accel_data, uint32_t num_samples) {
-  // do nothing
+  timer = app_timer_register(ACCEL_STEP_MS, timer_callback, NULL);
 }
 
 static void window_load(Window *window) {
@@ -128,9 +125,9 @@ static void init(void) {
   window_stack_push(window, true /* Animated */);
   window_set_background_color(window, GColorBlack);
 
-  accel_data_service_subscribe(0, handle_accel);
+  accel_data_service_subscribe(0, NULL);
 
-  timer = app_timer_register(100 /* milliseconds */, timer_callback, NULL);
+  timer = app_timer_register(ACCEL_STEP_MS, timer_callback, NULL);
 }
 
 static void deinit(void) {

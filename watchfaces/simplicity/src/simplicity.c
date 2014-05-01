@@ -17,6 +17,10 @@ void handle_minute_tick(struct tm *tick_time, TimeUnits units_changed) {
 
   char *time_format;
 
+  if (!tick_time) {
+    time_t now = time(NULL);
+    tick_time = localtime(&now);
+  }
 
   // TODO: Only update the date when it's changed.
   strftime(date_text, sizeof(date_text), "%B %e", tick_time);
@@ -54,13 +58,13 @@ void handle_init(void) {
   text_date_layer = text_layer_create(GRect(8, 68, 144-8, 168-68));
   text_layer_set_text_color(text_date_layer, GColorWhite);
   text_layer_set_background_color(text_date_layer, GColorClear);
-  text_layer_set_font(text_date_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ROBOTO_CONDENSED_21)));
+  text_layer_set_font(text_date_layer, fonts_get_system_font(FONT_KEY_ROBOTO_CONDENSED_21));
   layer_add_child(window_layer, text_layer_get_layer(text_date_layer));
 
   text_time_layer = text_layer_create(GRect(7, 92, 144-7, 168-92));
   text_layer_set_text_color(text_time_layer, GColorWhite);
   text_layer_set_background_color(text_time_layer, GColorClear);
-  text_layer_set_font(text_time_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ROBOTO_BOLD_SUBSET_49)));
+  text_layer_set_font(text_time_layer, fonts_get_system_font(FONT_KEY_ROBOTO_BOLD_SUBSET_49));
   layer_add_child(window_layer, text_layer_get_layer(text_time_layer));
 
   GRect line_frame = GRect(8, 97, 139, 2);
@@ -69,7 +73,7 @@ void handle_init(void) {
   layer_add_child(window_layer, line_layer);
 
   tick_timer_service_subscribe(MINUTE_UNIT, handle_minute_tick);
-  // TODO: Update display here to avoid blank display on launch?
+  handle_minute_tick(NULL, MINUTE_UNIT);
 }
 
 

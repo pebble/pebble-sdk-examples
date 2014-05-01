@@ -118,9 +118,9 @@ static void draw_strikethrough_on_item(GContext* ctx, Layer* cell_layer, TodoLis
   text_cell_rect.origin = GPointZero;
   text_cell_rect.size = text_cell_size;
 
-  GSize max_used_size = graphics_text_layout_get_max_used_size(ctx,
-      item->text, fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD), text_cell_rect,
-      GTextOverflowModeTrailingEllipsis, GTextAlignmentLeft, NULL);
+  GSize max_used_size = graphics_text_layout_get_content_size(item->text,
+      fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD), text_cell_rect,
+      GTextOverflowModeTrailingEllipsis, GTextAlignmentLeft);
 
   GRect strike_through;
   strike_through.origin = cell_bounds.origin;
