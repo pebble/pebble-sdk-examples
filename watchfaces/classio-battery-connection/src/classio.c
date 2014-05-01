@@ -23,7 +23,12 @@ static void handle_battery(BatteryChargeState charge_state) {
 static void handle_second_tick(struct tm* tick_time, TimeUnits units_changed) {
   static char time_text[] = "00:00:00"; // Needs to be static because it's used by the system later.
 
-  strftime(time_text, sizeof(time_text), "%T", tick_time);
+  if (clock_is_24h_style()){
+    strftime(time_text, sizeof(time_text), "%T", tick_time);
+  }else{
+    strftime(time_text, sizeof(time_text), "%l:%M:%S", tick_time);
+  }
+  
   text_layer_set_text(time_layer, time_text);
 
   handle_battery(battery_state_service_peek());
