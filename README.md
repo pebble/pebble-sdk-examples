@@ -22,8 +22,6 @@ Content overview:
 
  * `weather-demo` -- Demonstrates how to use the AppMessage API to send weather information to a watchface (with PebbleKit iOS and Android)
 
- * `todolist-demo` -- Demonstrates how to use the AppMessage API to communicate between a Pebble app and an Android app
-
  * `golf-demo` -- Demonstrates how to use the Golf application that is embedded in every Pebble (iOS and Android)
 
  * `sports-demo` -- Demonstrates how to use the Sports application that is embedded in every Pebble (iOS and Android)
