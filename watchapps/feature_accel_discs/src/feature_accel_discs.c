@@ -131,6 +131,7 @@ static void init(void) {
 }
 
 static void deinit(void) {
+  app_timer_cancel(timer);
   accel_data_service_unsubscribe();
 
   window_destroy(window);

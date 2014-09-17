@@ -46,6 +46,10 @@ void handle_minute_tick(struct tm *tick_time, TimeUnits units_changed) {
 
 void handle_deinit(void) {
   tick_timer_service_unsubscribe();
+  text_layer_destroy(text_date_layer);
+  text_layer_destroy(text_time_layer);
+  layer_destroy(line_layer);
+  window_destroy(window);
 }
 
 void handle_init(void) {

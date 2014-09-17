@@ -334,6 +334,7 @@ void deinit(void) {
   layer_destroy(boardLayer);
   layer_destroy(playersLayer);
   text_layer_destroy(timeLayer);
+  tick_timer_service_unsubscribe();
 }
 
 // The main event/run loop for our app

@@ -107,7 +107,9 @@ void init(void) {
 }
 
 void deinit(void) {
+  app_timer_cancel(progress_timer);
   text_layer_destroy(done_text);
+  text_layer_destroy(instruction_text);
   progress_bar_destroy(progress_bar);
   window_destroy(window);
 }

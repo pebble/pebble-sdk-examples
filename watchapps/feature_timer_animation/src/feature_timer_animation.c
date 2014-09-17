@@ -71,6 +71,8 @@ static void deinit(void) {
 
   layer_destroy(square_layer);
   window_destroy(window);
+
+  app_timer_cancel(timer);
 }
 
 int main(void) {

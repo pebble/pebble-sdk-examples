@@ -4,7 +4,7 @@
   "longName": "Custom Font",
   "companyName": "Pebble Technology",
   "versionCode": 2,
-  "versionLabel": "2.0.0",
+  "versionLabel": "2.0",
   "watchapp": {
     "watchface": false
   },

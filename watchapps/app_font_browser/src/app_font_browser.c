@@ -252,6 +252,7 @@ static void font_window_unload(Window *window) {
   text_layer_destroy(text_layer);
   text_layer_destroy(font_name_layer);
   text_layer_destroy(font_variant_layer);
+  text_layer_destroy(font_size_layer);
 }
 
 /*

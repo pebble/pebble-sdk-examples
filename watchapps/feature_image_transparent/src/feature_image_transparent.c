@@ -76,6 +76,7 @@ static void window_load(Window *window) {
 static void window_unload(Window *window) {
   bitmap_layer_destroy(white_image_layer);
   bitmap_layer_destroy(black_image_layer);
+  text_layer_destroy(text_layer);
 
   gbitmap_destroy(white_image);
   gbitmap_destroy(black_image);

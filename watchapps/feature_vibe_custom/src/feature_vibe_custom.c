@@ -46,5 +46,6 @@ int main(void) {
 
   app_event_loop();
 
+  text_layer_destroy(text_layer);
   window_destroy(window);
 }
