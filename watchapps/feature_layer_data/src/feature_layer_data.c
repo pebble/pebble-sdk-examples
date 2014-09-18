@@ -1,4 +1,4 @@
-/* Inspired by peapod's progress bar layer: https://github.com/Katharine/peapod */
+/* Inspired by peapod's progress bar layer: https://github.com/Kathatrine/peapod */
 #include <pebble.h>
 
 typedef Layer ProgressBarLayer;

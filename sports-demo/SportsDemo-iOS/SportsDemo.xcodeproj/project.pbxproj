@@ -29,13 +29,12 @@
 		1048210016C5972E00F2AFC8 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104820FF16C5972E00F2AFC8 /* CoreBluetooth.framework */; };
 		1048210216C5973B00F2AFC8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1048210116C5973B00F2AFC8 /* CoreMotion.framework */; };
 		1048210416C5974800F2AFC8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1048210316C5974800F2AFC8 /* MessageUI.framework */; };
-		1048210B16C5CFFE00F2AFC8 /* PebbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1048210916C5CFFE00F2AFC8 /* PebbleKit.framework */; };
-		1048210C16C5CFFE00F2AFC8 /* PebbleVendor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1048210A16C5CFFE00F2AFC8 /* PebbleVendor.framework */; };
 		10B6DA0716FFF89F0079E460 /* SDIconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B6DA0516FFF89F0079E460 /* SDIconViewController.m */; };
 		10B6DA0816FFF89F0079E460 /* SDIconViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10B6DA0616FFF89F0079E460 /* SDIconViewController.xib */; };
 		10B6DA0A16FFFC960079E460 /* bike.png in Resources */ = {isa = PBXBuildFile; fileRef = 10B6DA0916FFFC960079E460 /* bike.png */; };
 		10B6DA0C16FFFDA90079E460 /* barefoot.png in Resources */ = {isa = PBXBuildFile; fileRef = 10B6DA0B16FFFDA90079E460 /* barefoot.png */; };
 		2ABD333B182A003B0077C1C8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABD333A182A003B0077C1C8 /* CFNetwork.framework */; };
+		CC681FEF86EF48CD98E30F0B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 408364FC1CD9451A8C117004 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,14 +66,14 @@
 		104820FF16C5972E00F2AFC8 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		1048210116C5973B00F2AFC8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		1048210316C5974800F2AFC8 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		1048210916C5CFFE00F2AFC8 /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleKit.framework; path = "../../../PebbleKit-iOS/PebbleKit.framework"; sourceTree = "<group>"; };
-		1048210A16C5CFFE00F2AFC8 /* PebbleVendor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleVendor.framework; path = "../../../PebbleKit-iOS/PebbleVendor.framework"; sourceTree = "<group>"; };
 		10B6DA0416FFF89F0079E460 /* SDIconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDIconViewController.h; sourceTree = "<group>"; };
 		10B6DA0516FFF89F0079E460 /* SDIconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDIconViewController.m; sourceTree = "<group>"; };
 		10B6DA0616FFF89F0079E460 /* SDIconViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDIconViewController.xib; sourceTree = "<group>"; };
 		10B6DA0916FFFC960079E460 /* bike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bike.png; sourceTree = "<group>"; };
 		10B6DA0B16FFFDA90079E460 /* barefoot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barefoot.png; sourceTree = "<group>"; };
 		2ABD333A182A003B0077C1C8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		408364FC1CD9451A8C117004 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3618B9941FF43ABA5D5A95A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +90,7 @@
 				1030EB5E16C4DB1A006F46EA /* UIKit.framework in Frameworks */,
 				1030EB6016C4DB1A006F46EA /* Foundation.framework in Frameworks */,
 				1030EB6216C4DB1A006F46EA /* CoreGraphics.framework in Frameworks */,
-				1048210B16C5CFFE00F2AFC8 /* PebbleKit.framework in Frameworks */,
-				1048210C16C5CFFE00F2AFC8 /* PebbleVendor.framework in Frameworks */,
+				CC681FEF86EF48CD98E30F0B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +103,7 @@
 				1030EB6316C4DB1A006F46EA /* SportsDemo */,
 				1030EB5C16C4DB1A006F46EA /* Frameworks */,
 				1030EB5B16C4DB1A006F46EA /* Products */,
+				B3618B9941FF43ABA5D5A95A /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,8 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				2ABD333A182A003B0077C1C8 /* CFNetwork.framework */,
-				1048210916C5CFFE00F2AFC8 /* PebbleKit.framework */,
-				1048210A16C5CFFE00F2AFC8 /* PebbleVendor.framework */,
 				1048210316C5974800F2AFC8 /* MessageUI.framework */,
 				1048210116C5973B00F2AFC8 /* CoreMotion.framework */,
 				104820FF16C5972E00F2AFC8 /* CoreBluetooth.framework */,
@@ -130,6 +127,7 @@
 				1030EB5D16C4DB1A006F46EA /* UIKit.framework */,
 				1030EB5F16C4DB1A006F46EA /* Foundation.framework */,
 				1030EB6116C4DB1A006F46EA /* CoreGraphics.framework */,
+				408364FC1CD9451A8C117004 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -180,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1030EB8B16C4DB1B006F46EA /* Build configuration list for PBXNativeTarget "SportsDemo" */;
 			buildPhases = (
+				EC1803460A2A41D3800F4613 /* Check Pods Manifest.lock */,
 				1030EB5616C4DB1A006F46EA /* Sources */,
 				1030EB5716C4DB1A006F46EA /* Frameworks */,
 				1030EB5816C4DB1A006F46EA /* Resources */,
+				BC9F230C01B746408F934B4A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,6 +242,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BC9F230C01B746408F934B4A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC1803460A2A41D3800F4613 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1030EB5616C4DB1A006F46EA /* Sources */ = {
@@ -346,17 +379,11 @@
 		};
 		1030EB8C16C4DB1B006F46EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3618B9941FF43ABA5D5A95A /* Pods.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/..\"",
-					"\"$(SRCROOT)/../../../PebbleKit-iOS\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SportsDemo/SportsDemo-Prefix.pch";
 				INFOPLIST_FILE = "SportsDemo/SportsDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -364,17 +391,11 @@
 		};
 		1030EB8D16C4DB1B006F46EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3618B9941FF43ABA5D5A95A /* Pods.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/..\"",
-					"\"$(SRCROOT)/../../../PebbleKit-iOS\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SportsDemo/SportsDemo-Prefix.pch";
 				INFOPLIST_FILE = "SportsDemo/SportsDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

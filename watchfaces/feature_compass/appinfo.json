@@ -1,0 +1,21 @@
+{
+  "uuid": "2ff7fa04-6011-4a98-8a3b-a826a4b899f8",
+  "shortName": "Compass Demo",
+  "longName": "Compass Demo",
+  "companyName": "Pebble Technology",
+  "versionCode": 1,
+  "versionLabel": "1.0",
+  "watchapp": {
+    "watchface": true
+  },
+  "appKeys": {},
+  "resources": {
+    "media": [
+      {
+        "type": "png",
+        "name": "COMPASS_BACKGROUND",
+        "file": "images/compass_background.png"
+      }
+    ]
+  }
+}

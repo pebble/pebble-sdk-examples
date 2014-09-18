@@ -21,10 +21,9 @@
 		1048210016C5972E00F2AFC8 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104820FF16C5972E00F2AFC8 /* CoreBluetooth.framework */; };
 		1048210216C5973B00F2AFC8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1048210116C5973B00F2AFC8 /* CoreMotion.framework */; };
 		1048210416C5974800F2AFC8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1048210316C5974800F2AFC8 /* MessageUI.framework */; };
-		1048210B16C5CFFE00F2AFC8 /* PebbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1048210916C5CFFE00F2AFC8 /* PebbleKit.framework */; };
-		1048210C16C5CFFE00F2AFC8 /* PebbleVendor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1048210A16C5CFFE00F2AFC8 /* PebbleVendor.framework */; };
 		1092225B1738302F001117B2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1092225A1738302F001117B2 /* CoreLocation.framework */; };
 		2ABD33291829FCD70077C1C8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABD33281829FCD70077C1C8 /* CFNetwork.framework */; };
+		D0701BEF404A4FCEB190B264 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B5EAF2968446649B3F5E52 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,10 +45,10 @@
 		104820FF16C5972E00F2AFC8 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		1048210116C5973B00F2AFC8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		1048210316C5974800F2AFC8 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		1048210916C5CFFE00F2AFC8 /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleKit.framework; path = "../../../PebbleKit-iOS/PebbleKit.framework"; sourceTree = "<group>"; };
-		1048210A16C5CFFE00F2AFC8 /* PebbleVendor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleVendor.framework; path = "../../../PebbleKit-iOS/PebbleVendor.framework"; sourceTree = "<group>"; };
 		1092225A1738302F001117B2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2ABD33281829FCD70077C1C8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C9B5EAF2968446649B3F5E52 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFA54A37FC934C7B91AC222A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +66,7 @@
 				1030EB5E16C4DB1A006F46EA /* UIKit.framework in Frameworks */,
 				1030EB6016C4DB1A006F46EA /* Foundation.framework in Frameworks */,
 				1030EB6216C4DB1A006F46EA /* CoreGraphics.framework in Frameworks */,
-				1048210B16C5CFFE00F2AFC8 /* PebbleKit.framework in Frameworks */,
-				1048210C16C5CFFE00F2AFC8 /* PebbleVendor.framework in Frameworks */,
+				D0701BEF404A4FCEB190B264 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +79,7 @@
 				1030EB6316C4DB1A006F46EA /* WeatherDemo */,
 				1030EB5C16C4DB1A006F46EA /* Frameworks */,
 				1030EB5B16C4DB1A006F46EA /* Products */,
+				DFA54A37FC934C7B91AC222A /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,8 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				2ABD33281829FCD70077C1C8 /* CFNetwork.framework */,
-				1048210916C5CFFE00F2AFC8 /* PebbleKit.framework */,
-				1048210A16C5CFFE00F2AFC8 /* PebbleVendor.framework */,
 				1092225A1738302F001117B2 /* CoreLocation.framework */,
 				1048210316C5974800F2AFC8 /* MessageUI.framework */,
 				1048210116C5973B00F2AFC8 /* CoreMotion.framework */,
@@ -107,6 +104,7 @@
 				1030EB5D16C4DB1A006F46EA /* UIKit.framework */,
 				1030EB5F16C4DB1A006F46EA /* Foundation.framework */,
 				1030EB6116C4DB1A006F46EA /* CoreGraphics.framework */,
+				C9B5EAF2968446649B3F5E52 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -142,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1030EB8B16C4DB1B006F46EA /* Build configuration list for PBXNativeTarget "WeatherDemo" */;
 			buildPhases = (
+				7AA77AF74E1342D4A8F67972 /* Check Pods Manifest.lock */,
 				1030EB5616C4DB1A006F46EA /* Sources */,
 				1030EB5716C4DB1A006F46EA /* Frameworks */,
 				1030EB5816C4DB1A006F46EA /* Resources */,
+				81DBFAF35DED4AB0A503718E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,6 +195,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7AA77AF74E1342D4A8F67972 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		81DBFAF35DED4AB0A503718E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1030EB5616C4DB1A006F46EA /* Sources */ = {
@@ -280,17 +313,11 @@
 		};
 		1030EB8C16C4DB1B006F46EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFA54A37FC934C7B91AC222A /* Pods.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/..\"",
-					"\"$(SRCROOT)/../../../PebbleKit-iOS\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WeatherDemo/WeatherDemo-Prefix.pch";
 				INFOPLIST_FILE = "WeatherDemo/WeatherDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = WeatherDemo;
 				WRAPPER_EXTENSION = app;
 			};
@@ -298,17 +325,11 @@
 		};
 		1030EB8D16C4DB1B006F46EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFA54A37FC934C7B91AC222A /* Pods.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/..\"",
-					"\"$(SRCROOT)/../../../PebbleKit-iOS\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WeatherDemo/WeatherDemo-Prefix.pch";
 				INFOPLIST_FILE = "WeatherDemo/WeatherDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = WeatherDemo;
 				WRAPPER_EXTENSION = app;
 			};

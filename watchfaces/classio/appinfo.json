@@ -4,7 +4,7 @@
   "longName": "Classio Digital",
   "companyName": "Classio Corp.",
   "versionCode": 2,
-  "versionLabel": "2.0.0",
+  "versionLabel": "2.0",
   "watchapp": {
     "watchface": true
   },

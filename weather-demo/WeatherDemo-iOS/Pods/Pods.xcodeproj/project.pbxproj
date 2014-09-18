@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11560F352F634288AF084F9D /* Pods-PebbleKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF0449218AD4C6EB62771E4 /* Pods-PebbleKit-dummy.m */; };
+		421D4351E0B1466691B25520 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE1459D66A04859A67DD16A /* Pods-dummy.m */; };
+		5E197E0F560540B5949F64C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45935F8623C14ACDAE9D450B /* Foundation.framework */; };
+		631F95D2992040EFB520C229 /* libPods-PebbleKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF377B312264A8D9D5A1B98 /* libPods-PebbleKit.a */; };
+		83242E63C8644ADDAC5A6B7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45935F8623C14ACDAE9D450B /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00C48C508A51451E8717F467 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C3918AD1BF145BFAFF78EB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B64B5FE85FFA44019BEACD42;
+			remoteInfo = "Pods-PebbleKit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FF0449218AD4C6EB62771E4 /* Pods-PebbleKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PebbleKit-dummy.m"; sourceTree = "<group>"; };
+		11C52A06851145C885FDFE88 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CEBC2A27A5147E8ADFA3FEF /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		45935F8623C14ACDAE9D450B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		53C9FDCCBA6042DFAE7526CE /* Pods-PebbleKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PebbleKit.xcconfig"; sourceTree = "<group>"; };
+		5B305DC4E0274951818D5AB7 /* Pods-PebbleKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PebbleKit-prefix.pch"; sourceTree = "<group>"; };
+		5DF377B312264A8D9D5A1B98 /* libPods-PebbleKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PebbleKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FE1459D66A04859A67DD16A /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		7B009BD7014447C4B5328148 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8997D8BFFCB84A42A0FA3A7A /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		B2B8F4F2E5444619A40A40B4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.xcconfig; sourceTree = "<group>"; };
+		B722F40053ED419290308E2E /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		B9EF01F550CF4ADD8D8F8874 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C92005B118BD4CC7A9719894 /* PebbleVendor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PebbleVendor.framework; sourceTree = "<group>"; };
+		EBB9D83981F6475481689495 /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PebbleKit.framework; sourceTree = "<group>"; };
+		F84D890342D94F5EA094CC7E /* Pods-PebbleKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PebbleKit-Private.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30CB92D2048D4481BC6A121A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83242E63C8644ADDAC5A6B7C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59A272038584610AEC46768 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E197E0F560540B5949F64C5 /* Foundation.framework in Frameworks */,
+				631F95D2992040EFB520C229 /* libPods-PebbleKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06768DC57C1F4A03971DD638 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11C52A06851145C885FDFE88 /* libPods.a */,
+				5DF377B312264A8D9D5A1B98 /* libPods-PebbleKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FF5D216957B48A9A582A1F3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				45935F8623C14ACDAE9D450B /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		22CA0A70A97E4FFCB0FEE894 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5E81D066D0D43B4A40896B9 /* PebbleKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		24255629A95B4E579F88A4AB = {
+			isa = PBXGroup;
+			children = (
+				7B009BD7014447C4B5328148 /* Podfile */,
+				424B19754EE24D41AD76712D /* Frameworks */,
+				22CA0A70A97E4FFCB0FEE894 /* Pods */,
+				06768DC57C1F4A03971DD638 /* Products */,
+				73A96408413E4BA7AE75DB97 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		2A8D43A6518C485281AF852C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2B8F4F2E5444619A40A40B4 /* Pods.xcconfig */,
+				B9EF01F550CF4ADD8D8F8874 /* Pods-acknowledgements.markdown */,
+				B722F40053ED419290308E2E /* Pods-acknowledgements.plist */,
+				5FE1459D66A04859A67DD16A /* Pods-dummy.m */,
+				1CEBC2A27A5147E8ADFA3FEF /* Pods-environment.h */,
+				8997D8BFFCB84A42A0FA3A7A /* Pods-resources.sh */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		424B19754EE24D41AD76712D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FF5D216957B48A9A582A1F3 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61CD749AC9B94BAA96BDA5EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBB9D83981F6475481689495 /* PebbleKit.framework */,
+				C92005B118BD4CC7A9719894 /* PebbleVendor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		73A96408413E4BA7AE75DB97 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A8D43A6518C485281AF852C /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A0A24387D2D846D08D5B6E96 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				53C9FDCCBA6042DFAE7526CE /* Pods-PebbleKit.xcconfig */,
+				F84D890342D94F5EA094CC7E /* Pods-PebbleKit-Private.xcconfig */,
+				0FF0449218AD4C6EB62771E4 /* Pods-PebbleKit-dummy.m */,
+				5B305DC4E0274951818D5AB7 /* Pods-PebbleKit-prefix.pch */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		B5E81D066D0D43B4A40896B9 /* PebbleKit */ = {
+			isa = PBXGroup;
+			children = (
+				61CD749AC9B94BAA96BDA5EA /* Frameworks */,
+				A0A24387D2D846D08D5B6E96 /* Support Files */,
+			);
+			name = PebbleKit;
+			path = PebbleKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AF6CC541AF844F696876EE2 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A67E03DD1054724B7341976 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				CEA5FD64852F4C2495E7C46D /* Sources */,
+				F59A272038584610AEC46768 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52DBC272F3D747FF886BCF3A /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 11C52A06851145C885FDFE88 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B64B5FE85FFA44019BEACD42 /* Pods-PebbleKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A067CE30A872400E8880BEA2 /* Build configuration list for PBXNativeTarget "Pods-PebbleKit" */;
+			buildPhases = (
+				8AF718D44E29443EB405A792 /* Sources */,
+				30CB92D2048D4481BC6A121A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PebbleKit";
+			productName = "Pods-PebbleKit";
+			productReference = 5DF377B312264A8D9D5A1B98 /* libPods-PebbleKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C3918AD1BF145BFAFF78EB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = A4028D118C8D48919419E572 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 24255629A95B4E579F88A4AB;
+			productRefGroup = 06768DC57C1F4A03971DD638 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+			);
+			projectRoot = "";
+			targets = (
+				1AF6CC541AF844F696876EE2 /* Pods */,
+				B64B5FE85FFA44019BEACD42 /* Pods-PebbleKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8AF718D44E29443EB405A792 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11560F352F634288AF084F9D /* Pods-PebbleKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA5FD64852F4C2495E7C46D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421D4351E0B1466691B25520 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52DBC272F3D747FF886BCF3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B64B5FE85FFA44019BEACD42 /* Pods-PebbleKit */;
+			targetProxy = 00C48C508A51451E8717F467 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B3C41B5ECBB4E178A68EAF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F84D890342D94F5EA094CC7E /* Pods-PebbleKit-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-PebbleKit-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1905F44012744E5D9BDD570F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2B8F4F2E5444619A40A40B4 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		438E3DDD18104DCEB67B7815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69A3E1B4DB3449B7A1804E8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2B8F4F2E5444619A40A40B4 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0B47F44B6594F16B2C73186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F84D890342D94F5EA094CC7E /* Pods-PebbleKit-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-PebbleKit-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E77B464F3AC649C6897AE8D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A67E03DD1054724B7341976 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1905F44012744E5D9BDD570F /* Debug */,
+				69A3E1B4DB3449B7A1804E8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A067CE30A872400E8880BEA2 /* Build configuration list for PBXNativeTarget "Pods-PebbleKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B3C41B5ECBB4E178A68EAF4 /* Debug */,
+				E0B47F44B6594F16B2C73186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4028D118C8D48919419E572 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E77B464F3AC649C6897AE8D7 /* Debug */,
+				438E3DDD18104DCEB67B7815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C3918AD1BF145BFAFF78EB6 /* Project object */;
+}

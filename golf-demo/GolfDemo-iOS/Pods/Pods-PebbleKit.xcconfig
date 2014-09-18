@@ -1,0 +1,2 @@
+PODS_PEBBLEKIT_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/PebbleKit" "$(PODS_ROOT)/PebbleKit"
+PODS_PEBBLEKIT_OTHER_LDFLAGS = -lz -framework PebbleKit -framework PebbleVendor -weak_framework CoreBluetooth -weak_framework CoreMotion -weak_framework ExternalAccessory -weak_framework MessageUI

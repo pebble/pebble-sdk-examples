@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+  <!-- FIXME is there a way to avoid using the condensed titles here, perhaps by stacking the items? -->
+    <item android:id="@+id/add_mi" android:title="Add" android:visible="true" android:enabled="true" android:titleCondensed="+"></item>
+    <item android:id="@+id/remove_all_checked_mi" android:enabled="true" android:titleCondensed="X" android:title="Remove Checked" android:visible="true"></item>
+</menu>

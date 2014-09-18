@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    mavenCentral()
+    maven { url "https://oss.sonatype.org/content/groups/public/" }
+}
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion '20.0.0'
+
+    defaultConfig {
+        applicationId "com.example.pebblekit.sports"
+        minSdkVersion 14
+        targetSdkVersion 17
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.getpebble:pebblekit:2.5.0'
+    compile 'com.google.android:support-v4:r7@jar'
+}

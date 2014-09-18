@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0F872BA4182243AD0071E717 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F872BA3182243AD0071E717 /* CFNetwork.framework */; };
-		1072217017CEF0CA000C35FE /* PebbleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1072216E17CEF0CA000C35FE /* PebbleKit.framework */; };
-		1072217117CEF0CA000C35FE /* PebbleVendor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1072216F17CEF0CA000C35FE /* PebbleVendor.framework */; };
 		1072217617CEF78A000C35FE /* OSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1072217317CEF78A000C35FE /* OSAppDelegate.m */; };
 		1072217717CEF78A000C35FE /* OSDataLoggingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1072217517CEF78A000C35FE /* OSDataLoggingViewController.m */; };
 		107BAF1617BB246900B91FCD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BAF1517BB246900B91FCD /* UIKit.framework */; };
@@ -29,8 +27,6 @@
 
 /* Begin PBXFileReference section */
 		0F872BA3182243AD0071E717 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		1072216E17CEF0CA000C35FE /* PebbleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleKit.framework; path = "../../../PebbleKit-iOS/PebbleKit.framework"; sourceTree = "<group>"; };
-		1072216F17CEF0CA000C35FE /* PebbleVendor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PebbleVendor.framework; path = "../../../PebbleKit-iOS/PebbleVendor.framework"; sourceTree = "<group>"; };
 		1072217217CEF78A000C35FE /* OSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSAppDelegate.h; sourceTree = "<group>"; };
 		1072217317CEF78A000C35FE /* OSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSAppDelegate.m; sourceTree = "<group>"; };
 		1072217417CEF78A000C35FE /* OSDataLoggingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSDataLoggingViewController.h; sourceTree = "<group>"; };
@@ -51,6 +47,7 @@
 		107BAF6817BB24BF00B91FCD /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		107BAF6917BB24BF00B91FCD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		107BAF6A17BB24BF00B91FCD /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		28B10E22A9204568AF3CA000 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +60,10 @@
 				107BAF6C17BB24BF00B91FCD /* CoreMotion.framework in Frameworks */,
 				107BAF6D17BB24BF00B91FCD /* ExternalAccessory.framework in Frameworks */,
 				107BAF6E17BB24BF00B91FCD /* libz.dylib in Frameworks */,
-				1072217117CEF0CA000C35FE /* PebbleVendor.framework in Frameworks */,
 				107BAF6F17BB24BF00B91FCD /* MessageUI.framework in Frameworks */,
 				107BAF1617BB246900B91FCD /* UIKit.framework in Frameworks */,
 				107BAF1817BB246900B91FCD /* Foundation.framework in Frameworks */,
 				107BAF1A17BB246900B91FCD /* CoreGraphics.framework in Frameworks */,
-				1072217017CEF0CA000C35FE /* PebbleKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +76,7 @@
 				107BAF1B17BB246900B91FCD /* OceanSurveyDemo */,
 				107BAF1417BB246900B91FCD /* Frameworks */,
 				107BAF1317BB246900B91FCD /* Products */,
+				28B10E22A9204568AF3CA000 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,8 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				0F872BA3182243AD0071E717 /* CFNetwork.framework */,
-				1072216E17CEF0CA000C35FE /* PebbleKit.framework */,
-				1072216F17CEF0CA000C35FE /* PebbleVendor.framework */,
 				107BAF6617BB24BF00B91FCD /* CoreBluetooth.framework */,
 				107BAF6717BB24BF00B91FCD /* CoreMotion.framework */,
 				107BAF6817BB24BF00B91FCD /* ExternalAccessory.framework */,
@@ -143,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 107BAF4317BB246900B91FCD /* Build configuration list for PBXNativeTarget "OceanSurveyDemo" */;
 			buildPhases = (
+				77C4664C438F45B1B5D06091 /* Check Pods Manifest.lock */,
 				107BAF0E17BB246900B91FCD /* Sources */,
 				107BAF0F17BB246900B91FCD /* Frameworks */,
 				107BAF1017BB246900B91FCD /* Resources */,
+				FBA3BC2A56B44DB38F2B1C00 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,7 +159,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = DS;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Pebble Technology Corp.";
 			};
 			buildConfigurationList = 107BAF0D17BB246900B91FCD /* Build configuration list for PBXProject "OceanSurveyDemo" */;
@@ -192,11 +188,43 @@
 				107BAF2817BB246900B91FCD /* Default.png in Resources */,
 				107BAF2A17BB246900B91FCD /* Default@2x.png in Resources */,
 				107BAF2C17BB246900B91FCD /* Default-568h@2x.png in Resources */,
-				1032846617C4157A0071B49E /* appinfo.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77C4664C438F45B1B5D06091 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FBA3BC2A56B44DB38F2B1C00 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		107BAF0E17BB246900B91FCD /* Sources */ = {
@@ -236,11 +264,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/..\"",
-				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -252,11 +275,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_LDFLAGS = "-ObjC";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../PebbleVendor/Lumberjack\"/** \"$(SRCROOT)/../PebbleKit\"/** \"$(SRCROOT)/../PebbleVendor\"/**";
-				VALID_ARCHS = armv7;
 			};
 			name = Debug;
 		};
@@ -273,27 +294,20 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/..\"",
-				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
-				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../PebbleVendor/Lumberjack\"/** \"$(SRCROOT)/../PebbleKit\"/** \"$(SRCROOT)/../PebbleVendor\"/**";
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = armv7;
 			};
 			name = Release;
 		};
 		107BAF4417BB246900B91FCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28B10E22A9204568AF3CA000 /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +323,7 @@
 		};
 		107BAF4517BB246900B91FCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28B10E22A9204568AF3CA000 /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

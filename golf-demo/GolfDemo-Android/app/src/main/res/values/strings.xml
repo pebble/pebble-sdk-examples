@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Golf Demo</string>
+  <string name="activity_golf">Golf App Example</string>
+</resources>

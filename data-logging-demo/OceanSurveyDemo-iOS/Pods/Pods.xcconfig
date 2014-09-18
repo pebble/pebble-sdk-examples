@@ -1,0 +1,6 @@
+FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/PebbleKit" "$(PODS_ROOT)/PebbleKit"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/PebbleKit"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/PebbleKit"
+OTHER_LDFLAGS = -ObjC -lz -framework PebbleKit -framework PebbleVendor -weak_framework CoreBluetooth -weak_framework CoreMotion -weak_framework ExternalAccessory -weak_framework MessageUI
+PODS_ROOT = ${SRCROOT}/Pods

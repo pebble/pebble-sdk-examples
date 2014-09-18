@@ -4,7 +4,7 @@
   "longName": "Simplicity",
   "companyName": "Pebble Technology",
   "versionCode": 3,
-  "versionLabel": "3.0.0",
+  "versionLabel": "3.0",
   "watchapp": {
     "watchface": true
   },
