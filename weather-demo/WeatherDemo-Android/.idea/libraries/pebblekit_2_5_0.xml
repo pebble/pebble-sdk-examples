@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="pebblekit-2.5.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.getpebble/pebblekit/2.5.0/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.getpebble/pebblekit/2.5.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

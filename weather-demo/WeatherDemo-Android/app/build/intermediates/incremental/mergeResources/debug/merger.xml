@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="2.5.0" >
+        <source path="/Users/cherie/pebble/pebble-sdk-examples-dev/weather-demo/WeatherDemo-Android/app/build/intermediates/exploded-aar/com.getpebble/pebblekit/2.5.0/res" >
+            <file
+                name="main"
+                path="/Users/cherie/pebble/pebble-sdk-examples-dev/weather-demo/WeatherDemo-Android/app/build/intermediates/exploded-aar/com.getpebble/pebblekit/2.5.0/res/layout/main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                path="/Users/cherie/pebble/pebble-sdk-examples-dev/weather-demo/WeatherDemo-Android/app/build/intermediates/exploded-aar/com.getpebble/pebblekit/2.5.0/res/values/values.xml"
+                qualifiers="" >
+                <string name="app_name" >PEBBLE_SPORTS_SDK
+                </string>
+            </file>
+        </source>
+    </dataSet>
+    <dataSet config="main" >
+        <source path="/Users/cherie/pebble/pebble-sdk-examples-dev/weather-demo/WeatherDemo-Android/app/src/main/res" >
+            <file
+                name="watch"
+                path="/Users/cherie/pebble/pebble-sdk-examples-dev/weather-demo/WeatherDemo-Android/app/src/main/res/drawable-nodpi/watch.png"
+                qualifiers="nodpi-v4"
+                type="drawable" />
+            <file
+                name="activity_weather"
+                path="/Users/cherie/pebble/pebble-sdk-examples-dev/weather-demo/WeatherDemo-Android/app/src/main/res/layout/activity_weather.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                path="/Users/cherie/pebble/pebble-sdk-examples-dev/weather-demo/WeatherDemo-Android/app/src/main/res/values/strings.xml"
+                qualifiers="" >
+                <string name="app_name" >PebbleKit Weather Example
+                </string>
+                <string name="activity_weather" >Weather App Example
+                </string>
+            </file>
+        </source>
+        <source path="/Users/cherie/pebble/pebble-sdk-examples-dev/weather-demo/WeatherDemo-Android/app/build/generated/res/rs/debug" />
+        <source path="/Users/cherie/pebble/pebble-sdk-examples-dev/weather-demo/WeatherDemo-Android/app/build/generated/res/generated/debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/cherie/pebble/pebble-sdk-examples-dev/weather-demo/WeatherDemo-Android/app/src/debug/res" />
+    </dataSet>
+
+</merger>

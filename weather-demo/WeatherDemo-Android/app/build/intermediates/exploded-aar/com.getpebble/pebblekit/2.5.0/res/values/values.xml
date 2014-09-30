@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/home/vagrant/bamboo-agent-home/xml-data/build-dir/36601857-36700161/PebbleKit/PebbleKit/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="app_name">PEBBLE_SPORTS_SDK</string>
+
+</resources>

@@ -1,0 +1,14 @@
+{
+  "uuid": "f6ec79cb-6d10-4ee9-9c13-f99169d952fe",
+  "shortName": "Background Example",
+  "longName": "Background Example",
+  "companyName": "Pebble Technology",
+  "versionCode": 1,
+  "versionLabel": "1.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "resources": {
+    "media": []
+  }
+}

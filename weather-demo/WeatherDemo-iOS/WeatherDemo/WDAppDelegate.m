@@ -174,13 +174,17 @@
 
 // iOS 5 and earlier:
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
-  NSLog(@"New Location: %@", newLocation);
+  [self reportNewLocation:newLocation];
 }
 
 // iOS 6 and later:
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
   CLLocation *lastLocation = [locations lastObject];
-  [self locationManager:manager didUpdateToLocation:lastLocation fromLocation:nil];
+  [self reportNewLocation:lastLocation];
+}
+
+- (void)reportNewLocation:(CLLocation *)newLocation {
+  NSLog(@"New Location: %@", newLocation);
 }
 
 @end

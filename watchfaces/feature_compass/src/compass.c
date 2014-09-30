@@ -47,17 +47,38 @@ void compass_heading_handler(CompassHeadingData heading_data){
   );
   text_layer_set_text(s_ui.text_layer, heading_buf);
 
+  // Modify alert layout depending on calibration state
+  GRect bounds = layer_get_frame(window_get_root_layer(s_ui.window)); 
+  GRect alert_bounds; 
+  if(heading_data.compass_status == CompassStatusDataInvalid) {
+    // Tell user to move their arm
+    alert_bounds = GRect(0, 0, bounds.size.w, bounds.size.h);
+    text_layer_set_background_color(s_ui.text_layer_calib_state, GColorBlack);
+    text_layer_set_text_color(s_ui.text_layer_calib_state, GColorWhite);
+    text_layer_set_font(s_ui.text_layer_calib_state, fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD));
+    text_layer_set_text_alignment(s_ui.text_layer_calib_state, GTextAlignmentCenter);
+  } else {
+    // Show status at the top
+    alert_bounds = GRect(0, -3, bounds.size.w, bounds.size.h/7);
+    text_layer_set_background_color(s_ui.text_layer_calib_state, GColorClear);
+    text_layer_set_text_color(s_ui.text_layer_calib_state, GColorBlack);
+    text_layer_set_font(s_ui.text_layer_calib_state, fonts_get_system_font(FONT_KEY_GOTHIC_18));
+    text_layer_set_text_alignment(s_ui.text_layer_calib_state, GTextAlignmentLeft);
+  }
+  layer_set_frame(text_layer_get_layer(s_ui.text_layer_calib_state), alert_bounds);
 
-  static char valid_buf[18];
+  // Display state of the compass
+  static char valid_buf[64];
   switch (heading_data.compass_status) {
     case CompassStatusDataInvalid:
-      snprintf(valid_buf, sizeof(valid_buf), "%s", "Calibrating");
+      snprintf(valid_buf, sizeof(valid_buf), "%s", "Compass is calibrating!\n\nMove your arm to aid calibration.");
       break;
     case CompassStatusCalibrating:
-      snprintf(valid_buf, sizeof(valid_buf), "%s", "Fine calibrating");
+      snprintf(valid_buf, sizeof(valid_buf), "%s", "Fine tuning...");
       break;
     case CompassStatusCalibrated:
       snprintf(valid_buf, sizeof(valid_buf), "%s", "Calibrated");
+      break;
   }
   text_layer_set_text(s_ui.text_layer_calib_state, valid_buf);
 
@@ -117,7 +138,7 @@ static void window_load(Window *window) {
     .origin = {.x = 0, .y = 0},
     .size = {.w = bounds.size.w, .h = bounds.size.h/7}
   });
-  text_layer_set_text_alignment(s_ui.text_layer_calib_state, GTextAlignmentRight);
+  text_layer_set_text_alignment(s_ui.text_layer_calib_state, GTextAlignmentLeft);
   text_layer_set_background_color(s_ui.text_layer_calib_state, GColorClear);
 
   layer_add_child(window_layer, text_layer_get_layer(s_ui.text_layer));

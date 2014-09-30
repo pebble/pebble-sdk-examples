@@ -6,6 +6,7 @@ import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -51,8 +52,7 @@ public class ExampleWeatherActivity extends Activity {
         // third-party web service
         LocationListener locationListener = new LocationListener() {
             public void onLocationChanged(Location location) {
-                mLocationManager.removeUpdates(this);
-                doWeatherUpdate(location);
+            	new UpdateWeatherTask().execute(location);
             }
 
             public void onStatusChanged(String provider, int status, Bundle extras) {
@@ -71,7 +71,12 @@ public class ExampleWeatherActivity extends Activity {
         	Toast.makeText(getApplicationContext(), "No location services enabled.",
         			   Toast.LENGTH_LONG).show();
         } else {
-        	mLocationManager.requestLocationUpdates(locationProvider, 0, 0, locationListener);
+        	// update might take a while, use last known location to speed things up
+        	Location location = mLocationManager.getLastKnownLocation(locationProvider);
+        	if(location != null) {
+        		new UpdateWeatherTask().execute(location);
+        	}
+        	mLocationManager.requestSingleUpdate(locationProvider, locationListener, this.getMainLooper());
         }
 
         
@@ -86,6 +91,14 @@ public class ExampleWeatherActivity extends Activity {
         // Send the assembled dictionary to the weather watch-app; this is a no-op if the app isn't running or is not
         // installed
         PebbleKit.sendDataToPebble(getApplicationContext(), WEATHER_UUID, data);
+    }
+    
+    private class UpdateWeatherTask extends AsyncTask<Location, Integer, Integer> {
+    	@Override
+    	protected Integer doInBackground(Location... params) {
+    		doWeatherUpdate(params[0]);
+    		return null;
+    	}
     }
 
     public void doWeatherUpdate(Location location) {
@@ -121,7 +134,15 @@ public class ExampleWeatherActivity extends Activity {
 
             Log.d("WeatherActivity", String.format("%f, %f", latitude, longitude));
         } catch (Exception e) {
-            throw new RuntimeException(e);
+        	runOnUiThread(new Runnable() {
+				
+				@Override
+				public void run() {
+		        	Toast.makeText(getApplicationContext(), "Error while accessing openweathermap.org.\nSee LogCat for details.",
+		        			   Toast.LENGTH_LONG).show();
+				}
+			});
+        	Log.e("WeatherActivity", "doWeatherUpdate", e);
         }
     }
 

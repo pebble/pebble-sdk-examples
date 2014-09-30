@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/Users/cherie/pebble/pebble-sdk-examples-dev/weather-demo/WeatherDemo-Android/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="activity_weather">Weather App Example</string>
+    <string name="app_name">PebbleKit Weather Example</string>
+
+</resources>

@@ -1,0 +1,951 @@
+Archive member included because of file (symbol)
+
+/Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                              src/main.c.7.o (app_event_loop)
+/Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-exit.o)
+                              /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/crt0.o (exit)
+/Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
+                              /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-exit.o) (_global_impure_ptr)
+/Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
+                              /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/crt0.o (__libc_init_array)
+/Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
+                              /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-exit.o) (__call_exitprocs)
+/Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
+                              /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o) (atexit)
+/Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
+                              /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o) (__libc_fini_array)
+/Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
+                              /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o) (__register_exitproc)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crti.o
+ .bss           0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crti.o
+ .init          0x0000000000000000        0x4 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crti.o
+ .fini          0x0000000000000000        0x4 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crti.o
+ .text          0x0000000000000000       0x54 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtbegin.o
+ .bss           0x0000000000000000       0x1c /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtbegin.o
+ .init_array    0x0000000000000000        0x4 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtbegin.o
+ .fini_array    0x0000000000000000        0x4 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtbegin.o
+ .eh_frame      0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtbegin.o
+ .jcr           0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtbegin.o
+ .text          0x0000000000000000       0x74 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .bss           0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.extab     0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.exidx     0x0000000000000000        0x8 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .text          0x0000000000000000        0x0 src/main.c.7.o
+ .bss           0x0000000000000000        0x0 src/main.c.7.o
+ .text          0x0000000000000000        0x0 appinfo.auto.c.7.o
+ .bss           0x0000000000000000        0x0 appinfo.auto.c.7.o
+ .bss           0x0000000000000000        0x0 /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.accel_data_service_subscribe__deprecated
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.accel_data_service_unsubscribe
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.accel_service_peek
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.accel_service_set_samples_per_update
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.accel_service_set_sampling_rate
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.accel_tap_service_subscribe
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.accel_tap_service_unsubscribe
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.action_bar_layer_add_to_window
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.action_bar_layer_clear_icon
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.action_bar_layer_create
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.action_bar_layer_destroy
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.action_bar_layer_get_layer
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.action_bar_layer_remove_from_window
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.action_bar_layer_set_background_color
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.action_bar_layer_set_click_config_provider
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.action_bar_layer_set_context
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.action_bar_layer_set_icon
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.animation_create
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.animation_destroy
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.animation_get_context
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.animation_is_scheduled
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.animation_schedule
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.animation_set_curve
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.animation_set_delay
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.animation_set_duration
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.animation_set_handlers
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.animation_set_implementation
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.animation_unschedule
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.animation_unschedule_all
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_comm_get_sniff_interval
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_comm_set_sniff_interval
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_message_deregister_callbacks
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_message_open
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_sync_deinit
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_sync_get
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_sync_init
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_sync_set
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_timer_cancel
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_timer_register
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_timer_reschedule
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.atan2_lookup
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.atoi     0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.atol     0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.battery_state_service_peek
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.battery_state_service_subscribe
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.battery_state_service_unsubscribe
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.bitmap_layer_create
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.bitmap_layer_destroy
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.bitmap_layer_get_layer
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.bitmap_layer_set_alignment
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.bitmap_layer_set_background_color
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.bitmap_layer_set_bitmap
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.bitmap_layer_set_compositing_mode
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.bluetooth_connection_service_peek
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.bluetooth_connection_service_subscribe
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.bluetooth_connection_service_unsubscribe
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.click_number_of_clicks_counted
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.click_recognizer_get_button_id
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.clock_copy_time_string
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.clock_is_24h_style
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.cos_lookup
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.data_logging_create
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.data_logging_finish
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.data_logging_log
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_calc_buffer_size
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_calc_buffer_size_from_tuplets
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_find
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_merge
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_read_begin_from_buffer
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_read_first
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_read_next
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_serialize_tuplets
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_serialize_tuplets_to_buffer__deprecated
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_serialize_tuplets_to_buffer_with_iter
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_write_begin
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_write_cstring
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_write_data
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_write_end
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_write_int
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_write_int16
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_write_int32
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_write_int8
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_write_tuplet
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_write_uint16
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_write_uint32
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_write_uint8
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.fonts_get_system_font
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.fonts_load_custom_font
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.fonts_unload_custom_font
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.free     0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.gbitmap_create_as_sub_bitmap
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.gbitmap_create_with_data
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.gbitmap_create_with_resource
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.gbitmap_destroy
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.gmtime   0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.gpath_create
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.gpath_destroy
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.gpath_draw_filled_legacy
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.gpath_draw_outline
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.gpath_move_to
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.gpath_rotate_to
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.gpoint_equal
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.graphics_context_set_compositing_mode
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.graphics_context_set_fill_color
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.graphics_context_set_stroke_color
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.graphics_context_set_text_color
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.graphics_draw_bitmap_in_rect
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.graphics_draw_circle
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.graphics_draw_line
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.graphics_draw_pixel
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.graphics_draw_rect
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.graphics_draw_round_rect
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.graphics_fill_circle
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.graphics_fill_rect
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.graphics_text_layout_get_max_used_size
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.grect_align
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.grect_center_point
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.grect_clip
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.grect_contains_point
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.grect_crop
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.grect_equal
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.grect_is_empty
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.grect_standardize
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.gsize_equal
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.inverter_layer_create
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.inverter_layer_destroy
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.inverter_layer_get_layer
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.layer_create
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.layer_create_with_data
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.layer_destroy
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.layer_get_bounds
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.layer_get_clips
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.layer_get_data
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.layer_get_frame
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.layer_get_hidden
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.layer_get_window
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.layer_insert_above_sibling
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.layer_insert_below_sibling
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.layer_mark_dirty
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.layer_remove_child_layers
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.layer_remove_from_parent
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.layer_set_bounds
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.layer_set_clips
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.layer_set_frame
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.layer_set_hidden
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.layer_set_update_proc
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.light_enable
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.light_enable_interaction
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.localtime
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.malloc   0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.memcpy   0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.memmove  0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.menu_cell_basic_draw
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.menu_cell_basic_header_draw
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.menu_cell_title_draw
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.menu_index_compare
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.menu_layer_create
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.menu_layer_destroy
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.menu_layer_get_layer
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.menu_layer_get_scroll_layer
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.menu_layer_get_selected_index
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.menu_layer_reload_data
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.menu_layer_set_callbacks__deprecated
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.menu_layer_set_click_config_onto_window
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.menu_layer_set_selected_index
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.menu_layer_set_selected_next
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.number_window_create
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.number_window_destroy
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.number_window_get_value
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.number_window_set_label
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.number_window_set_max
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.number_window_set_min
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.number_window_set_step_size
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.number_window_set_value
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.persist_delete
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.persist_exists
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.persist_get_size
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.persist_read_bool
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.persist_read_data__deprecated
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.persist_read_int
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.persist_read_string__deprecated
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.persist_write_bool
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.persist_write_data__deprecated
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.persist_write_int
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.persist_write_string
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.property_animation_create
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.property_animation_create_layer_frame
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.property_animation_destroy
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.property_animation_update_gpoint
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.property_animation_update_grect
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.property_animation_update_int16
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.psleep   0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.rand     0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.resource_get_handle
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.resource_load
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.resource_load_byte_range
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.resource_size
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.rot_bitmap_layer_create
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.rot_bitmap_layer_destroy
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.rot_bitmap_layer_increment_angle
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.rot_bitmap_layer_set_angle
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.rot_bitmap_layer_set_corner_clip_color
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.rot_bitmap_set_compositing_mode
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.rot_bitmap_set_src_ic
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.scroll_layer_add_child
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.scroll_layer_create
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.scroll_layer_destroy
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.scroll_layer_get_content_offset
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.scroll_layer_get_content_size
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.scroll_layer_get_layer
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.scroll_layer_get_shadow_hidden
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.scroll_layer_scroll_down_click_handler
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.scroll_layer_scroll_up_click_handler
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.scroll_layer_set_callbacks
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.scroll_layer_set_click_config_onto_window
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.scroll_layer_set_content_offset
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.scroll_layer_set_content_size
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.scroll_layer_set_context
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.scroll_layer_set_frame
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.scroll_layer_set_shadow_hidden
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.simple_menu_layer_create
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.simple_menu_layer_destroy
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.simple_menu_layer_get_layer
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.simple_menu_layer_get_selected_index
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.simple_menu_layer_set_selected_index
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.sin_lookup
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.srand    0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.strcat   0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.strcmp   0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.strcpy   0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.strftime
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.strlen   0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.strncat  0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.strncmp  0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.strncpy  0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.text_layer_get_content_size
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.text_layer_get_text
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.text_layer_set_background_color
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.text_layer_set_font
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.text_layer_set_overflow_mode
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.text_layer_set_size
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.text_layer_set_text_color
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.tick_timer_service_subscribe
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.tick_timer_service_unsubscribe
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.time     0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.time_ms  0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.vibes_cancel
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.vibes_double_pulse
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.vibes_enqueue_custom_pattern
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.vibes_long_pulse
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.vibes_short_pulse
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.window_get_click_config_provider
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.window_get_fullscreen
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.window_is_loaded
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.window_set_background_color
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.window_set_click_config_provider_with_context
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.window_set_fullscreen
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.window_set_status_bar_icon
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.window_stack_contains_window
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.window_stack_get_top_window
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.window_stack_pop
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.window_stack_pop_all
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.window_stack_remove
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_focus_service_subscribe
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_focus_service_unsubscribe
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.window_get_user_data
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.window_set_user_data
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_message_get_context
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_message_inbox_size_maximum
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_message_outbox_begin
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_message_outbox_send
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_message_outbox_size_maximum
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_message_register_inbox_dropped
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_message_register_inbox_received
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_message_register_outbox_failed
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_message_register_outbox_sent
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_message_set_context
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.window_long_click_subscribe
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.window_multi_click_subscribe
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.window_raw_click_subscribe
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.window_set_click_context
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.window_single_repeating_click_subscribe
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.graphics_draw_text
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_serialize_tuplets_to_buffer
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.persist_read_data
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.persist_read_string
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.persist_write_data
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.dict_size
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.graphics_text_layout_get_content_size
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.simple_menu_layer_get_menu_layer
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.accel_data_service_subscribe
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.calloc   0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.bitmap_layer_get_bitmap
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.menu_layer_set_callbacks
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.window_get_click_config_context
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.number_window_get_window
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.realloc  0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.gbitmap_create_blank
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.click_recognizer_is_repeating
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.accel_raw_data_service_subscribe
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.app_worker_send_message
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.worker_event_loop
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.worker_launch_app
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.heap_bytes_free
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.heap_bytes_used
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.compass_service_peek
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.compass_service_set_heading_filter
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.compass_service_subscribe
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.compass_service_unsubscribe
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.uuid_equal
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.uuid_to_string
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.gpath_draw_filled
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.animation_set_custom_curve
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.watch_info_get_color
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.watch_info_get_firmware_version
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.watch_info_get_model
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.graphics_capture_frame_buffer
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.graphics_frame_buffer_is_captured
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text.graphics_release_frame_buffer
+                0x0000000000000000        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .text          0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-exit.o)
+ .bss           0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-exit.o)
+ .text.exit     0x0000000000000000       0x20 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-exit.o)
+ .text          0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
+ .data.impure_data
+                0x0000000000000000      0x428 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x0000000000000000        0x4 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
+ .rodata.str1.4
+                0x0000000000000000        0x4 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x0000000000000000        0x4 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
+ .bss           0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
+ .text.__libc_init_array
+                0x0000000000000000       0x50 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
+ .text          0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
+ .bss           0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
+ .text.startup.register_fini
+                0x0000000000000000       0x14 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
+ .init_array.00000
+                0x0000000000000000        0x4 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
+ .text.__call_exitprocs
+                0x0000000000000000       0xf0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
+ .text          0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
+ .bss           0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
+ .text.atexit   0x0000000000000000        0xc /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
+ .text          0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
+ .bss           0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
+ .text.__libc_fini_array
+                0x0000000000000000       0x30 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
+ .text          0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
+ .bss           0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
+ .text.__register_exitproc
+                0x0000000000000000       0xa8 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
+ .text          0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtend.o
+ .bss           0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtend.o
+ .eh_frame      0x0000000000000000        0x4 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtend.o
+ .jcr           0x0000000000000000        0x4 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtend.o
+ .text          0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtn.o
+ .bss           0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtn.o
+ .init          0x0000000000000000        0x8 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtn.o
+ .fini          0x0000000000000000        0x8 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+APP              0x0000000000000000 0x0000000000006000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crti.o
+LOAD /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtbegin.o
+LOAD /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+LOAD src/main.c.7.o
+LOAD appinfo.auto.c.7.o
+LOAD /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a
+START GROUP
+LOAD /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/libgcc.a
+LOAD /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a
+END GROUP
+LOAD /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtend.o
+LOAD /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtn.o
+
+.header         0x0000000000000000       0x82
+ *(.pbl_header)
+ .pbl_header    0x0000000000000000       0x82 appinfo.auto.c.7.o
+                0x0000000000000000                __pbl_app_info
+
+.text           0x0000000000000084      0x3e2
+ *(.text)
+ .text          0x0000000000000084       0x14 /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ *(.text.*)
+ .text.main_window_unload
+                0x0000000000000098       0x24 src/main.c.7.o
+ .text.main_window_load
+                0x00000000000000bc       0x9c src/main.c.7.o
+ .text.click_config_provider
+                0x0000000000000158       0x10 src/main.c.7.o
+ .text.select_click_handler
+                0x0000000000000168       0x88 src/main.c.7.o
+ .text.worker_message_handler
+                0x00000000000001f0       0x38 src/main.c.7.o
+ .text.startup.main
+                0x0000000000000228       0x74 src/main.c.7.o
+                0x0000000000000228                main
+ .text.app_event_loop
+                0x000000000000029c        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                0x000000000000029c                app_event_loop
+ .text.app_log  0x00000000000002a8        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                0x00000000000002a8                app_log
+ .text.layer_add_child
+                0x00000000000002b4        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                0x00000000000002b4                layer_add_child
+ .text.memset   0x00000000000002c0        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                0x00000000000002c0                memset
+ .text.snprintf
+                0x00000000000002cc        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                0x00000000000002cc                snprintf
+ .text.text_layer_create
+                0x00000000000002d8        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                0x00000000000002d8                text_layer_create
+ .text.text_layer_destroy
+                0x00000000000002e4        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                0x00000000000002e4                text_layer_destroy
+ .text.text_layer_get_layer
+                0x00000000000002f0        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                0x00000000000002f0                text_layer_get_layer
+ .text.text_layer_set_text
+                0x00000000000002fc        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                0x00000000000002fc                text_layer_set_text
+ .text.text_layer_set_text_alignment
+                0x0000000000000308        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                0x0000000000000308                text_layer_set_text_alignment
+ .text.window_create
+                0x0000000000000314        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                0x0000000000000314                window_create
+ .text.window_destroy
+                0x0000000000000320        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                0x0000000000000320                window_destroy
+ .text.window_get_root_layer
+                0x000000000000032c        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                0x000000000000032c                window_get_root_layer
+ .text.window_set_click_config_provider
+                0x0000000000000338        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                0x0000000000000338                window_set_click_config_provider
+ .text.window_set_window_handlers
+                0x0000000000000344        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                0x0000000000000344                window_set_window_handlers
+ .text.window_stack_push
+                0x0000000000000350        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                0x0000000000000350                window_stack_push
+ .text.window_single_click_subscribe
+                0x000000000000035c        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                0x000000000000035c                window_single_click_subscribe
+ .text.app_worker_is_running
+                0x0000000000000368        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                0x0000000000000368                app_worker_is_running
+ .text.app_worker_kill
+                0x0000000000000374        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                0x0000000000000374                app_worker_kill
+ .text.app_worker_launch
+                0x0000000000000380        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                0x0000000000000380                app_worker_launch
+ .text.app_worker_message_subscribe
+                0x000000000000038c        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                0x000000000000038c                app_worker_message_subscribe
+ .text.app_worker_message_unsubscribe
+                0x0000000000000398        0xc /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+                0x0000000000000398                app_worker_message_unsubscribe
+ *(.rodata)
+ .rodata        0x00000000000003a4       0x10 src/main.c.7.o
+ *(.rodata*)
+ .rodata.str1.1
+                0x00000000000003b4       0xb2 src/main.c.7.o
+
+.glue_7         0x0000000000000468        0x0
+ .glue_7        0x0000000000000000        0x0 linker stubs
+
+.glue_7t        0x0000000000000468        0x0
+ .glue_7t       0x0000000000000000        0x0 linker stubs
+
+.vfp11_veneer   0x0000000000000468        0x0
+ .vfp11_veneer  0x0000000000000000        0x0 linker stubs
+
+.v4_bx          0x0000000000000468        0x0
+ .v4_bx         0x0000000000000000        0x0 linker stubs
+
+.iplt           0x0000000000000468        0x0
+ .iplt          0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtbegin.o
+
+.rel.dyn        0x0000000000000468        0x0
+ .rel.iplt      0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtbegin.o
+
+.data           0x0000000000000468        0x4
+ *(.data)
+ .data          0x0000000000000468        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crti.o
+ .data          0x0000000000000468        0x4 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtbegin.o
+                0x0000000000000468                __dso_handle
+ .data          0x000000000000046c        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .data          0x000000000000046c        0x0 src/main.c.7.o
+ .data          0x000000000000046c        0x0 appinfo.auto.c.7.o
+ .data          0x000000000000046c        0x0 /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .data          0x000000000000046c        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-exit.o)
+ .data          0x000000000000046c        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
+ .data          0x000000000000046c        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
+ .data          0x000000000000046c        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
+ .data          0x000000000000046c        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
+ .data          0x000000000000046c        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
+ .data          0x000000000000046c        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
+ .data          0x000000000000046c        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtend.o
+ .data          0x000000000000046c        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtn.o
+ *(.data.*)
+
+.igot.plt       0x000000000000046c        0x0
+ .igot.plt      0x0000000000000000        0x0 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtbegin.o
+
+.bss            0x000000000000046c       0x2c
+ *(.bss)
+ *(.bss.*)
+ .bss.s_ticks_layer
+                0x000000000000046c        0x4 src/main.c.7.o
+ .bss.s_output_layer
+                0x0000000000000470        0x4 src/main.c.7.o
+ .bss.s_buffer.6578
+                0x0000000000000474       0x20 src/main.c.7.o
+ .bss.s_main_window
+                0x0000000000000494        0x4 src/main.c.7.o
+
+DISCARD
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+ *(.eh_frame)
+OUTPUT(/Users/cherie/pebble/pebble-sdk-examples-dev/watchapps/feature-background-counter/build/pebble-app.elf elf32-littlearm)
+
+.ARM.attributes
+                0x0000000000000000       0x29
+ .ARM.attributes
+                0x0000000000000000       0x1d /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crti.o
+ .ARM.attributes
+                0x000000000000001d       0x2d /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtbegin.o
+ .ARM.attributes
+                0x000000000000004a       0x1b /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.attributes
+                0x0000000000000065       0x33 src/main.c.7.o
+ .ARM.attributes
+                0x0000000000000098       0x33 appinfo.auto.c.7.o
+ .ARM.attributes
+                0x00000000000000cb       0x21 /Users/cherie/pebble-dev/PebbleSDK-2.6/Pebble/lib/libpebble.a(tmpbuF0Xgpebble.o)
+ .ARM.attributes
+                0x00000000000000ec       0x2d /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000000000000119       0x2d /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000000000000146       0x2d /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
+ .ARM.attributes
+                0x0000000000000173       0x2d /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
+ .ARM.attributes
+                0x00000000000001a0       0x2d /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
+ .ARM.attributes
+                0x00000000000001cd       0x2d /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
+ .ARM.attributes
+                0x00000000000001fa       0x2d /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
+ .ARM.attributes
+                0x0000000000000227       0x2d /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtend.o
+ .ARM.attributes
+                0x0000000000000254       0x1d /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7-m/crtn.o
+
+.comment        0x0000000000000000       0x70
+ .comment       0x0000000000000000       0x70 src/main.c.7.o
+                                         0x71 (size before relaxing)
+ .comment       0x0000000000000000       0x71 appinfo.auto.c.7.o
+
+.debug_info     0x0000000000000000      0xbd1
+ .debug_info    0x0000000000000000      0x8f6 src/main.c.7.o
+ .debug_info    0x00000000000008f6      0x2db appinfo.auto.c.7.o
+
+.debug_abbrev   0x0000000000000000      0x315
+ .debug_abbrev  0x0000000000000000      0x277 src/main.c.7.o
+ .debug_abbrev  0x0000000000000277       0x9e appinfo.auto.c.7.o
+
+.debug_loc      0x0000000000000000      0x1e9
+ .debug_loc     0x0000000000000000      0x1e9 src/main.c.7.o
+
+.debug_aranges  0x0000000000000000       0x60
+ .debug_aranges
+                0x0000000000000000       0x48 src/main.c.7.o
+ .debug_aranges
+                0x0000000000000048       0x18 appinfo.auto.c.7.o
+
+.debug_ranges   0x0000000000000000       0x50
+ .debug_ranges  0x0000000000000000       0x50 src/main.c.7.o
+
+.debug_line     0x0000000000000000      0x381
+ .debug_line    0x0000000000000000      0x230 src/main.c.7.o
+ .debug_line    0x0000000000000230      0x151 appinfo.auto.c.7.o
+
+.debug_str      0x0000000000000000      0x819
+ .debug_str     0x0000000000000000      0x687 src/main.c.7.o
+                                        0x726 (size before relaxing)
+ .debug_str     0x0000000000000687      0x192 appinfo.auto.c.7.o
+                                        0x34c (size before relaxing)
+
+.debug_frame    0x0000000000000000      0x1c4
+ .debug_frame   0x0000000000000000       0xac src/main.c.7.o
+ .debug_frame   0x00000000000000ac       0x28 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-exit.o)
+ .debug_frame   0x00000000000000d4       0x2c /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-init.o)
+ .debug_frame   0x0000000000000100       0x48 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x0000000000000148       0x20 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-atexit.o)
+ .debug_frame   0x0000000000000168       0x2c /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-fini.o)
+ .debug_frame   0x0000000000000194       0x30 /Users/cherie/pebble/gcc-arm-none-eabi-4_8-2014q2/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-__atexit.o)
