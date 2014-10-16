@@ -1,0 +1,29 @@
+{
+  "uuid": "89bcd079-41b7-4d8c-bc38-af385d86a55c",
+  "shortName": "Tea Timer",
+  "longName": "Tea Timer",
+  "companyName": "MakeAwesomeHappen",
+  "versionCode": "1",
+  "versionLabel": "1.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": [
+      {
+        "menuIcon": true,
+        "type": "png",
+        "name": "IMAGE_ICON",
+        "file": "cup_icon.png"
+      },
+      {
+        "type": "png", 
+        "name": "TEA_SIGN", 
+        "file": "tea-sign.png"
+      }
+    ]
+  }
+}
