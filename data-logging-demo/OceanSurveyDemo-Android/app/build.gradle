@@ -28,7 +28,6 @@ android {
 }
 
 dependencies {
-    compile 'com.getpebble:pebblekit:2.5.0'
+    compile 'com.getpebble:pebblekit:2.6.0'
     compile 'com.google.android:support-v4:r7@jar'
-//    compile 'com.google.guava:guava:18.0'
 }

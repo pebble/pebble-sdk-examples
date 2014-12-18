@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.widget.TextView;
 import com.getpebble.android.kit.PebbleKit;
-import com.google.common.primitives.UnsignedInteger;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -57,10 +56,10 @@ public class ExampleDataLoggingActivity extends Activity {
         // was sighted. The "timestamp" indicates when the log was first created, and will not be used in this example.
         mDataLogReceiver = new PebbleKit.PebbleDataLogReceiver(OCEAN_SURVEY_APP_UUID) {
             @Override
-            public void receiveData(Context context, UUID logUuid, UnsignedInteger timestamp, UnsignedInteger tag,
-                                    UnsignedInteger secondsSinceEpoch) {
+            public void receiveData(Context context, UUID logUuid, Long timestamp, Long tag,
+                                    Long secondsSinceEpoch) {
                 mDisplayText.append("\n");
-                mDisplayText.append(getUintAsTimestamp(secondsSinceEpoch));
+                mDisplayText.append(getLongAsTimestamp(secondsSinceEpoch));
                 mDisplayText.append(": Saw a ");
                 mDisplayText.append(AnimalName.fromInt(tag.intValue()).getName());
 
@@ -83,8 +82,8 @@ public class ExampleDataLoggingActivity extends Activity {
         textView.setText(mDisplayText.toString());
     }
 
-    private String getUintAsTimestamp(UnsignedInteger uint) {
-        return DATE_FORMAT.format(new Date(uint.longValue() * 1000L)).toString();
+    private String getLongAsTimestamp(Long l) {
+        return DATE_FORMAT.format(new Date(l.longValue() * 1000L)).toString();
     }
 
     private static enum AnimalName {

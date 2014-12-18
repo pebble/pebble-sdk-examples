@@ -17,11 +17,3 @@ typedef enum {
   RESOURCE_ID_IMAGE_SNOW,
 
 } ResourceId;
-
-static const uint32_t resource_crc_table[] = {
-  480439287,
-  323605218,
-  1628261794,
-  4138502712,
-};
-
