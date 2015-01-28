@@ -7,6 +7,8 @@ static Window *window;
 static TextLayer *text_layer;
 static TextLayer *char_text_layer;
 
+static GFont customFont;
+
 static char text_buffer[] = "Aa";
 
 void down_single_click_handler(ClickRecognizerRef recognizer, Window *window) {
@@ -46,7 +48,8 @@ static void init() {
 
   text_layer = text_layer_create((GRect) { { pad, 0 }, { bounds.size.w - 2*pad, bounds.size.h } });
   text_layer_set_text(text_layer, text_buffer);
-  text_layer_set_font(text_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_UNICONS_30)));
+  customFont = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_UNICONS_30));
+  text_layer_set_font(text_layer, customFont);
   layer_add_child(window_layer, text_layer_get_layer(text_layer));
 
   char_text_layer = text_layer_create((GRect) { { pad, bounds.size.h - 60 }, { bounds.size.w - 2*pad, 40 } });
@@ -58,6 +61,7 @@ static void init() {
 static void deinit() {
   text_layer_destroy(text_layer);
   text_layer_destroy(char_text_layer);
+  fonts_unload_custom_font(customFont);
   window_destroy(window);
 }
 

@@ -233,6 +233,7 @@ static void app_deinit(void) {
   text_layer_destroy(helpTextLayer);
   window_destroy(helpWindow);
   window_destroy(window);
+  tick_timer_service_unsubscribe();
 }
 
 int main(void) {

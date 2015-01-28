@@ -80,6 +80,7 @@ static void init(void) {
 static void deinit(void) {
   window_destroy(window);
   text_layer_destroy(timeLayer);
+  tick_timer_service_unsubscribe();
 }
 
 // The main event/run loop for our app

@@ -2,6 +2,7 @@
 
 Window *window;
 TextLayer *text_time_layer;
+static GFont font;
 
 
 // There are two of these because we have to schedule the next animation
@@ -79,8 +80,8 @@ static void init(void) {
   text_layer_set_text_color(text_time_layer, GColorWhite);
   text_layer_set_background_color(text_time_layer, GColorClear);
   text_layer_set_text_alignment(text_time_layer, GTextAlignmentCenter);
-  text_layer_set_font(text_time_layer,
-      fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ROBOTO_BOLD_CONDENSED_SUBSET_40)));
+  font = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ROBOTO_BOLD_CONDENSED_SUBSET_40));
+  text_layer_set_font(text_time_layer,font);
   layer_add_child(window_get_root_layer(window), text_layer_get_layer(text_time_layer));
 
   init_animations();
@@ -91,6 +92,7 @@ static void deinit(void) {
   property_animation_destroy(up_animation);
   property_animation_destroy(down_animation);
 
+  fonts_unload_custom_font(font);
   text_layer_destroy(text_time_layer);
   window_destroy(window);
 }
