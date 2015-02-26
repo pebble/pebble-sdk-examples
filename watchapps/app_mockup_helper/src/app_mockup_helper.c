@@ -1,37 +1,43 @@
 /*
-
-  Helps with watch face mockups by displaying the image `mockup.png`
-  as a fullscreen image in a watch app so you can see how it looks
-  without writing any code.
-
+ * Helps with watch face mockups by displaying the s_mockup_bitmap `mockup.png` as a
+ * fullscreen image in a watch app so you can see how it looks without writing
+ * any code.
  */
 
 #include "pebble.h"
 
+static Window *s_main_window;
 
-static Window *window;
+static GBitmap *s_mockup_bitmap;
+static BitmapLayer *s_mockup_layer;
 
-static GBitmap *image;
-static BitmapLayer *image_layer;
+static void main_window_load(Window *window) {
+  Layer *window_layer = window_get_root_layer(s_main_window);
+  GRect bounds = layer_get_frame(window_layer);
 
+  s_mockup_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_MOCKUP);
+
+  s_mockup_layer = bitmap_layer_create(bounds);
+  bitmap_layer_set_bitmap(s_mockup_layer, s_mockup_bitmap);
+  layer_add_child(window_layer, bitmap_layer_get_layer(s_mockup_layer));
+}
+
+static void main_window_unload(Window *window) {
+  gbitmap_destroy(s_mockup_bitmap);
+  bitmap_layer_destroy(s_mockup_layer);
+}
 
 static void init() {
-  window = window_create();
-  window_stack_push(window, true /* Animated */);
-
-  image = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_MOCKUP);
-
-  Layer* window_layer = window_get_root_layer(window);
-  GRect bounds = layer_get_frame(window_layer);
-  image_layer = bitmap_layer_create(bounds);
-  bitmap_layer_set_bitmap(image_layer, image);
-  layer_add_child(window_layer, bitmap_layer_get_layer(image_layer));
+  s_main_window = window_create();
+  window_set_window_handlers(s_main_window, (WindowHandlers) {
+    .load = main_window_load,
+    .unload = main_window_unload,
+  });
+  window_stack_push(s_main_window, true);
 }
 
 static void deinit() {
-  gbitmap_destroy(image);
-  bitmap_layer_destroy(image_layer);
-  window_destroy(window);
+  window_destroy(s_main_window);
 }
 
 int main(void) {

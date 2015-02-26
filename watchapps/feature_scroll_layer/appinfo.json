@@ -11,5 +11,10 @@
   "appKeys": {},
   "resources": {
     "media": []
-  }
+  },
+  "targetPlatforms": [
+    "aplite",
+    "basalt"
+  ],
+  "sdkVersion": "3"
 }

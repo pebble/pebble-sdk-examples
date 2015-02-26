@@ -18,5 +18,10 @@
         "file": "images/menu_icon_simplicity.png"
       }
     ]
-  }
+  },
+  "targetPlatforms": [
+    "aplite",
+    "basalt"
+  ],
+  "sdkVersion": "3"
 }

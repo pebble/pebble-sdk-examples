@@ -17,5 +17,10 @@
         "file": "images/panda.png"
       }
     ]
-  }
+  },
+  "targetPlatforms": [
+    "aplite",
+    "basalt"
+  ],
+  "sdkVersion": "3"
 }

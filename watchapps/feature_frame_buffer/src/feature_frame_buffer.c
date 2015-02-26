@@ -1,18 +1,18 @@
 #include <pebble.h>
 
-static Window *s_window;
+static Window *s_main_window;
 static GSize s_window_size;
 
 /*
  * Gray values for the animated gradient.
  */
-int s_gray_top;
-int s_gray_bottom;
+static int s_gray_top;
+static int s_gray_bottom;
 
 /*
  * Helper value for draw_method_feedback().
  */
-int s_time_feedback_y;
+static int s_time_feedback_y;
 
 /*
  * Bayer matrix for ordered dithering.
@@ -56,6 +56,7 @@ static GColor color_for_gray(int16_t x, int16_t y, uint8_t gray) {
 /*
  * Calculates GColor values for 8 adjacent pixels at once and returns them as a single byte.
  */
+#ifndef PBL_COLOR
 static uint8_t dither_pattern_8(int16_t y, uint8_t gray) {
   return color_for_gray(0, y, gray) << 7 |
          color_for_gray(1, y, gray) << 6 |
@@ -66,6 +67,7 @@ static uint8_t dither_pattern_8(int16_t y, uint8_t gray) {
          color_for_gray(6, y, gray) << 1 |
          color_for_gray(7, y, gray) << 0;
 }
+#endif
 
 /*
  * Draws textual feedback about the currently used update procedure.
@@ -129,23 +131,36 @@ static void update_proc_frame_buffer(Layer *layer, GContext *ctx) {
   // calculates dithering pattern for the row, and
   // sets all pixels of the row at once
 
-  // obtain frame buffer (must be released, again using graphics_release_frame_buffer!)
+  // obtain frame buffer (must be released again using graphics_release_frame_buffer!)
   GBitmap *fb = graphics_capture_frame_buffer(ctx);
 
   // during the loop, row always points to the byte of the first 8 pixels of the current row
-  uint8_t *row = (uint8_t *)fb->addr;
-  row += fb->bounds.origin.y * fb->row_size_bytes;
+#ifdef PBL_PLATFORM_BASALT
+  GRect fb_bounds = gbitmap_get_bounds(fb);
+  uint8_t *row = gbitmap_get_data(fb);
+  uint16_t row_bytes = gbitmap_get_bytes_per_row(fb);
+#else
+  GRect fb_bounds = fb->bounds;
+  uint8_t *row = fb->addr;
+  uint16_t row_bytes = fb->row_size_bytes;
+#endif
+  row += fb_bounds.origin.y * row_bytes;
 
-  for (int16_t y = fb->bounds.origin.y; y < fb->bounds.size.h; y++) {
-    const uint8_t row_gray = gray_for_row(y);
-
+  // For all rows
+  for (int16_t y = fb_bounds.origin.y; y < fb_bounds.size.h; y++) {
+  const uint8_t row_gray = gray_for_row(y);
+#ifdef PBL_PLATFORM_BASALT
+    // Each pixel is one whole byte
+    for(int x = fb_bounds.origin.x; x < fb_bounds.size.w; x++) {
+      memset(&row[(y * fb_bounds.size.w) + x], color_for_gray(x, y, row_gray).argb, 1);
+    }
+#else
     // as our dither pattern repeats itself after 8 pixels (8x8 dither matrix), we can store the
     // whole pattern of this row in a single byte and set all pixels with a single call to memset
     uint8_t row_gray_dither_pattern = dither_pattern_8(y, row_gray);
-    memset(row, row_gray_dither_pattern, fb->row_size_bytes);
-
-    // move row pointer to the start of the next row
-    row += fb->row_size_bytes;
+    memset(row, row_gray_dither_pattern, row_bytes);
+    row += row_bytes;
+#endif
   }
 
   // do not forget to release the frame buffer after usage. Other graphics_* functions are blocked
@@ -165,7 +180,7 @@ static void update_proc_frame_buffer_1(Layer *layer, GContext *ctx) {
  * Draws linear gradient 20 times using direct frame buffer access + draws info about used method.
  */
 static void update_proc_frame_buffer_20(Layer *layer, GContext *ctx) {
-  for(int i = 0; i < 20; i++) {
+  for (int i = 0; i < 20; i++) {
     update_proc_frame_buffer(layer, ctx);
   }
   draw_method_feedback(ctx, "20 x frame_buffer");
@@ -193,7 +208,7 @@ static void update_animation(void *data) {
   s_time_feedback_y += 5;
 
   // trigger the actual redraw
-  layer_mark_dirty(window_get_root_layer(s_window));
+  layer_mark_dirty(window_get_root_layer(s_main_window));
 
   // enter the infinite update loop
   app_timer_register(1000 / 30, update_animation, NULL);
@@ -209,7 +224,7 @@ static int s_current_update_proc = 0;
 
 static void toggle_update_proc_click_handler(ClickRecognizerRef recognizer, void *context) {
   s_current_update_proc = (s_current_update_proc + 1) % ARRAY_LENGTH(update_procs);
-  layer_set_update_proc(window_get_root_layer(s_window), update_procs[s_current_update_proc]);
+  layer_set_update_proc(window_get_root_layer(s_main_window), update_procs[s_current_update_proc]);
 }
 
 static void click_config_provider(void *context) {
@@ -228,26 +243,20 @@ static void window_load(Window *window) {
 }
 
 static void init(void) {
-  s_window = window_create();
-  window_set_click_config_provider(s_window, click_config_provider);
-  window_set_window_handlers(s_window, (WindowHandlers) {
+  s_main_window = window_create();
+  window_set_click_config_provider(s_main_window, click_config_provider);
+  window_set_window_handlers(s_main_window, (WindowHandlers) {
     .load = window_load,
   });
-
-  const bool animated = true;
-  window_stack_push(s_window, animated);
+  window_stack_push(s_main_window, true);
 }
 
 static void deinit(void) {
-  window_destroy(s_window);
+  window_destroy(s_main_window);
 }
 
 int main(void) {
   init();
-
-  APP_LOG(APP_LOG_LEVEL_DEBUG, "Done initializing, pushed window: %p", s_window);
-
   app_event_loop();
   deinit();
-  return 0;
 }

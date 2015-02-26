@@ -17,5 +17,10 @@
         "file": "fonts/unicons_30.ttf"
       }
     ]
-  }
+  },
+  "targetPlatforms": [
+    "aplite",
+    "basalt"
+  ],
+  "sdkVersion": "3"
 }

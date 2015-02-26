@@ -9,9 +9,9 @@
     "watchface": false
   },
   "appKeys": {
-    "city": 2,
-    "temperature": 1,
-    "icon": 0
+    "WEATHER_CITY_KEY": 2,
+    "WEATHER_TEMPERATURE_KEY": 1,
+    "WEATHER_ICON_KEY": 0
   },
   "resources": {
     "media": [
@@ -36,5 +36,10 @@
         "file": "img/snow.png"
       }
     ]
-  }
+  },
+  "targetPlatforms": [
+    "aplite",
+    "basalt"
+  ],
+  "sdkVersion": "3"
 }

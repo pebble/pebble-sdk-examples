@@ -46,38 +46,34 @@ function fetchStockQuote(symbol, isInitMsg) {
 }
 
 // Set callback for the app ready event
-Pebble.addEventListener("ready",
-                        function(e) {
-                          console.log("connect! " + e.ready);
-                          console.log(e.type);
-                          // Fetch saved symbol from local storage (using
-                          // standard localStorage webAPI)
-                          symbol = localStorage.getItem("symbol");
-                          if (!symbol) {
-                            symbol = "PBL";
-                          }
-                          var isInitMsg = true;
-                          fetchStockQuote(symbol, isInitMsg);
-                        });
+Pebble.addEventListener("ready", function(e) {
+  console.log("connect! " + e.ready);
+  console.log(e.type);
+  // Fetch saved symbol from local storage (using
+  // standard localStorage webAPI)
+  symbol = localStorage.getItem("symbol");
+  if (!symbol) {
+    symbol = "PBL";
+  }
+  var isInitMsg = true;
+  fetchStockQuote(symbol, isInitMsg);
+});
 
 // Set callback for appmessage events
-Pebble.addEventListener("appmessage",
-                        function(e) {
-                          console.log("message");
-                          var isInitMsg;
-                          if (e.payload.init) {
-                            isInitMsg = true;
-                            fetchStockQuote(symbol, isInitMsg);
-                          }
-                          else if (e.payload.fetch) {
-                            isInitMsg = false;
-                            fetchStockQuote(symbol, isInitMsg);
-                          }
-                          else if (e.payload.symbol) {
-                            symbol = e.payload.symbol;
-                            localStorage.setItem("symbol", symbol);
-                            isInitMsg = false;
-                            fetchStockQuote(symbol, isInitMsg);
-                          }
-                        });
+Pebble.addEventListener("appmessage", function(e) {
+  console.log("message");
+  var isInitMsg;
+  if (e.payload.init) {
+    isInitMsg = true;
+    fetchStockQuote(symbol, isInitMsg);
+  } else if (e.payload.fetch) {
+    isInitMsg = false;
+    fetchStockQuote(symbol, isInitMsg);
+  } else if (e.payload.symbol) {
+    symbol = e.payload.symbol;
+    localStorage.setItem("symbol", symbol);
+    isInitMsg = false;
+    fetchStockQuote(symbol, isInitMsg);
+  }
+});
 

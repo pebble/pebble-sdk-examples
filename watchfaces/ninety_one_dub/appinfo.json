@@ -1,14 +1,14 @@
 {
-  "uuid" : "7112d624-6555-4279-89ae-c086e9369427",
-  "shortName" : "91 Dub",
-  "longName" : "91 Dub",
-  "companyName" : "Pebble Technology & orviwan",
-  "versionCode" : 3,
-  "versionLabel" : "3.0",
-  "watchapp" : {
-    "watchface" : true
+  "uuid": "7112d624-6555-4279-89ae-c086e9369427",
+  "shortName": "91 Dub",
+  "longName": "91 Dub",
+  "companyName": "Pebble Technology & orviwan",
+  "versionCode": 3,
+  "versionLabel": "3.0",
+  "watchapp": {
+    "watchface": true
   },
-  "resources" : {
+  "resources": {
     "media": [
       {
         "type": "png",
@@ -172,5 +172,10 @@
         "file": "images/num_9.png"
       }
     ]
-  }
+  },
+  "targetPlatforms": [
+    "aplite",
+    "basalt"
+  ],
+  "sdkVersion": "3"
 }

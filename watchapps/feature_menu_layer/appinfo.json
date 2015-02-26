@@ -32,5 +32,10 @@
         "file": "images/brains_watch_background.png"
       }
     ]
-  }
+  },
+  "targetPlatforms": [
+    "aplite",
+    "basalt"
+  ],
+  "sdkVersion": "3"
 }

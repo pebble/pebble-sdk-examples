@@ -1,4 +1,5 @@
 #pragma once
 
-void game_init(void);
-void game_deinit(void);
+void game_init();
+
+void game_deinit();

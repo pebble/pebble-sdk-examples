@@ -1,33 +1,27 @@
 /*
-
-   Demonstrate how to display an image with black, white and transparent sections.
-
-   To achieve this effect you need to use a `RotBmpPairContainer` which contains
-   two bitmaps: one is black and transparent, the other is white and transparent.
-
-   The two bitmaps are created during the build process from a RGBA format PNG file.
-
-   The image can also be rotated at runtime.
-
-   The demonstration image is a modified version of the following SVG
-   exported from Inkscape:
-
-       <http://openclipart.org/detail/48919/panda-with-bamboo-leaves-by-adam_lowe>
-
+ * Demonstrate how to display an image with black, white and transparent sections.
+ *
+ * To achieve this effect you need to use GCompOp with two bitmaps: one is black
+ * and transparent, the other is white and transparent.
+ *
+ * The two bitmaps are created during the build process from a RGBA format PNG file.
+ *
+ * The image can also be rotated at runtime.
+ *
+ * The demonstration image is a modified version of the following SVG
+ * exported from Inkscape:
+ *
+ * <http://openclipart.org/detail/48919/panda-with-bamboo-leaves-by-adam_lowe>
  */
 
 #include "pebble.h"
 
-static Window *window;
+static Window *s_main_window;
+static TextLayer *s_text_layer;
+static GBitmap *s_white_bitmap, *s_black_bitmap;
+static BitmapLayer *s_white_layer, *s_black_layer;
 
-static GBitmap *white_image;
-static GBitmap *black_image;
-static BitmapLayer *white_image_layer;
-static BitmapLayer *black_image_layer;
-
-static TextLayer *text_layer; // Used as a background to help demonstrate transparency.
-
-static void window_load(Window *window) {
+static void main_window_load(Window *window) {
   Layer *window_layer = window_get_root_layer(window);
   GRect bounds = layer_get_bounds(window_layer);
 
@@ -38,8 +32,8 @@ static void window_load(Window *window) {
   layer_frame_description.origin.y = 0;
 
   // Add some background content to help demonstrate transparency.
-  text_layer = text_layer_create(layer_frame_description);
-  text_layer_set_text(text_layer,
+  s_text_layer = text_layer_create(layer_frame_description);
+  text_layer_set_text(s_text_layer,
       "pandamonium pandamon\n"
       "ium pandamonium panda\n"
       "monium     pandamonium\n"
@@ -50,49 +44,53 @@ static void window_load(Window *window) {
       "ium pandamonium panda\n"
       "monium pandamonium p\n"
       "andamonium pandamoni\n");
-  layer_add_child(window_layer, text_layer_get_layer(text_layer));
+  layer_add_child(window_layer, text_layer_get_layer(s_text_layer));
 
-  white_image = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_PANDA_WHITE);
-  black_image = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_PANDA_BLACK);
+  s_white_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_PANDA_WHITE);
+  s_black_bitmap = gbitmap_create_with_resource(RESOURCE_ID_IMAGE_PANDA_BLACK);
 
-  const GPoint center = grect_center_point(&bounds);
-  GRect image_frame = (GRect) { .origin = center, .size = white_image->bounds.size };
-  image_frame.origin.x -= white_image->bounds.size.w/2;
-  image_frame.origin.y -= white_image->bounds.size.h/2;
+  GPoint center = grect_center_point(&bounds);
+#ifdef PBL_PLATFORM_BASALT
+  GSize image_size = gbitmap_get_bounds(s_white_bitmap).size;
+#else
+  GSize image_size = s_white_bitmap->bounds.size;
+#endif
+  GRect image_frame = GRect(center.x, center.y, image_size.w, image_size.h);
+  image_frame.origin.x -= image_size.w / 2;
+  image_frame.origin.y -= image_size.h / 2;
 
   // Use GCompOpOr to display the white portions of the image
-  white_image_layer = bitmap_layer_create(image_frame);
-  bitmap_layer_set_bitmap(white_image_layer, white_image);
-  bitmap_layer_set_compositing_mode(white_image_layer, GCompOpOr);
-  layer_add_child(window_layer, bitmap_layer_get_layer(white_image_layer));
+  s_white_layer = bitmap_layer_create(image_frame);
+  bitmap_layer_set_bitmap(s_white_layer, s_white_bitmap);
+  bitmap_layer_set_compositing_mode(s_white_layer, GCompOpOr);
+  layer_add_child(window_layer, bitmap_layer_get_layer(s_white_layer));
 
   // Use GCompOpClear to display the black portions of the image
-  black_image_layer = bitmap_layer_create(image_frame);
-  bitmap_layer_set_bitmap(black_image_layer, black_image);
-  bitmap_layer_set_compositing_mode(black_image_layer, GCompOpClear);
-  layer_add_child(window_layer, bitmap_layer_get_layer(black_image_layer));
+  s_black_layer = bitmap_layer_create(image_frame);
+  bitmap_layer_set_bitmap(s_black_layer, s_black_bitmap);
+  bitmap_layer_set_compositing_mode(s_black_layer, GCompOpClear);
+  layer_add_child(window_layer, bitmap_layer_get_layer(s_black_layer));
 }
 
-static void window_unload(Window *window) {
-  bitmap_layer_destroy(white_image_layer);
-  bitmap_layer_destroy(black_image_layer);
-
-  gbitmap_destroy(white_image);
-  gbitmap_destroy(black_image);
-
+static void main_window_unload(Window *window) {
+  bitmap_layer_destroy(s_white_layer);
+  bitmap_layer_destroy(s_black_layer);
+  text_layer_destroy(s_text_layer);
+  gbitmap_destroy(s_white_bitmap);
+  gbitmap_destroy(s_black_bitmap);
 }
 
 static void init(void) {
-  window = window_create();
-  window_set_window_handlers(window, (WindowHandlers) {
-    .load = window_load,
-    .unload = window_unload
+  s_main_window = window_create();
+  window_set_window_handlers(s_main_window, (WindowHandlers) {
+    .load = main_window_load,
+    .unload = main_window_unload
   });
-  window_stack_push(window, true /* Animated */);
+  window_stack_push(s_main_window, true);
 }
 
 static void deinit(void) {
-  window_destroy(window);
+  window_destroy(s_main_window);
 }
 
 int main(void) {

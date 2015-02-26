@@ -77,7 +77,7 @@ public class ExampleGolfActivity extends Activity {
         dataReceiver = new PebbleKit.PebbleDataReceiver(Constants.GOLF_UUID) {
             @Override
             public void receiveData(final Context context, final int transactionId, final PebbleDictionary data) {
-                final int cmd = data.getUnsignedInteger(Constants.GOLF_CMD_KEY).intValue();
+                final int cmd = data.getInteger(Constants.GOLF_CMD_KEY).intValue();
 
                 handler.post(new Runnable() {
                     @Override

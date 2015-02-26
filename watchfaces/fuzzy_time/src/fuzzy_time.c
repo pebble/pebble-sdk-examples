@@ -1,39 +1,30 @@
-#include "pebble.h"
+#include <pebble.h>
 #include "num2words.h"
 
 #define BUFFER_SIZE 86
 
-static struct CommonWordsData {
-  TextLayer *label;
-  Window *window;
-  char buffer[BUFFER_SIZE];
-} s_data;
+static Window *s_main_window;
+static TextLayer *s_text_layer;
+static char s_buffer[BUFFER_SIZE];
 
-static void update_time(struct tm* t) {
-  fuzzy_time_to_words(t->tm_hour, t->tm_min, s_data.buffer, BUFFER_SIZE);
-  text_layer_set_text(s_data.label, s_data.buffer);
+static void update_time(struct tm *t) {
+  fuzzy_time_to_words(t->tm_hour, t->tm_min, s_buffer, BUFFER_SIZE);
+  text_layer_set_text(s_text_layer, s_buffer);
 }
 
 static void handle_minute_tick(struct tm *tick_time, TimeUnits units_changed) {
   update_time(tick_time);
 }
 
-static void do_init(void) {
-  s_data.window = window_create();
-  const bool animated = true;
-  window_stack_push(s_data.window, animated);
+static void main_window_load(Window *window) {
+  Layer *window_layer = window_get_root_layer(window);
+  GRect bounds = layer_get_frame(window_layer);
 
-  window_set_background_color(s_data.window, GColorBlack);
-  GFont font = fonts_get_system_font(FONT_KEY_DROID_SERIF_28_BOLD);
-
-  Layer *root_layer = window_get_root_layer(s_data.window);
-  GRect frame = layer_get_frame(root_layer);
-
-  s_data.label = text_layer_create(GRect(0, 20, frame.size.w, frame.size.h - 20));
-  text_layer_set_background_color(s_data.label, GColorBlack);
-  text_layer_set_text_color(s_data.label, GColorWhite);
-  text_layer_set_font(s_data.label, font);
-  layer_add_child(root_layer, text_layer_get_layer(s_data.label));
+  s_text_layer = text_layer_create(GRect(0, 20, bounds.size.w, bounds.size.h - 20));
+  text_layer_set_background_color(s_text_layer, GColorBlack);
+  text_layer_set_text_color(s_text_layer, GColorWhite);
+  text_layer_set_font(s_text_layer, fonts_get_system_font(FONT_KEY_DROID_SERIF_28_BOLD));
+  layer_add_child(window_layer, text_layer_get_layer(s_text_layer));
 
   time_t now = time(NULL);
   struct tm *t = localtime(&now);
@@ -42,13 +33,26 @@ static void do_init(void) {
   tick_timer_service_subscribe(MINUTE_UNIT, &handle_minute_tick);
 }
 
-static void do_deinit(void) {
-  window_destroy(s_data.window);
-  text_layer_destroy(s_data.label);
+static void main_window_unload(Window *window) {
+  text_layer_destroy(s_text_layer);
+}
+
+static void init() {
+  s_main_window = window_create();
+  window_set_background_color(s_main_window, GColorBlack);
+  window_set_window_handlers(s_main_window, (WindowHandlers) {
+    .load = main_window_load,
+    .unload = main_window_unload,
+  });
+  window_stack_push(s_main_window, true);
+}
+
+static void deinit() {
+  window_destroy(s_main_window);
 }
 
 int main(void) {
-  do_init();
+  init();
   app_event_loop();
-  do_deinit();
+  deinit();
 }

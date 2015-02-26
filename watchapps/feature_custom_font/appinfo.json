@@ -17,5 +17,10 @@
         "file": "fonts/osp-din/OSP-DIN_44.ttf"
       }
     ]
-  }
+  },
+  "targetPlatforms": [
+    "aplite",
+    "basalt"
+  ],
+  "sdkVersion": "3"
 }

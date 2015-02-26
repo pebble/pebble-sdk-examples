@@ -18,5 +18,10 @@
         "file": "images/menu_icon_tic_tock_toe.png"
       }
     ]
-  }
+  },
+  "targetPlatforms": [
+    "aplite",
+    "basalt"
+  ],
+  "sdkVersion": "3"
 }

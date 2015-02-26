@@ -1,33 +1,7 @@
-/*
+#include <pebble.h>
 
-   Big Time watch
+static Window *s_main_window;
 
-   A digital watch with large digits.
-
-
-   A few things complicate the implementation of this watch:
-
-   a) The largest size of the Nevis font which the Pebble handles
-      seems to be ~47 units (points or pixels?). But the size of
-      characters we want is ~100 points.
-
-      This requires us to generate and use images instead of
-      fonts--which complicates things greatly.
-
-   b) When I started it wasn't possible to load all the images into
-      RAM at once--this means we have to load/unload each image when
-      we need it. The images are slightly smaller now than they were
-      but I figured it would still be pushing it to load them all at
-      once, even if they just fit, so I've stuck with the load/unload
-      approach.
-
- */
-
-#include "pebble.h"
-
-static Window *window;
-
-//
 // There's only enough memory to load about 6 of 10 required images
 // so we have to swap them in & out...
 //
@@ -39,9 +13,7 @@ static Window *window;
 // Slot on-screen layout:
 //     0 1
 //     2 3
-//
 #define TOTAL_IMAGE_SLOTS 4
-
 #define NUMBER_OF_IMAGES 10
 
 // These images are 72 x 84 pixels (i.e. a quarter of the display),
@@ -54,8 +26,8 @@ const int IMAGE_RESOURCE_IDS[NUMBER_OF_IMAGES] = {
   RESOURCE_ID_IMAGE_NUM_9
 };
 
-static GBitmap *images[TOTAL_IMAGE_SLOTS];
-static BitmapLayer *image_layers[TOTAL_IMAGE_SLOTS];
+static GBitmap *s_images[TOTAL_IMAGE_SLOTS];
+static BitmapLayer *s_image_layers[TOTAL_IMAGE_SLOTS];
 
 #define EMPTY_SLOT -1
 
@@ -63,19 +35,15 @@ static BitmapLayer *image_layers[TOTAL_IMAGE_SLOTS];
 // the slot--which was going to be used to assist with de-duplication
 // but we're not doing that due to the one parent-per-layer
 // restriction mentioned above.
-static int image_slot_state[TOTAL_IMAGE_SLOTS] = {EMPTY_SLOT, EMPTY_SLOT, EMPTY_SLOT, EMPTY_SLOT};
+static int s_image_slot_state[TOTAL_IMAGE_SLOTS] = {EMPTY_SLOT, EMPTY_SLOT, EMPTY_SLOT, EMPTY_SLOT};
 
 static void load_digit_image_into_slot(int slot_number, int digit_value) {
   /*
-
-     Loads the digit image from the application's resources and
-     displays it on-screen in the correct location.
-
-     Each slot is a quarter of the screen.
-
+   * Loads the digit image from the application's resources and
+   * displays it on-screen in the correct location.
+   *
+   * Each slot is a quarter of the screen.
    */
-
-  // TODO: Signal these error(s)?
 
   if ((slot_number < 0) || (slot_number >= TOTAL_IMAGE_SLOTS)) {
     return;
@@ -85,56 +53,34 @@ static void load_digit_image_into_slot(int slot_number, int digit_value) {
     return;
   }
 
-  if (image_slot_state[slot_number] != EMPTY_SLOT) {
+  if (s_image_slot_state[slot_number] != EMPTY_SLOT) {
     return;
   }
 
-  image_slot_state[slot_number] = digit_value;
-  images[slot_number] = gbitmap_create_with_resource(IMAGE_RESOURCE_IDS[digit_value]);
-  GRect frame = (GRect) {
-    .origin = { (slot_number % 2) * 72, (slot_number / 2) * 84 },
-    .size = images[slot_number]->bounds.size
-  };
-  BitmapLayer *bitmap_layer = bitmap_layer_create(frame);
-  image_layers[slot_number] = bitmap_layer;
-  bitmap_layer_set_bitmap(bitmap_layer, images[slot_number]);
-  Layer *window_layer = window_get_root_layer(window);
+  s_image_slot_state[slot_number] = digit_value;
+  s_images[slot_number] = gbitmap_create_with_resource(IMAGE_RESOURCE_IDS[digit_value]);
+#ifdef PBL_PLATFORM_BASALT
+  GRect bounds = gbitmap_get_bounds(s_images[slot_number]);
+#else
+  GRect bounds = s_images[slot_number]->bounds;
+#endif
+  BitmapLayer *bitmap_layer = bitmap_layer_create(GRect((slot_number % 2) * 72, (slot_number / 2) * 84, bounds.size.w, bounds.size.h));
+  s_image_layers[slot_number] = bitmap_layer;
+  bitmap_layer_set_bitmap(bitmap_layer, s_images[slot_number]);
+  Layer *window_layer = window_get_root_layer(s_main_window);
   layer_add_child(window_layer, bitmap_layer_get_layer(bitmap_layer));
 }
 
 static void unload_digit_image_from_slot(int slot_number) {
-  /*
-
-     Removes the digit from the display and unloads the image resource
-     to free up RAM.
-
-     Can handle being called on an already empty slot.
-
-   */
-
-  if (image_slot_state[slot_number] != EMPTY_SLOT) {
-    layer_remove_from_parent(bitmap_layer_get_layer(image_layers[slot_number]));
-    bitmap_layer_destroy(image_layers[slot_number]);
-    gbitmap_destroy(images[slot_number]);
-    image_slot_state[slot_number] = EMPTY_SLOT;
+  if (s_image_slot_state[slot_number] != EMPTY_SLOT) {
+    layer_remove_from_parent(bitmap_layer_get_layer(s_image_layers[slot_number]));
+    bitmap_layer_destroy(s_image_layers[slot_number]);
+    gbitmap_destroy(s_images[slot_number]);
+    s_image_slot_state[slot_number] = EMPTY_SLOT;
   }
-
 }
 
 static void display_value(unsigned short value, unsigned short row_number, bool show_first_leading_zero) {
-  /*
-
-     Displays a numeric value between 0 and 99 on screen.
-
-     Rows are ordered on screen as:
-
-       Row 0
-       Row 1
-
-     Includes optional blanking of first leading zero,
-     i.e. displays ' 0' rather than '00'.
-
-   */
   value = value % 100; // Maximum of two digits per row.
 
   // Column order is: | Column 0 | Column 1 |
@@ -151,7 +97,6 @@ static void display_value(unsigned short value, unsigned short row_number, bool 
 }
 
 static unsigned short get_display_hour(unsigned short hour) {
-
   if (clock_is_24h_style()) {
     return hour;
   }
@@ -164,10 +109,6 @@ static unsigned short get_display_hour(unsigned short hour) {
 }
 
 static void display_time(struct tm *tick_time) {
-
-  // TODO: Use `units_changed` and more intelligence to reduce
-  //       redundant digit unload/load?
-
   display_value(get_display_hour(tick_time->tm_hour), 0, false);
   display_value(tick_time->tm_min, 1, true);
 }
@@ -176,12 +117,7 @@ static void handle_minute_tick(struct tm *tick_time, TimeUnits units_changed) {
   display_time(tick_time);
 }
 
-static void init() {
-  window = window_create();
-  window_stack_push(window, true);
-  window_set_background_color(window, GColorBlack);
-
-  // Avoids a blank screen on watch start.
+static void main_window_load(Window *window) {
   time_t now = time(NULL);
   struct tm *tick_time = localtime(&now);
   display_time(tick_time);
@@ -189,12 +125,24 @@ static void init() {
   tick_timer_service_subscribe(MINUTE_UNIT, handle_minute_tick);
 }
 
-static void deinit() {
+static void main_window_unload(Window *window) {
   for (int i = 0; i < TOTAL_IMAGE_SLOTS; i++) {
     unload_digit_image_from_slot(i);
   }
+}
 
-  window_destroy(window);
+static void init() {
+  s_main_window = window_create();
+  window_set_background_color(s_main_window, GColorBlack);
+  window_set_window_handlers(s_main_window, (WindowHandlers) {
+    .load = main_window_load,
+    .unload = main_window_unload,
+  });
+  window_stack_push(s_main_window, true);
+}
+
+static void deinit() {
+  window_destroy(s_main_window);
 }
 
 int main(void) {

@@ -1,35 +1,43 @@
 /* Inspired by peapod's progress bar layer: https://github.com/Kathatrine/peapod */
 #include <pebble.h>
 
-typedef Layer ProgressBarLayer;
-
 #define SPEED_MAX 5000
 #define SPEED_MIN 50
 #define DEFAULT_SPEED 750
 
-static Window *window;
-static TextLayer *done_text;
-static TextLayer *instruction_text;
-static AppTimer *progress_timer;
-static ProgressBarLayer *progress_bar;
+typedef Layer ProgressBarLayer;
+
+static Window *s_main_window;
+static TextLayer *s_done_text, *s_instruction_text;
+static AppTimer *s_progress_timer;
+static ProgressBarLayer *s_progress_bar;
 static unsigned int s_current_speed = DEFAULT_SPEED;
 
 typedef struct {
   unsigned int progress; // how full the progress bar is
 } ProgressData;
 
-static void progress_timer_callback(void *data);
+static void progress_timer_callback(void *data) {
+  ProgressData *d = layer_get_data(s_progress_bar);
+  if (d->progress > 129) {
+    s_progress_timer = NULL;
+    text_layer_set_text(s_done_text, "Done!");
+  } else {
+    s_progress_timer = app_timer_register(s_current_speed, progress_timer_callback, NULL);
+    layer_mark_dirty(s_progress_bar);
+  }
+}
 
 static void select_click_handler(ClickRecognizerRef recognizer, void *context) {
-  ProgressData *data = layer_get_data(progress_bar);
+  ProgressData *data = layer_get_data(s_progress_bar);
   data->progress = 0;
   s_current_speed = DEFAULT_SPEED;
-  if (progress_timer) {
-    app_timer_cancel(progress_timer);
+  if (s_progress_timer) {
+    app_timer_cancel(s_progress_timer);
   }
-  progress_timer = app_timer_register(s_current_speed /* milliseconds */, progress_timer_callback, NULL);
-  text_layer_set_text(done_text, "");
-  layer_mark_dirty(progress_bar);
+  s_progress_timer = app_timer_register(s_current_speed, progress_timer_callback, NULL);
+  text_layer_set_text(s_done_text, "");
+  layer_mark_dirty(s_progress_bar);
 }
 
 static void up_click_handler(ClickRecognizerRef recognizer, void *context) {
@@ -44,21 +52,10 @@ static void down_click_handler(ClickRecognizerRef recognizer, void *context) {
   }
 }
 
-static void config_provider(Window *window) {
+static void config_provider(void *context) {
   window_single_click_subscribe(BUTTON_ID_UP, up_click_handler);
   window_single_click_subscribe(BUTTON_ID_SELECT, select_click_handler);
   window_single_click_subscribe(BUTTON_ID_DOWN, down_click_handler);
-}
-
-static void progress_timer_callback(void *data) {
-  ProgressData *d = layer_get_data(progress_bar);
-  if (d->progress > 129) {
-    progress_timer = NULL;
-    text_layer_set_text(done_text, "Done!");
-  } else {
-    progress_timer = app_timer_register(s_current_speed /* milliseconds */, progress_timer_callback, NULL);
-    layer_mark_dirty(progress_bar);
-  }
 }
 
 static void progress_bar_layer_update(ProgressBarLayer *bar, GContext *ctx) {
@@ -75,7 +72,7 @@ static void progress_bar_layer_update(ProgressBarLayer *bar, GContext *ctx) {
   ++data->progress;
 }
 
-static ProgressBarLayer * progress_bar_layer_create(void) {
+static ProgressBarLayer* progress_bar_layer_create(void) {
   ProgressBarLayer *progress_bar_layer = layer_create_with_data(GRect(6, 120, 130, 8), sizeof(ProgressData));
   layer_set_update_proc(progress_bar_layer, progress_bar_layer_update);
   layer_mark_dirty(progress_bar_layer);
@@ -87,29 +84,40 @@ static void progress_bar_destroy(ProgressBarLayer *progress_bar_layer) {
   layer_destroy(progress_bar_layer);
 }
 
-void init(void) {
-  window = window_create();
-  window_set_click_config_provider(window, (ClickConfigProvider) config_provider);
-  window_stack_push(window, true /* Animated */);
+static void main_window_load(Window *window) {
+  Layer *window_layer = window_get_root_layer(window);
 
-  instruction_text = text_layer_create(GRect(0, 0, 144, 73));
-  layer_add_child(window_get_root_layer(window), text_layer_get_layer(instruction_text));
-  text_layer_set_text(instruction_text, "[UP] increase speed\n[SEL] reset\n[DN] decrease speed");
+  s_instruction_text = text_layer_create(GRect(0, 0, 144, 73));
+  layer_add_child(window_layer, text_layer_get_layer(s_instruction_text));
+  text_layer_set_text(s_instruction_text, "[UP] increase speed\n[SEL] reset\n[DN] decrease speed");
 
-  progress_bar = progress_bar_layer_create();
-  layer_add_child(window_get_root_layer(window), progress_bar);
+  s_progress_bar = progress_bar_layer_create();
+  layer_add_child(window_layer, s_progress_bar);
 
-  done_text = text_layer_create(GRect(50, 74, 94, 20));
-  layer_add_child(window_get_root_layer(window), text_layer_get_layer(done_text));
+  s_done_text = text_layer_create(GRect(50, 74, 94, 20));
+  layer_add_child(window_layer, text_layer_get_layer(s_done_text));
 
   // Start the progress timer
-  progress_timer = app_timer_register(s_current_speed /* milliseconds */, progress_timer_callback, NULL);
+  s_progress_timer = app_timer_register(s_current_speed, progress_timer_callback, NULL);
 }
 
-void deinit(void) {
-  text_layer_destroy(done_text);
-  progress_bar_destroy(progress_bar);
-  window_destroy(window);
+static void main_window_unload(Window *window) {
+  text_layer_destroy(s_done_text);
+  progress_bar_destroy(s_progress_bar);
+}
+
+static void init() {
+  s_main_window = window_create();
+  window_set_click_config_provider(s_main_window, config_provider);
+  window_set_window_handlers(s_main_window, (WindowHandlers) {
+    .load = main_window_load,
+    .unload = main_window_unload,
+  });
+  window_stack_push(s_main_window, true);
+}
+
+static void deinit() {
+  window_destroy(s_main_window);
 }
 
 int main(void) {

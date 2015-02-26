@@ -12,15 +12,20 @@
   "resources": {
     "media": [
       {
-        "type": "png",
+        "type": "pbi",
         "name": "IMAGE_ACTION_ICON_PLUS",
         "file": "images/action_icon_plus.png"
       },
       {
-        "type": "png",
+        "type": "pbi",
         "name": "IMAGE_ACTION_ICON_MINUS",
         "file": "images/action_icon_minus.png"
       }
     ]
-  }
+  },
+  "targetPlatforms": [
+    "aplite",
+    "basalt"
+  ],
+  "sdkVersion": "3"
 }

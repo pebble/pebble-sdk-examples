@@ -12,29 +12,29 @@ typedef struct Vec2d {
 } Vec2d;
 
 typedef struct Disc {
+#ifdef PBL_COLOR
+  GColor color;
+#endif
   Vec2d pos;
   Vec2d vel;
   double mass;
   double radius;
 } Disc;
 
-static Disc discs[NUM_DISCS];
 
-static double next_radius = 3;
+static Window *s_main_window;
+static Layer *s_disc_layer;
 
-static Window *window;
-
+static Disc disc_array[NUM_DISCS];
 static GRect window_frame;
-
-static Layer *disc_layer;
-
-static AppTimer *timer;
 
 static double disc_calc_mass(Disc *disc) {
   return MATH_PI * disc->radius * disc->radius * DISC_DENSITY;
 }
 
 static void disc_init(Disc *disc) {
+  static double next_radius = 3;
+
   GRect frame = window_frame;
   disc->pos.x = frame.size.w/2;
   disc->pos.y = frame.size.h/2;
@@ -42,6 +42,9 @@ static void disc_init(Disc *disc) {
   disc->vel.y = 0;
   disc->radius = next_radius;
   disc->mass = disc_calc_mass(disc);
+#ifdef PBL_COLOR
+  disc->color = GColorFromRGB(rand() % 255, rand() % 255, rand() % 255);
+#endif
   next_radius += 0.5;
 }
 
@@ -51,89 +54,94 @@ static void disc_apply_force(Disc *disc, Vec2d force) {
 }
 
 static void disc_apply_accel(Disc *disc, AccelData accel) {
-  Vec2d force;
-  force.x = accel.x * ACCEL_RATIO;
-  force.y = -accel.y * ACCEL_RATIO;
-  disc_apply_force(disc, force);
+  disc_apply_force(disc, (Vec2d) {
+    .x = accel.x * ACCEL_RATIO,
+    .y = -accel.y * ACCEL_RATIO
+  });
 }
 
 static void disc_update(Disc *disc) {
-  const GRect frame = window_frame;
   double e = 0.5;
+
   if ((disc->pos.x - disc->radius < 0 && disc->vel.x < 0)
-    || (disc->pos.x + disc->radius > frame.size.w && disc->vel.x > 0)) {
+    || (disc->pos.x + disc->radius > window_frame.size.w && disc->vel.x > 0)) {
     disc->vel.x = -disc->vel.x * e;
   }
+
   if ((disc->pos.y - disc->radius < 0 && disc->vel.y < 0)
-    || (disc->pos.y + disc->radius > frame.size.h && disc->vel.y > 0)) {
+    || (disc->pos.y + disc->radius > window_frame.size.h && disc->vel.y > 0)) {
     disc->vel.y = -disc->vel.y * e;
   }
+
   disc->pos.x += disc->vel.x;
   disc->pos.y += disc->vel.y;
 }
 
 static void disc_draw(GContext *ctx, Disc *disc) {
+#ifdef PBL_COLOR
+  graphics_context_set_fill_color(ctx, disc->color);
+#else
   graphics_context_set_fill_color(ctx, GColorWhite);
+#endif
   graphics_fill_circle(ctx, GPoint(disc->pos.x, disc->pos.y), disc->radius);
 }
 
 static void disc_layer_update_callback(Layer *me, GContext *ctx) {
   for (int i = 0; i < NUM_DISCS; i++) {
-    disc_draw(ctx, &discs[i]);
+    disc_draw(ctx, &disc_array[i]);
   }
 }
 
 static void timer_callback(void *data) {
   AccelData accel = (AccelData) { .x = 0, .y = 0, .z = 0 };
-
   accel_service_peek(&accel);
 
   for (int i = 0; i < NUM_DISCS; i++) {
-    Disc *disc = &discs[i];
+    Disc *disc = &disc_array[i];
     disc_apply_accel(disc, accel);
     disc_update(disc);
   }
 
-  layer_mark_dirty(disc_layer);
+  layer_mark_dirty(s_disc_layer);
 
-  timer = app_timer_register(ACCEL_STEP_MS, timer_callback, NULL);
+  app_timer_register(ACCEL_STEP_MS, timer_callback, NULL);
 }
 
-static void window_load(Window *window) {
+static void main_window_load(Window *window) {
   Layer *window_layer = window_get_root_layer(window);
   GRect frame = window_frame = layer_get_frame(window_layer);
 
-  disc_layer = layer_create(frame);
-  layer_set_update_proc(disc_layer, disc_layer_update_callback);
-  layer_add_child(window_layer, disc_layer);
+  s_disc_layer = layer_create(frame);
+  layer_set_update_proc(s_disc_layer, disc_layer_update_callback);
+  layer_add_child(window_layer, s_disc_layer);
 
   for (int i = 0; i < NUM_DISCS; i++) {
-    disc_init(&discs[i]);
+    disc_init(&disc_array[i]);
   }
 }
 
-static void window_unload(Window *window) {
-  layer_destroy(disc_layer);
+static void main_window_unload(Window *window) {
+  layer_destroy(s_disc_layer);
 }
 
 static void init(void) {
-  window = window_create();
-  window_set_window_handlers(window, (WindowHandlers) {
-    .load = window_load,
-    .unload = window_unload
+  s_main_window = window_create();
+  window_set_background_color(s_main_window, GColorBlack);
+  window_set_window_handlers(s_main_window, (WindowHandlers) {
+    .load = main_window_load,
+    .unload = main_window_unload
   });
-  window_stack_push(window, true /* Animated */);
-  window_set_background_color(window, GColorBlack);
+  window_stack_push(s_main_window, true);
 
   accel_data_service_subscribe(0, NULL);
 
-  timer = app_timer_register(ACCEL_STEP_MS, timer_callback, NULL);
+  app_timer_register(ACCEL_STEP_MS, timer_callback, NULL);
 }
 
 static void deinit(void) {
   accel_data_service_unsubscribe();
 
-  window_destroy(window);
+  window_destroy(s_main_window);
 }
 
 int main(void) {

@@ -17,5 +17,10 @@
         "file": "images/no_litter_crop.png"
       }
     ]
-  }
+  },
+  "targetPlatforms": [
+    "aplite",
+    "basalt"
+  ],
+  "sdkVersion": "3"
 }

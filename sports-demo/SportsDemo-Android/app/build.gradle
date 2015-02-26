@@ -21,13 +21,13 @@ android {
 
     buildTypes {
         release {
-            runProguard false
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
 }
 
 dependencies {
-    compile 'com.getpebble:pebblekit:2.5.0'
+    compile 'com.getpebble:pebblekit:2.6.0'
     compile 'com.google.android:support-v4:r7@jar'
 }

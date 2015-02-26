@@ -1,8 +1,6 @@
 #include "pebble.h"
 
-static Window *window;
-
-static Layer *path_layer;
+#define NUM_PATHS 2
 
 // This defines graphics path information to be loaded as a path later
 static const GPathInfo HOUSE_PATH_POINTS = {
@@ -51,71 +49,64 @@ static const GPathInfo INFINITY_RECT_PATH_POINTS = {
   }
 };
 
-static GPath *house_path;
+static Window *s_main_window;
+static Layer *s_path_layer;
 
-static GPath *infinity_path;
+static GPath *s_path_array[NUM_PATHS];
+static GPath *s_house_path, *s_infinity_path, *s_current_path;
 
-#define NUM_GRAPHIC_PATHS 2
-
-static GPath *graphic_paths[NUM_GRAPHIC_PATHS];
-
-static GPath *current_path = NULL;
-
-static int current_path_index = 0;
-
-static int path_angle = 0;
-
-static bool outline_mode = false;
+static int s_current_path_index;
+static int s_path_angle;
+static bool s_outline_mode;
 
 // This is the layer update callback which is called on render updates
-static void path_layer_update_callback(Layer *me, GContext *ctx) {
-  (void)me;
-
+static void path_layer_update_callback(Layer *layer, GContext *ctx) {
   // You can rotate the path before rendering
-  gpath_rotate_to(current_path, (TRIG_MAX_ANGLE / 360) * path_angle);
+  gpath_rotate_to(s_current_path, (TRIG_MAX_ANGLE / 360) * s_path_angle);
 
   // There are two ways you can draw a GPath: outline or filled
   // In this example, only one or the other is drawn, but you can draw
   // multiple instances of the same path filled or outline.
-  if (outline_mode) {
+  if (s_outline_mode) {
     // draw outline uses the stroke color
     graphics_context_set_stroke_color(ctx, GColorWhite);
-    gpath_draw_outline(ctx, current_path);
+    gpath_draw_outline(ctx, s_current_path);
   } else {
     // draw filled uses the fill color
     graphics_context_set_fill_color(ctx, GColorWhite);
-    gpath_draw_filled(ctx, current_path);
+    gpath_draw_filled(ctx, s_current_path);
   }
 }
 
 static int path_angle_add(int angle) {
-  return path_angle = (path_angle + angle) % 360;
+  return s_path_angle = (s_path_angle + angle) % 360;
 }
 
 static void up_click_handler(ClickRecognizerRef recognizer, void *context) {
   // Rotate the path counter-clockwise
   path_angle_add(-10);
-  layer_mark_dirty(path_layer);
+  layer_mark_dirty(s_path_layer);
 }
 
 static void down_click_handler(ClickRecognizerRef recognizer, void *context) {
   // Rotate the path clockwise
   path_angle_add(10);
-  layer_mark_dirty(path_layer);
+  layer_mark_dirty(s_path_layer);
 }
 
 static void select_raw_down_handler(ClickRecognizerRef recognizer, void *context) {
   // Show the outline of the path when select is held down
-  outline_mode = true;
-  layer_mark_dirty(path_layer);
+  s_outline_mode = true;
+  layer_mark_dirty(s_path_layer);
 }
 static void select_raw_up_handler(ClickRecognizerRef recognizer, void *context) {
   // Show the path filled
-  outline_mode = false;
+  s_outline_mode = false;
+
   // Cycle to the next path
-  current_path_index = (current_path_index+1) % NUM_GRAPHIC_PATHS;
-  current_path = graphic_paths[current_path_index];
-  layer_mark_dirty(path_layer);
+  s_current_path_index = (s_current_path_index + 1) % NUM_PATHS;
+  s_current_path = s_path_array[s_current_path_index];
+  layer_mark_dirty(s_path_layer);
 }
 
 static void config_provider(void *context) {
@@ -124,45 +115,54 @@ static void config_provider(void *context) {
   window_raw_click_subscribe(BUTTON_ID_SELECT, select_raw_down_handler, select_raw_up_handler, NULL);
 }
 
-static void init() {
-  window = window_create();
-  window_stack_push(window, true /* Animated */);
-  window_set_background_color(window, GColorBlack);
-
-  window_set_click_config_provider(window, config_provider);
-
+static void main_window_load(Window *window) {
   Layer *window_layer = window_get_root_layer(window);
   GRect bounds = layer_get_frame(window_layer);
 
-  path_layer = layer_create(bounds);
-  layer_set_update_proc(path_layer, path_layer_update_callback);
-  layer_add_child(window_layer, path_layer);
+  s_path_layer = layer_create(bounds);
+  layer_set_update_proc(s_path_layer, path_layer_update_callback);
+  layer_add_child(window_layer, s_path_layer);
 
+  // Move all paths to the center of the screen
+  for (int i = 0; i < NUM_PATHS; i++) {
+    gpath_move_to(s_path_array[i], GPoint(bounds.size.w/2, bounds.size.h/2));
+  }
+}
+
+static void main_window_unload(Window *window) {
+  layer_destroy(s_path_layer);
+}
+
+static void init() {
   // Pass the corresponding GPathInfo to initialize a GPath
-  house_path = gpath_create(&HOUSE_PATH_POINTS);
-  infinity_path = gpath_create(&INFINITY_RECT_PATH_POINTS);
+  s_house_path = gpath_create(&HOUSE_PATH_POINTS);
+  s_infinity_path = gpath_create(&INFINITY_RECT_PATH_POINTS);
 
   // This demo allows you to cycle paths in an array
   // Try adding more GPaths to cycle through
   // You'll need to define another GPathInfo
-  // Remember to update NUM_GRAPHIC_PATHS accordingly
-  graphic_paths[0] = house_path;
-  graphic_paths[1] = infinity_path;
+  // Remember to update NUM_PATHS accordingly
+  s_path_array[0] = s_house_path;
+  s_path_array[1] = s_infinity_path;
 
-  current_path = graphic_paths[0];
+  s_current_path = s_path_array[0];
 
-  // Move all paths to the center of the screen
-  for (int i = 0; i < NUM_GRAPHIC_PATHS; i++) {
-    gpath_move_to(graphic_paths[i], GPoint(bounds.size.w/2, bounds.size.h/2));
-  }
+  // Create Window
+  s_main_window = window_create();
+  window_set_background_color(s_main_window, GColorBlack);
+  window_set_click_config_provider(s_main_window, config_provider);
+  window_set_window_handlers(s_main_window, (WindowHandlers) {
+    .load = main_window_load,
+    .unload = main_window_unload,
+  });
+  window_stack_push(s_main_window, true);
 }
 
 static void deinit() {
-  gpath_destroy(house_path);
-  gpath_destroy(infinity_path);
+  window_destroy(s_main_window);
 
-  layer_destroy(path_layer);
-  window_destroy(window);
+  gpath_destroy(s_house_path);
+  gpath_destroy(s_infinity_path);
 }
 
 int main(void) {

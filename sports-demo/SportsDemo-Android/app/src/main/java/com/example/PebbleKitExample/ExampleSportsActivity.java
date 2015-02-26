@@ -61,7 +61,7 @@ public class ExampleSportsActivity extends Activity {
         sportsDataHandler = new PebbleKit.PebbleDataReceiver(Constants.SPORTS_UUID) {
             @Override
             public void receiveData(final Context context, final int transactionId, final PebbleDictionary data) {
-                int newState = data.getUnsignedInteger(Constants.SPORTS_STATE_KEY).intValue();
+                int newState = data.getInteger(Constants.SPORTS_STATE_KEY).intValue();
                 sportsState = newState;
 
                 PebbleKit.sendAckToPebble(context, transactionId);

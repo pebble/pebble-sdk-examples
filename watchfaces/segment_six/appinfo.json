@@ -18,5 +18,10 @@
         "file": "images/menu_icon_sector_watch.png"
       }
     ]
-  }
+  },
+  "targetPlatforms": [
+    "aplite",
+    "basalt"
+  ],
+  "sdkVersion": "3"
 }

@@ -2,63 +2,72 @@
 
 #include <pebble.h>
 
-static Window *window;
+#define PADDING 5
+#define REPEAT_INTERVAL_MS 100
 
-static TextLayer *text_layer;
-static TextLayer *char_text_layer;
+static Window *s_main_window;
+static TextLayer *s_text_layer;
+static TextLayer *s_char_text_layer;
 
-static char text_buffer[] = "Aa";
+static char s_text_buffer[] = "Aa";
 
-void down_single_click_handler(ClickRecognizerRef recognizer, Window *window) {
-  if (text_buffer[0] != 'Z') {
-    text_buffer[0]++;
-    text_buffer[1]++;
-    text_layer_set_text(text_layer, text_buffer);
-    text_layer_set_text(char_text_layer, text_buffer);
+static void down_single_click_handler(ClickRecognizerRef recognizer, void *context) {
+  if (s_text_buffer[0] != 'Z') {
+    s_text_buffer[0]++;
+    s_text_buffer[1]++;
+
+    text_layer_set_text(s_text_layer, s_text_buffer);
+    text_layer_set_text(s_char_text_layer, s_text_buffer);
   }
 }
 
-void up_single_click_handler(ClickRecognizerRef recognizer, Window *window) {
-  if (text_buffer[0] != 'A') {
-    text_buffer[0]--;
-    text_buffer[1]--;
-    text_layer_set_text(text_layer, text_buffer);
-    text_layer_set_text(char_text_layer, text_buffer);
+static void up_single_click_handler(ClickRecognizerRef recognizer, void *context) {
+  if (s_text_buffer[0] != 'A') {
+    s_text_buffer[0]--;
+    s_text_buffer[1]--;
+
+    text_layer_set_text(s_text_layer, s_text_buffer);
+    text_layer_set_text(s_char_text_layer, s_text_buffer);
   }
 }
 
-void click_config_provider(Window *window) {
-  const uint16_t repeat_interval_ms = 100;
-  window_single_repeating_click_subscribe(BUTTON_ID_UP, repeat_interval_ms, (ClickHandler) up_single_click_handler);
-  window_single_repeating_click_subscribe(BUTTON_ID_DOWN, repeat_interval_ms, (ClickHandler) down_single_click_handler);
+static void click_config_provider(void *context) {
+  window_single_repeating_click_subscribe(BUTTON_ID_UP, REPEAT_INTERVAL_MS, up_single_click_handler);
+  window_single_repeating_click_subscribe(BUTTON_ID_DOWN, REPEAT_INTERVAL_MS, down_single_click_handler);
 }
 
-static void init() {
-  window = window_create();
-  window_stack_push(window, true /* Animated */);
-
-  window_set_click_config_provider(window, (ClickConfigProvider) click_config_provider);
-
+static void main_window_load(Window *window) {
   Layer *window_layer = window_get_root_layer(window);
   GRect bounds = layer_get_bounds(window_layer);
 
-  static const int pad = 5;
+  s_text_layer = text_layer_create((GRect) { { PADDING, 0 }, { bounds.size.w - 2*PADDING, bounds.size.h } });
+  text_layer_set_text(s_text_layer, s_text_buffer);
+  text_layer_set_font(s_text_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_UNICONS_30)));
+  layer_add_child(window_layer, text_layer_get_layer(s_text_layer));
 
-  text_layer = text_layer_create((GRect) { { pad, 0 }, { bounds.size.w - 2*pad, bounds.size.h } });
-  text_layer_set_text(text_layer, text_buffer);
-  text_layer_set_font(text_layer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_UNICONS_30)));
-  layer_add_child(window_layer, text_layer_get_layer(text_layer));
+  s_char_text_layer = text_layer_create((GRect) { { PADDING, bounds.size.h - 60 }, { bounds.size.w - 2*PADDING, 40 } });
+  text_layer_set_text(s_char_text_layer, s_text_buffer);
+  text_layer_set_font(s_char_text_layer, fonts_get_system_font(FONT_KEY_BITHAM_30_BLACK));
+  layer_add_child(window_layer, text_layer_get_layer(s_char_text_layer));
+}
 
-  char_text_layer = text_layer_create((GRect) { { pad, bounds.size.h - 60 }, { bounds.size.w - 2*pad, 40 } });
-  text_layer_set_text(char_text_layer, text_buffer);
-  text_layer_set_font(char_text_layer, fonts_get_system_font(FONT_KEY_BITHAM_30_BLACK));
-  layer_add_child(window_layer, text_layer_get_layer(char_text_layer));
+static void main_window_unload(Window *window) {
+  text_layer_destroy(s_text_layer);
+  text_layer_destroy(s_char_text_layer);
+}
+
+static void init() {
+  s_main_window = window_create();
+  window_set_click_config_provider(s_main_window, click_config_provider);
+  window_set_window_handlers(s_main_window, (WindowHandlers) {
+    .load = main_window_load,
+    .unload = main_window_unload,
+  });
+  window_stack_push(s_main_window, true);
 }
 
 static void deinit() {
-  text_layer_destroy(text_layer);
-  text_layer_destroy(char_text_layer);
-  window_destroy(window);
+  window_destroy(s_main_window);
 }
 
 int main(void) {

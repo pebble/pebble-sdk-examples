@@ -1,22 +1,12 @@
-/*
+#include <pebble.h>
 
-   Demonstrate a few standard library functions available.
+static Window *s_main_window;
+static Layer *s_layer;
+static AppTimer *s_timer;
 
- */
-
-#include "pebble.h"
-
-static Window *window;
-
-static Layer *layer;
-
-static AppTimer *timer = NULL;
-
-static char info_text[256] = "info";
-
-static char str_example[32] = "Goodbye!";
-
-static char str_copy[32] = "Hello, World!";
+static char s_info_text[64] = "info";
+static char s_str_example[32] = "Goodbye!";
+static char s_str_copy[] = "Hello, World!";
 
 static void update_layer_callback(Layer *layer, GContext *ctx) {
   // Get the amount of seconds and the milliseconds part since the Epoch
@@ -30,56 +20,56 @@ static void update_layer_callback(Layer *layer, GContext *ctx) {
   int r = rand();
 
   // Print formatted text into a buffer
-  snprintf(info_text, sizeof(info_text),
-      "str: %s\n"
-      "time: %lu\n"
-      "milliseconds: %u\n"
-      "rand: %d",
-      str_example, t, t_ms, r);
+  snprintf(s_info_text, sizeof(s_info_text), "str: %s\ntime: %lu\nmilliseconds: %u\nrand: %d", s_str_example, t, t_ms, r);
+
+  GRect bounds = layer_get_frame(layer);
 
   // Draw the formatted text
   graphics_context_set_text_color(ctx, GColorBlack);
-  graphics_draw_text(ctx,
-      info_text,
-      fonts_get_system_font(FONT_KEY_GOTHIC_18_BOLD),
-      (GRect){ .origin = GPoint(10, 5), .size = layer_get_frame(layer).size },
-      GTextOverflowModeWordWrap,
-      GTextAlignmentLeft,
-      NULL);
+  graphics_draw_text(ctx, s_info_text, fonts_get_system_font(FONT_KEY_GOTHIC_18_BOLD), GRect(10, 5, bounds.size.w, bounds.size.h), GTextOverflowModeWordWrap, GTextAlignmentLeft, NULL);
 }
 
 static void timer_callback(void *data) {
-  // Mark the layer dirty to have it update
-  layer_mark_dirty(layer);
-
-  // Start another timer to have this happen again
-  timer = app_timer_register(50 /* milliseconds */, timer_callback, NULL);
+  layer_mark_dirty(s_layer);
+  s_timer = app_timer_register(50, timer_callback, NULL);
 }
 
+static void main_window_load(Window *window) {
+  Layer *window_layer = window_get_root_layer(s_main_window);
+  GRect bounds = layer_get_frame(window_layer);
 
-int main(void) {
+  s_layer = layer_create(bounds);
+  layer_set_update_proc(s_layer, update_layer_callback);
+  layer_add_child(window_layer, s_layer);
+
+  // Copy the string into the example
+  strcpy(s_str_example, s_str_copy);
+
+  s_timer = app_timer_register(50, timer_callback, NULL);
+}
+
+static void main_window_unload(Window *window) {
+  layer_destroy(s_layer);
+}
+
+static void init() {
   // Seed the pseudo-random number generator with the time
   srand(time(NULL));
 
-  // Setup the window
-  window = window_create();
-  window_stack_push(window, true /* Animated */);
+  s_main_window = window_create();
+  window_set_window_handlers(s_main_window, (WindowHandlers) {
+    .load = main_window_load,
+    .unload = main_window_unload,
+  });
+  window_stack_push(s_main_window, true);
+}
 
-  // Setup the layer that will display the text
-  Layer *window_layer = window_get_root_layer(window);
-  GRect bounds = layer_get_frame(window_layer);
-  layer = layer_create(bounds);
-  layer_set_update_proc(layer, update_layer_callback);
-  layer_add_child(window_layer, layer);
+static void deinit() {
+  window_destroy(s_main_window);
+}
 
-  // Copy the string into the example
-  strcpy(str_example, str_copy);
-
-  // Start the timer
-  timer = app_timer_register(50 /* milliseconds */, timer_callback, NULL);
-
+int main(void) {
+  init();
   app_event_loop();
-
-  layer_destroy(layer);
-  window_destroy(window);
+  deinit();
 }

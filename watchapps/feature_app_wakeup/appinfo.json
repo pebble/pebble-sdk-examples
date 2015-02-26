@@ -20,10 +20,15 @@
         "file": "cup_icon.png"
       },
       {
-        "type": "png", 
-        "name": "TEA_SIGN", 
+        "type": "png",
+        "name": "TEA_SIGN",
         "file": "tea-sign.png"
       }
     ]
-  }
+  },
+  "targetPlatforms": [
+    "aplite",
+    "basalt"
+  ],
+  "sdkVersion": "3"
 }

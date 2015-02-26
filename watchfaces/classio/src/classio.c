@@ -1,41 +1,23 @@
-/*
+#include <pebble.h>
 
-   "Classic" Digital Watch Pebble App
+static Window *s_main_window;
+static TextLayer *s_time_layer;
 
- */
-
-// Standard includes
-#include "pebble.h"
-
-
-// App-specific data
-Window *window; // All apps must have at least one window
-TextLayer *time_layer; // The clock
-
-// Called once per second
 static void handle_second_tick(struct tm* tick_time, TimeUnits units_changed) {
+  // Needs to be static because it's used by the system later.
+  static char s_time_text[] = "00:00:00";
 
-  static char time_text[] = "00:00:00"; // Needs to be static because it's used by the system later.
-
-
-  strftime(time_text, sizeof(time_text), "%T", tick_time);
-  text_layer_set_text(time_layer, time_text);
+  strftime(s_time_text, sizeof(s_time_text), "%T", tick_time);
+  text_layer_set_text(s_time_layer, s_time_text);
 }
 
+static void main_window_load(Window *window) {
+  Layer *window_layer = window_get_root_layer(window);
 
-// Handle the start-up of the app
-static void do_init(void) {
-
-  // Create our app's base window
-  window = window_create();
-  window_stack_push(window, true);
-  window_set_background_color(window, GColorBlack);
-
-  // Init the text layer used to show the time
-  time_layer = text_layer_create(GRect(29, 54, 144-40 /* width */, 168-54 /* height */));
-  text_layer_set_text_color(time_layer, GColorWhite);
-  text_layer_set_background_color(time_layer, GColorClear);
-  text_layer_set_font(time_layer, fonts_get_system_font(FONT_KEY_GOTHIC_28_BOLD));
+  s_time_layer = text_layer_create(GRect(29, 54, 104, 114));
+  text_layer_set_text_color(s_time_layer, GColorWhite);
+  text_layer_set_background_color(s_time_layer, GColorClear);
+  text_layer_set_font(s_time_layer, fonts_get_system_font(FONT_KEY_GOTHIC_28_BOLD));
 
   // Ensures time is displayed immediately (will break if NULL tick event accessed).
   // (This is why it's a good idea to have a separate routine to do the update itself.)
@@ -44,17 +26,29 @@ static void do_init(void) {
   handle_second_tick(current_time, SECOND_UNIT);
   tick_timer_service_subscribe(SECOND_UNIT, &handle_second_tick);
 
-  layer_add_child(window_get_root_layer(window), text_layer_get_layer(time_layer));
+  layer_add_child(window_layer, text_layer_get_layer(s_time_layer));
 }
 
-static void do_deinit(void) {
-  text_layer_destroy(time_layer);
-  window_destroy(window);
+static void main_window_unload(Window *window) {
+  text_layer_destroy(s_time_layer);
 }
 
-// The main event/run loop for our app
+static void init() {
+  s_main_window = window_create();
+  window_set_background_color(s_main_window, GColorBlack);
+  window_set_window_handlers(s_main_window, (WindowHandlers) {
+    .load = main_window_load,
+    .unload = main_window_unload,
+  });
+  window_stack_push(s_main_window, true);
+}
+
+static void deinit() {
+  window_destroy(s_main_window);
+}
+
 int main(void) {
-  do_init();
+  init();
   app_event_loop();
-  do_deinit();
+  deinit();
 }

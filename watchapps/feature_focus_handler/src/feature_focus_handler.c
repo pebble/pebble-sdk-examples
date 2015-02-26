@@ -1,61 +1,68 @@
 #include <pebble.h>
-#include <pebble_fonts.h>
-#include <stdio.h>
-#include <time.h>
 
 #define BUF_LEN 32
 
-static char in_buf[BUF_LEN];
-static char out_buf[BUF_LEN];
-static TextLayer *in_time;
-static TextLayer *out_time;
-
-static Window *window;
+static char s_in_buf[BUF_LEN];
+static char s_out_buf[BUF_LEN];
+static TextLayer *s_in_time;
+static TextLayer *s_out_time;
+static Window *s_main_window;
 
 static void focus_handler(bool in_focus) {
-  static char time_txt[32];
+  static char time_str[BUF_LEN];
   time_t t = time(NULL);
   struct tm *lt = localtime(&t);
-  strftime(time_txt, 32, "%H:%M:%S", lt);
+  strftime(time_str, BUF_LEN, "%H:%M:%S", lt);
 
   if (in_focus) {
-       snprintf(in_buf, BUF_LEN, "Last in focus:\n%s", time_txt);
-       layer_mark_dirty(text_layer_get_layer(in_time));
+    snprintf(s_in_buf, sizeof(s_in_buf), "Last in focus:\n%s", time_str);
+    layer_mark_dirty(text_layer_get_layer(s_in_time));
   }
   else {
-       snprintf(out_buf, BUF_LEN, "Last out focus:\n%s", time_txt);
-       layer_mark_dirty(text_layer_get_layer(out_time));
+    snprintf(s_out_buf, sizeof(s_out_buf), "Last out focus:\n%s", time_str);
+    layer_mark_dirty(text_layer_get_layer(s_out_time));
   }
 }
 
-static void init(void) {
-  window = window_create();
-  const bool animated = true;
-  window_stack_push(window, animated);
-  Layer *window_layer = window_get_root_layer(window);
-  GRect frame = layer_get_frame(window_layer);
+static void main_window_load(Window *window) {
+  Layer *window_layer = window_get_root_layer(s_main_window);
+  GRect bounds = layer_get_frame(window_layer);
 
-  in_time = text_layer_create(frame);
-  text_layer_set_text(in_time, in_buf);
-  text_layer_set_font(in_time, fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD));
-  layer_add_child(window_layer, text_layer_get_layer(in_time));
+  s_in_time = text_layer_create(bounds);
+  text_layer_set_text(s_in_time, s_in_buf);
+  text_layer_set_font(s_in_time, fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD));
+  layer_add_child(window_layer, text_layer_get_layer(s_in_time));
  
-  frame.origin.y = 50;
-  out_time = text_layer_create(frame);
-  text_layer_set_text(out_time, out_buf);
-  text_layer_set_font(out_time, fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD));
-  layer_add_child(window_layer, text_layer_get_layer(out_time));
+  bounds.origin.y = 50;
 
-  snprintf(in_buf, BUF_LEN, "Last in focus:\nNever");
-  snprintf(out_buf, BUF_LEN, "Last out focus:\nNever");
+  s_out_time = text_layer_create(bounds);
+  text_layer_set_text(s_out_time, s_out_buf);
+  text_layer_set_font(s_out_time, fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD));
+  layer_add_child(window_layer, text_layer_get_layer(s_out_time));
+
+  snprintf(s_in_buf, sizeof(s_in_buf), "Last in focus:\nNever");
+  snprintf(s_out_buf, sizeof(s_out_buf), "Last out focus:\nNever");
+
   app_focus_service_subscribe(focus_handler);
 }
 
-static void deinit(void) {
+static void main_window_unload(Window *window) {
   app_focus_service_unsubscribe();
-  text_layer_destroy(in_time);
-  text_layer_destroy(out_time);
-  window_destroy(window);
+  text_layer_destroy(s_in_time);
+  text_layer_destroy(s_out_time);
+}
+
+static void init() {
+  s_main_window = window_create();
+  window_set_window_handlers(s_main_window, (WindowHandlers) {
+    .load = main_window_load,
+    .unload = main_window_unload,
+  });
+  window_stack_push(s_main_window, true);
+}
+
+static void deinit(void) {
+  window_destroy(s_main_window);
 }
 
 int main(void) {
