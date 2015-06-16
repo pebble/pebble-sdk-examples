@@ -1,8 +1,6 @@
 ## Pebble Smartwatch SDK Examples
 
-### This repository has been deprecated and will no longer be updated. Head over 
-to [pebble-examples](https://github.com/pebble-examples) for official example
-repositories that can be individually imported to CloudPebble with ease.
+### This repository has been deprecated and will no longer be updated. Head over to [pebble-examples](https://github.com/pebble-examples) for official example repositories that can be individually imported to CloudPebble with ease.
 
 To learn more about the Pebble SDK visit <https://developer.getpebble.com/>.
 
