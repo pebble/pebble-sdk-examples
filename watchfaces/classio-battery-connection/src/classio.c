@@ -22,8 +22,6 @@ static void handle_second_tick(struct tm* tick_time, TimeUnits units_changed) {
 
   strftime(s_time_text, sizeof(s_time_text), "%T", tick_time);
   text_layer_set_text(s_time_layer, s_time_text);
-
-  handle_battery(battery_state_service_peek());
 }
 
 static void handle_bluetooth(bool connected) {
@@ -67,6 +65,8 @@ static void main_window_load(Window *window) {
   layer_add_child(window_layer, text_layer_get_layer(s_time_layer));
   layer_add_child(window_layer, text_layer_get_layer(s_connection_layer));
   layer_add_child(window_layer, text_layer_get_layer(s_battery_layer));
+  
+  handle_battery(battery_state_service_peek());
 }
 
 static void main_window_unload(Window *window) {
