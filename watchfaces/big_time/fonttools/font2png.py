@@ -42,12 +42,12 @@
 # canvas of the correct size.
 #
 
-import ImageFont, ImageDraw, Image
+from PIL import ImageFont, ImageDraw, Image
 
 FONT_SIZE = 100
-FONT_FILE_PATH = "resources/src/fonts/nevis.ttf"
+FONT_FILE_PATH = "resources/fonts/nevis.ttf"
 
-OUTPUT_IMAGE_FILEPATH_TEMPLATE = "resources/src/images/num_%d.png"
+OUTPUT_IMAGE_FILEPATH_TEMPLATE = "resources/images/num_%d.png"
 
 
 TILE_WIDTH_PIXELS = 144/2
@@ -60,7 +60,7 @@ META_DATA_TEMPLATE = \
 """
         {
         "type": "png",
-        "defName": "IMAGE_NUM_%d",
+        "name": "IMAGE_NUM_%d",
         "file": "images/num_%d.png"
         }"""
 
