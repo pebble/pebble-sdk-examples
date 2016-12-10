@@ -1,0 +1,11 @@
+
+{"friendlyVersion": "VERSION",
+ "versionDefName": "VERSION",
+ "media": [
+	   {
+	    "type":"raw",
+	    "defName":"FuzzyZeit",
+	    "file":"resource_map.json"
+	   }
+	  ]
+}
